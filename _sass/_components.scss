@@ -1,0 +1,105 @@
+// Reusable UI components — all token-driven.
+
+// ── Buttons ────────────────────────────────────────────────────────────────
+.btn {
+  display: inline-flex; align-items: center; gap: var(--space-2);
+  font-weight: 600; font-size: var(--text-sm);
+  padding: 0.7rem 1.25rem; border-radius: var(--radius-sm);
+  border: 1px solid transparent; cursor: pointer;
+  transition: transform var(--dur) var(--ease), background var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+}
+.btn:hover { text-decoration: none; transform: translateY(-1px); }
+.btn--primary { background: var(--color-brand); color: #fff; box-shadow: var(--shadow-sm); }
+.btn--primary:hover { background: var(--color-brand-dark); color: #fff; }
+.btn--ghost { background: transparent; color: var(--color-brand); border-color: var(--color-line); }
+.btn--ghost:hover { border-color: var(--color-brand); color: var(--color-brand); }
+.btn--light { background: #fff; color: var(--color-brand); }
+
+// ── Hero ─────────────────────────────────────────────────────────────────
+.hero {
+  position: relative; overflow: hidden;
+  background:
+    radial-gradient(1200px 500px at 75% -10%, var(--color-brand-light), transparent 60%),
+    linear-gradient(180deg, var(--color-bg), var(--color-bg-alt));
+  padding-block: var(--space-24) var(--space-16);
+}
+.hero__eyebrow {
+  display: inline-block; font-size: var(--text-sm); font-weight: 700; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--color-brand); margin-bottom: var(--space-4);
+}
+.hero h1 { font-size: clamp(2.2rem, 5vw, var(--text-4xl)); max-width: 16ch; }
+.hero__lead { font-size: var(--text-lg); color: var(--color-ink-soft); max-width: 56ch; margin-bottom: var(--space-8); }
+.hero__actions { display: flex; gap: var(--space-4); flex-wrap: wrap; }
+
+// ── Cards ──────────────────────────────────────────────────────────────────
+.card {
+  background: var(--color-surface); border: 1px solid var(--color-line);
+  border-radius: var(--radius); padding: var(--space-6);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease), border-color var(--dur) var(--ease);
+  display: flex; flex-direction: column;
+}
+a.card:hover { text-decoration: none; transform: translateY(-3px); box-shadow: var(--shadow); border-color: color-mix(in srgb, var(--color-brand) 40%, var(--color-line)); }
+.card__icon { font-size: 1.8rem; margin-bottom: var(--space-3); }
+.card h3 { margin-bottom: var(--space-2); color: var(--color-ink); }
+.card p { color: var(--color-ink-soft); margin: 0; font-size: var(--text-sm); }
+.card__more { margin-top: var(--space-4); font-weight: 600; font-size: var(--text-sm); color: var(--color-brand); }
+
+// ── Stats strip ─────────────────────────────────────────────────────────────
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-6); }
+.stat { text-align: center; }
+.stat__num { font-size: var(--text-3xl); font-weight: 800; color: var(--color-brand); line-height: 1; }
+.stat__label { color: var(--color-ink-soft); font-size: var(--text-sm); margin-top: var(--space-2); }
+@media (max-width: 640px) { .stats { grid-template-columns: repeat(2, 1fr); } }
+
+// ── Team ────────────────────────────────────────────────────────────────────
+.person { text-align: left; }
+.person__photo {
+  aspect-ratio: 1 / 1; width: 100%; border-radius: var(--radius);
+  object-fit: cover; background: var(--color-bg-alt); margin-bottom: var(--space-3);
+}
+.person__photo--placeholder { display: grid; place-items: center; color: var(--color-ink-soft); font-size: 2rem; }
+.person__name { font-weight: 700; margin: 0; }
+.person__role { color: var(--color-ink-soft); font-size: var(--text-sm); margin: 0 0 var(--space-2); }
+.person__links { display: flex; gap: var(--space-3); font-size: var(--text-sm); }
+
+// ── Publications ─────────────────────────────────────────────────────────────
+.pub-list { list-style: none; padding: 0; margin: 0; }
+.pub {
+  display: grid; grid-template-columns: auto 1fr; gap: var(--space-6);
+  padding: var(--space-6) 0; border-bottom: 1px solid var(--color-line);
+}
+.pub__year { font-weight: 800; color: var(--color-brand); font-variant-numeric: tabular-nums; }
+.pub__title { font-weight: 600; color: var(--color-ink); margin: 0 0 var(--space-1); }
+.pub__meta { color: var(--color-ink-soft); font-size: var(--text-sm); margin: 0; }
+@media (max-width: 560px) { .pub { grid-template-columns: 1fr; gap: var(--space-2); } }
+
+// ── News / posts ─────────────────────────────────────────────────────────────
+.post-meta { color: var(--color-ink-soft); font-size: var(--text-sm); margin-bottom: var(--space-6); }
+.post-list { list-style: none; padding: 0; margin: 0; display: grid; gap: var(--space-6); }
+.post-list time { color: var(--color-ink-soft); font-size: var(--text-sm); }
+
+// ── Prose (long-form page body) ──────────────────────────────────────────────
+.prose { max-width: var(--container-narrow); }
+.prose :is(h2, h3) { margin-top: var(--space-12); }
+.prose img { border-radius: var(--radius); margin-block: var(--space-6); }
+
+// ── Page header band ─────────────────────────────────────────────────────────
+.page-head { background: var(--color-bg-alt); border-bottom: 1px solid var(--color-line); padding-block: var(--space-16) var(--space-12); }
+.page-head p { color: var(--color-ink-soft); font-size: var(--text-lg); max-width: 60ch; margin: 0; }
+
+// ── Tags / pills ─────────────────────────────────────────────────────────────
+.pill {
+  display: inline-block; padding: 0.25rem 0.7rem; border-radius: 999px;
+  background: var(--color-brand-light); color: var(--color-brand-dark);
+  font-size: var(--text-xs); font-weight: 600;
+}
+
+// ── Call to action band ──────────────────────────────────────────────────────
+.cta {
+  background: linear-gradient(135deg, var(--color-brand), var(--color-brand-dark));
+  color: #fff; border-radius: var(--radius-lg); padding: var(--space-16);
+  text-align: center;
+}
+.cta h2 { color: #fff; }
+.cta p { color: rgba(255,255,255,0.85); max-width: 50ch; margin-inline: auto; margin-bottom: var(--space-8); }

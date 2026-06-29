@@ -1,0 +1,41 @@
+# Research themes shown on the Research landing page.
+# Each theme also has a full page in the _research collection (_research/*.md).
+# `icon` is an emoji placeholder until the design system provides iconography.
+- id: mfe
+  title: "Magnetic Flexible Endoscope (MFE)"
+  icon: "🧲"
+  summary: >-
+    A capsule-shaped device on a highly flexible tether, guided through the
+    colon by an external magnet on a robotic arm — paving the way to painless,
+    safer and more affordable colonoscopy.
+- id: capsule-robots
+  title: "Medical Capsule Robots"
+  icon: "💊"
+  summary: >-
+    Untethered and tethered capsule robots that travel deep inside the body to
+    diagnose and treat disease, combining magnetic actuation with on-board
+    sensing.
+- id: autonomy
+  title: "Autonomy in Surgery"
+  icon: "🤖"
+  summary: >-
+    Computer-vision and control methods that let robotic systems autonomously
+    navigate inside the body, with the clinician always able to take over.
+- id: soft-robotics
+  title: "Soft Surgical Robots"
+  icon: "🪱"
+  summary: >-
+    Soft magnetic continuum manipulators that bend and steer through delicate
+    anatomy where rigid instruments cannot safely reach.
+- id: sensing
+  title: "Advanced Sensing & Micro-Ultrasound"
+  icon: "📡"
+  summary: >-
+    Capsules capable of in-situ diagnostics such as micro-ultrasound within the
+    gastrointestinal tract, under intelligent magnetic control.
+- id: affordable
+  title: "Affordable Medical Devices"
+  icon: "🌍"
+  summary: >-
+    Intelligent, low-cost robotic platforms designed to widen access to
+    screening and treatment in settings with limited healthcare infrastructure.

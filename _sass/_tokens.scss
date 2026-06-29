@@ -1,0 +1,76 @@
+// ─────────────────────────────────────────────────────────────────────────
+// DESIGN TOKENS
+//
+// This is the single integration point for the Claude Design system.
+// When the design files land on the branch, map their tokens onto these CSS
+// custom properties (colours, type scale, spacing, radii, shadows). Every
+// component below and in _base/_components reads from these variables, so the
+// whole site re-skins by editing this one block.
+//
+// Values here are sensible placeholders (a clean clinical-robotics palette)
+// chosen to look presentable before the real design system is applied.
+// ─────────────────────────────────────────────────────────────────────────
+
+:root {
+  // Brand palette ----------------------------------------------------------
+  --color-brand:        #0b5fff;   // primary
+  --color-brand-dark:   #0842b0;
+  --color-brand-light:  #e8f0ff;
+  --color-accent:       #00b3a4;   // teal accent (sensing / robotics)
+
+  // Neutrals ---------------------------------------------------------------
+  --color-ink:          #11161d;   // body text
+  --color-ink-soft:     #4a5563;   // secondary text
+  --color-line:         #e3e8ef;   // borders / hairlines
+  --color-surface:      #ffffff;   // cards / panels
+  --color-bg:           #ffffff;   // page background
+  --color-bg-alt:       #f5f7fb;   // alternating sections
+
+  // Semantic ---------------------------------------------------------------
+  --color-text:         var(--color-ink);
+  --color-link:         var(--color-brand);
+  --color-link-hover:   var(--color-brand-dark);
+
+  // Typography -------------------------------------------------------------
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-display: var(--font-sans);
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+
+  --text-xs:   0.78rem;
+  --text-sm:   0.9rem;
+  --text-base: 1rem;
+  --text-lg:   1.18rem;
+  --text-xl:   1.5rem;
+  --text-2xl:  2rem;
+  --text-3xl:  2.6rem;
+  --text-4xl:  3.4rem;
+  --leading:   1.6;
+  --leading-tight: 1.2;
+
+  // Spacing scale ----------------------------------------------------------
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-24: 6rem;
+
+  // Layout -----------------------------------------------------------------
+  --container: 1140px;
+  --container-narrow: 760px;
+
+  // Radii & shadows --------------------------------------------------------
+  --radius-sm: 6px;
+  --radius:    12px;
+  --radius-lg: 20px;
+  --shadow-sm: 0 1px 2px rgba(17, 22, 29, 0.06);
+  --shadow:    0 6px 24px rgba(17, 22, 29, 0.08);
+  --shadow-lg: 0 18px 48px rgba(17, 22, 29, 0.12);
+
+  // Motion -----------------------------------------------------------------
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --dur:  180ms;
+}

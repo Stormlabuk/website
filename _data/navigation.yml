@@ -1,0 +1,15 @@
+# Primary navigation. `url` values are baseurl-relative.
+- title: Home
+  url: /
+- title: About
+  url: /about/
+- title: Research
+  url: /research/
+- title: Team
+  url: /team/
+- title: Publications
+  url: /publications/
+- title: News
+  url: /news/
+- title: Contact
+  url: /contact/

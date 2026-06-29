@@ -1,0 +1,33 @@
+---
+layout: default
+title: News
+permalink: /news/
+description: "Latest news from STORM Lab UK."
+---
+
+<div class="page-head">
+  <div class="container">
+    <h1>News</h1>
+    <p>Updates, milestones and stories from the lab.</p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="container">
+    {%- if site.news and site.news.size > 0 -%}
+    <ul class="post-list">
+      {%- assign items = site.news | sort: "date" | reverse -%}
+      {%- for post in items -%}
+      <li class="card">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B %Y" }}</time>
+        <h3 style="margin:var(--space-2) 0"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        {%- if post.excerpt -%}<p style="color:var(--color-ink-soft)">{{ post.excerpt | strip_html | truncate: 180 }}</p>{%- endif -%}
+        <span class="card__more">Read more &rarr;</span>
+      </li>
+      {%- endfor -%}
+    </ul>
+    {%- else -%}
+    <p>No news yet — check back soon.</p>
+    {%- endif -%}
+  </div>
+</div>

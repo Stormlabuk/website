@@ -1,0 +1,46 @@
+---
+layout: default
+title: Team
+permalink: /team/
+description: "The people of STORM Lab UK at the University of Leeds."
+---
+
+<div class="page-head">
+  <div class="container">
+    <h1>Team</h1>
+    <p>The people behind STORM Lab UK, led by {{ site.director }}.</p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="container">
+    {%- assign groups = site.data.team | group_by: "group" -%}
+    {%- for group in groups -%}
+      <h2 style="margin-top:var(--space-12)">{{ group.name }}</h2>
+      <div class="grid grid--3">
+        {%- for member in group.items -%}
+        <div class="person card">
+          {%- if member.photo and member.photo != "" -%}
+            <img class="person__photo" src="{{ member.photo | prepend: '/assets/images/' | relative_url }}" alt="{{ member.name }}">
+          {%- else -%}
+            <div class="person__photo person__photo--placeholder" aria-hidden="true">👤</div>
+          {%- endif -%}
+          <p class="person__name">{{ member.name }}</p>
+          <p class="person__role">{{ member.role }}</p>
+          {%- if member.bio -%}<p class="card__p" style="color:var(--color-ink-soft);font-size:var(--text-sm)">{{ member.bio }}</p>{%- endif -%}
+          <div class="person__links">
+            {%- if member.links.profile and member.links.profile != "" -%}<a href="{{ member.links.profile }}">Profile</a>{%- endif -%}
+            {%- if member.links.scholar and member.links.scholar != "" -%}<a href="{{ member.links.scholar }}">Scholar</a>{%- endif -%}
+            {%- if member.links.email and member.links.email != "" -%}<a href="mailto:{{ member.links.email }}">Email</a>{%- endif -%}
+          </div>
+        </div>
+        {%- endfor -%}
+      </div>
+    {%- endfor -%}
+
+    <p style="margin-top:var(--space-12);color:var(--color-ink-soft)">
+      <em>Are you a current member who should appear here? Team entries live in
+      <code>_data/team.yml</code>.</em>
+    </p>
+  </div>
+</div>

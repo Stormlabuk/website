@@ -1,0 +1,42 @@
+---
+layout: default
+title: Publications
+permalink: /publications/
+description: "Selected publications from STORM Lab UK."
+---
+
+<div class="page-head">
+  <div class="container">
+    <h1>Publications</h1>
+    <p>A selection of our work in surgical robotics, magnetic endoscopy and autonomy.</p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="container">
+    {%- assign pubs = site.data.publications | sort: "year" | reverse -%}
+    <ul class="pub-list">
+      {%- for pub in pubs -%}
+      <li class="pub">
+        <div class="pub__year">{{ pub.year }}</div>
+        <div>
+          <p class="pub__title">
+            {%- if pub.url and pub.url != "" -%}
+              <a href="{{ pub.url }}">{{ pub.title }}</a>
+            {%- else -%}
+              {{ pub.title }}
+            {%- endif -%}
+            {% if pub.featured %}<span class="pill" style="margin-left:.5rem">Featured</span>{% endif %}
+          </p>
+          <p class="pub__meta">{{ pub.authors }}{% if pub.venue %} — <em>{{ pub.venue }}</em>{% endif %}</p>
+        </div>
+      </li>
+      {%- endfor -%}
+    </ul>
+
+    <p style="margin-top:var(--space-8);color:var(--color-ink-soft)">
+      <em>This is a selected list maintained in <code>_data/publications.yml</code>.
+      For the complete and current record, see the lab's Google Scholar profile.</em>
+    </p>
+  </div>
+</div>

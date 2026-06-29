@@ -1,0 +1,30 @@
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <span class="brand__mark">S</span>
+      <span class="brand__text">
+        STORM Lab UK
+        <small>{{ site.tagline }}</small>
+      </span>
+    </a>
+
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+      <span></span>
+    </button>
+
+    <nav class="site-nav" id="primary-nav" aria-label="Primary">
+      <ul>
+        {%- for item in site.data.navigation -%}
+          {%- assign item_url = item.url | relative_url -%}
+          {%- assign current = page.url | relative_url -%}
+          <li>
+            <a href="{{ item_url }}"
+               {% if page.url == item.url or (item.url != '/' and page.url contains item.url) %}aria-current="page"{% endif %}>
+              {{ item.title }}
+            </a>
+          </li>
+        {%- endfor -%}
+      </ul>
+    </nav>
+  </div>
+</header>

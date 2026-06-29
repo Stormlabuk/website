@@ -1,0 +1,33 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>STORM Lab UK</h4>
+        <p>{{ site.description }}</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <address>
+          {%- for line in site.address -%}
+            {{ line }}<br>
+          {%- endfor -%}
+          <br>
+          <a href="mailto:{{ site.email }}">{{ site.email }}</a><br>
+          {{ site.phone }}
+        </address>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul style="list-style:none;padding:0;line-height:2;">
+          {%- for item in site.data.navigation -%}
+            <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+          {%- endfor -%}
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; {{ 'now' | date: "%Y" }} STORM Lab UK, {{ site.organisation }}.</span>
+      <span>Science and Technology Of Robotics in Medicine</span>
+    </div>
+  </div>
+</footer>

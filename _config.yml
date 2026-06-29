@@ -1,0 +1,70 @@
+# ── Site settings ────────────────────────────────────────────────────────────
+title: "STORM Lab UK"
+tagline: "Science and Technology Of Robotics in Medicine"
+description: >-
+  STORM Lab UK, based at the University of Leeds and directed by Professor
+  Pietro Valdastri, develops medical capsule robots, robotic endoscopy, soft
+  surgical robots and autonomy for affordable, intelligent surgery.
+# Set `url` to your published address (e.g. https://stormlabuk.github.io or a custom domain).
+url: ""
+# If the site is served from a project subpath (https://USER.github.io/REPO),
+# set baseurl to "/REPO". For a custom domain or user/org page, leave it "".
+baseurl: ""
+lang: en-GB
+
+# ── Branding / contact (surfaced in templates) ───────────────────────────────
+organisation: "University of Leeds"
+director: "Professor Pietro Valdastri"
+email: "p.valdastri@leeds.ac.uk"
+phone: "+44 (0) 113 343 3706"
+address:
+  - "School of Electronic and Electrical Engineering"
+  - "University of Leeds"
+  - "Leeds, LS2 9JT"
+  - "United Kingdom"
+
+social:
+  twitter: ""        # e.g. "stormlabuk"
+  linkedin: ""
+  youtube: ""
+  github: "stormlabuk"
+
+# ── Build settings ───────────────────────────────────────────────────────────
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+sass:
+  style: compressed
+  sass_dir: _sass
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Collections
+collections:
+  research:
+    output: true
+    permalink: /research/:path/
+  team:
+    output: false
+  news:
+    output: true
+    permalink: /news/:year/:month/:slug/
+
+defaults:
+  - scope: { path: "", type: "research" }
+    values: { layout: "research" }
+  - scope: { path: "", type: "news" }
+    values: { layout: "post" }
+  - scope: { path: "" }
+    values: { layout: "page" }
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .github
+  - scripts

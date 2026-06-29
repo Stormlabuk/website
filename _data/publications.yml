@@ -1,0 +1,29 @@
+# Selected publications. Newest first. `featured: true` highlights an entry.
+# This is a starter set gathered from public sources; sync with your full list
+# (e.g. Google Scholar / the live site's Publications page) when available.
+
+- year: 2025
+  title: "The Magnetic Flexible Endoscope: Phase 1 First-in-Human Clinical Trial"
+  authors: "Obstein K., Landewee S., Martin J., Valdastri P., et al."
+  venue: "American Journal of Gastroenterology"
+  featured: true
+  url: ""
+
+- year: 2024
+  title: "Magnetic Flexible Endoscope: a novel platform for diagnostic and therapeutic colonoscopy"
+  authors: "Landewee S., Winters C., Martin J., Valdastri P., Obstein K., et al."
+  venue: "Techniques and Innovations in Gastrointestinal Endoscopy, Vol. 3(1)"
+  featured: true
+  url: ""
+
+- year: 2022
+  title: "Robotic Autonomy for Magnetic Endoscope Biopsy"
+  authors: "Martin J., Barducci L., Scaglioni B., Norton J., Winters C., Subramanian V., Arezzo A., Obstein K., Valdastri P."
+  venue: "IEEE Transactions on Medical Robotics and Bionics"
+  url: "https://pubmed.ncbi.nlm.nih.gov/36249558/"
+
+- year: 2019
+  title: "Explicit Model Predictive Control of a Magnetic Flexible Endoscope"
+  authors: "Scaglioni B., Previtera L., Martin J., Norton J., Obstein K., Valdastri P."
+  venue: "IEEE Robotics and Automation Letters"
+  url: "https://pubmed.ncbi.nlm.nih.gov/30931392/"

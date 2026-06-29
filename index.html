@@ -1,0 +1,85 @@
+---
+layout: default
+title: "STORM Lab UK — Robotics in Medicine"
+description: "Developing medical capsule robots, robotic endoscopy and surgical autonomy at the University of Leeds."
+---
+
+<section class="hero">
+  <div class="container">
+    <span class="hero__eyebrow">University of Leeds</span>
+    <h1>Robotics that reach deep inside the body to diagnose and treat disease</h1>
+    <p class="hero__lead">
+      STORM Lab UK builds medical capsule robots, magnetically-guided endoscopes and
+      autonomous surgical systems — creating affordable, intelligent technology for
+      earlier diagnosis and more effective treatment of life-threatening disease.
+    </p>
+    <div class="hero__actions">
+      <a class="btn btn--primary" href="{{ '/research/' | relative_url }}">Explore our research</a>
+      <a class="btn btn--ghost" href="{{ '/about/' | relative_url }}">About the lab</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="stats">
+      <div class="stat"><div class="stat__num">6+</div><div class="stat__label">Research themes</div></div>
+      <div class="stat"><div class="stat__num">2</div><div class="stat__label">Continents (UK &amp; USA)</div></div>
+      <div class="stat"><div class="stat__num">1st</div><div class="stat__label">In-human MFE trial</div></div>
+      <div class="stat"><div class="stat__num">Leeds</div><div class="stat__label">School of EEE</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container">
+    <div class="section__head">
+      <h2>What we work on</h2>
+      <p>Our research spans medical capsule robots, robotic endoscopy, soft surgical robots,
+         affordable devices and autonomy in robotic surgery.</p>
+    </div>
+    <div class="grid grid--3">
+      {%- for theme in site.data.research -%}
+      <a class="card" href="{{ '/research/' | append: theme.id | append: '/' | relative_url }}">
+        <span class="card__icon">{{ theme.icon }}</span>
+        <h3>{{ theme.title }}</h3>
+        <p>{{ theme.summary | truncate: 130 }}</p>
+        <span class="card__more">Learn more &rarr;</span>
+      </a>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid grid--2" style="align-items:center;gap:var(--space-16)">
+      <div>
+        <h2>Disrupting colonoscopy</h2>
+        <p>Our Magnetic Flexible Endoscope replaces the traditional push-style scope with a
+           soft, capsule-shaped tip guided through the colon by an external magnet on a robotic
+           arm. The aim: painless, safer, easier and more affordable investigation of the large
+           intestine — and earlier detection of cancer.</p>
+        <p><a class="btn btn--ghost" href="{{ '/research/mfe/' | relative_url }}">The MFE programme &rarr;</a></p>
+      </div>
+      <div class="card" style="background:var(--color-bg-alt);align-items:flex-start">
+        <span class="card__icon">🧲</span>
+        <h3>Intelligent magnetic manipulation</h3>
+        <p>Computer vision and control let the system autonomously navigate inside the body,
+           with the clinician always able to take over — pushing toward affordable, intelligent
+           endoscopy for everyone.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="cta">
+      <h2>Interested in working with us?</h2>
+      <p>We collaborate with clinicians, engineers and industry partners, and welcome enquiries
+         from prospective researchers and PhD candidates.</p>
+      <a class="btn btn--light" href="{{ '/contact/' | relative_url }}">Get in touch</a>
+    </div>
+  </div>
+</section>

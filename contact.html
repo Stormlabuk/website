@@ -1,0 +1,49 @@
+---
+layout: default
+title: Contact
+permalink: /contact/
+description: "Get in touch with STORM Lab UK at the University of Leeds."
+---
+
+<div class="page-head">
+  <div class="container">
+    <h1>Contact</h1>
+    <p>We welcome enquiries from clinicians, engineers, industry partners and
+       prospective researchers.</p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="container">
+    <div class="grid grid--2" style="gap:var(--space-16)">
+      <div>
+        <h2>Find us</h2>
+        <address style="font-style:normal;line-height:1.9;font-size:var(--text-lg)">
+          <strong>STORM Lab UK</strong><br>
+          {%- for line in site.address -%}{{ line }}<br>{%- endfor -%}
+        </address>
+
+        <h3 style="margin-top:var(--space-8)">Get in touch</h3>
+        <p>
+          Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a><br>
+          Phone: {{ site.phone }}
+        </p>
+        <p>
+          <a class="btn btn--ghost" href="https://eps.leeds.ac.uk/electronic-engineering/staff/863/professor-pietro-valdastri">
+            Director's university profile &rarr;
+          </a>
+        </p>
+      </div>
+
+      <div>
+        <h2>Join the lab</h2>
+        <p>We regularly host PhD researchers, postdoctoral fellows and visiting
+           collaborators working at the intersection of robotics, control,
+           computer vision and medicine.</p>
+        <p>If you'd like to work with us, please get in touch with a short note
+           about your background and interests, along with your CV.</p>
+        <p><a class="btn btn--primary" href="mailto:{{ site.email }}">Email the lab</a></p>
+      </div>
+    </div>
+  </div>
+</div>
