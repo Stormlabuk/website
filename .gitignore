@@ -7,3 +7,8 @@ vendor/
 Gemfile.lock
 *.gem
 .DS_Store
+
+# Node tooling (used only for local screenshot verification — not part of the site)
+node_modules/
+package.json
+package-lock.json

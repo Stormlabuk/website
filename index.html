@@ -1,85 +1,115 @@
 ---
 layout: default
-title: "STORM Lab UK — Robotics in Medicine"
-description: "Developing medical capsule robots, robotic endoscopy and surgical autonomy at the University of Leeds."
+title: "Home"
+nav_section: "Home"
+seo_title: "STORM Lab UK — Surgical, Robotic and Medical Technologies"
+description: "The STORM Lab at the University of Leeds pioneers miniature surgical robots, capsule endoscopes, and AI-guided tools for minimally invasive medicine."
 ---
 
+<!-- Hero -->
 <section class="hero">
-  <div class="container">
-    <span class="hero__eyebrow">University of Leeds</span>
-    <h1>Robotics that reach deep inside the body to diagnose and treat disease</h1>
-    <p class="hero__lead">
-      STORM Lab UK builds medical capsule robots, magnetically-guided endoscopes and
-      autonomous surgical systems — creating affordable, intelligent technology for
-      earlier diagnosis and more effective treatment of life-threatening disease.
+  <div class="hero__inner">
+    <div class="hero__text">
+      <span class="eyebrow">Medical robotics / University of Leeds</span>
+      <h1 class="storm-display">Disrupting<br>colonoscopy with<br><span class="storm-mark">capsule robots</span></h1>
+      <p class="hero__lead">
+        We leverage magnetic manipulation to enable tiny medical instruments to reach deep
+        within the human body — diagnosing and treating disease while minimising risk to the patient.
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--accent btn--lg" href="{{ '/research/' | relative_url }}">Explore our research <span aria-hidden="true">→</span></a>
+        <a class="btn btn--secondary btn--lg" href="{{ '/team/' | relative_url }}">Meet the team</a>
+      </div>
+    </div>
+    <div class="hero__media">
+      <div class="dither-layer" aria-hidden="true"></div>
+      <img src="{{ '/assets/images/illustration-surgical-system.png' | relative_url }}" alt="Robotic surgical system">
+      <span class="hero__tag tag tag--accent">Robotic surgery platform</span>
+    </div>
+  </div>
+</section>
+
+<!-- Mission band -->
+<section class="mission">
+  <div class="dither-layer" aria-hidden="true"></div>
+  <div class="mission__inner">
+    <span class="eyebrow eyebrow--inverse">Our mission</span>
+    <p class="mission__text">
+      We develop intelligent robotic technologies that make minimally invasive procedures
+      <span class="hl">safer, more accessible and more effective</span> — leveraging magnetic
+      manipulation to reach deep within the body, diagnose disease earlier and expand access to care worldwide.
     </p>
-    <div class="hero__actions">
-      <a class="btn btn--primary" href="{{ '/research/' | relative_url }}">Explore our research</a>
-      <a class="btn btn--ghost" href="{{ '/about/' | relative_url }}">About the lab</a>
-    </div>
   </div>
 </section>
 
-<section class="section">
+<!-- Expertise -->
+<section class="expertise section">
   <div class="container">
-    <div class="stats">
-      <div class="stat"><div class="stat__num">6+</div><div class="stat__label">Research themes</div></div>
-      <div class="stat"><div class="stat__num">2</div><div class="stat__label">Continents (UK &amp; USA)</div></div>
-      <div class="stat"><div class="stat__num">1st</div><div class="stat__label">In-human MFE trial</div></div>
-      <div class="stat"><div class="stat__num">Leeds</div><div class="stat__label">School of EEE</div></div>
+    <div class="expertise__head">
+      <span class="eyebrow" style="justify-content:center">Our expertise</span>
+      <h2>Three capabilities, one principle</h2>
+      <p>Everything we build combines manipulation, sensing and soft mechanics to reach the body safely and affordably.</p>
     </div>
-  </div>
-</section>
-
-<section class="section section--alt">
-  <div class="container">
-    <div class="section__head">
-      <h2>What we work on</h2>
-      <p>Our research spans medical capsule robots, robotic endoscopy, soft surgical robots,
-         affordable devices and autonomy in robotic surgery.</p>
-    </div>
-    <div class="grid grid--3">
-      {%- for theme in site.data.research -%}
-      <a class="card" href="{{ '/research/' | append: theme.id | append: '/' | relative_url }}">
-        <span class="card__icon">{{ theme.icon }}</span>
-        <h3>{{ theme.title }}</h3>
-        <p>{{ theme.summary | truncate: 130 }}</p>
-        <span class="card__more">Learn more &rarr;</span>
-      </a>
+    <div class="expertise__grid">
+      {%- assign xp = site.data.expertise -%}
+      {%- for item in xp -%}
+      <div class="xp-card">
+        <div class="xp-card__media">
+          <canvas class="storm-anim" data-anim="{{ item.anim }}" height="200" aria-hidden="true"></canvas>
+          <span class="xp-card__seq">{{ item.seq }}</span>
+        </div>
+        <div class="xp-card__body">
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.body }}</p>
+        </div>
+      </div>
       {%- endfor -%}
     </div>
   </div>
 </section>
 
-<section class="section">
-  <div class="container">
-    <div class="grid grid--2" style="align-items:center;gap:var(--space-16)">
-      <div>
-        <h2>Disrupting colonoscopy</h2>
-        <p>Our Magnetic Flexible Endoscope replaces the traditional push-style scope with a
-           soft, capsule-shaped tip guided through the colon by an external magnet on a robotic
-           arm. The aim: painless, safer, easier and more affordable investigation of the large
-           intestine — and earlier detection of cancer.</p>
-        <p><a class="btn btn--ghost" href="{{ '/research/mfe/' | relative_url }}">The MFE programme &rarr;</a></p>
-      </div>
-      <div class="card" style="background:var(--color-bg-alt);align-items:flex-start">
-        <span class="card__icon">🧲</span>
-        <h3>Intelligent magnetic manipulation</h3>
-        <p>Computer vision and control let the system autonomously navigate inside the body,
-           with the clinician always able to take over — pushing toward affordable, intelligent
-           endoscopy for everyone.</p>
-      </div>
+<!-- Research projects -->
+<section class="projects">
+  <div class="dither-layer" aria-hidden="true"></div>
+  <div class="projects__inner">
+    <span class="eyebrow eyebrow--inverse">Our research projects</span>
+    <h2>Pioneering magnetic robotics across the body</h2>
+    <p class="projects__lead">
+      From painless screening to autonomous surgery, our projects share one principle:
+      manipulating tiny instruments from afar with magnetic fields, safely and affordably.
+    </p>
+    <div class="projects__grid">
+      {%- for area in site.data.research -%}
+      <a class="proj" href="{{ '/research/' | append: area.slug | append: '/' | relative_url }}">
+        <span class="proj__media">
+          <span class="dither-layer" aria-hidden="true"></span>
+          <img class="{% if area.fit == 'contain' %}fit-contain{% endif %}" src="{{ area.img | prepend: '/assets/images/' | relative_url }}" alt="{{ area.title }}">
+          <span class="proj__n">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
+        </span>
+        <span class="proj__body">
+          <span class="proj__bar" aria-hidden="true"></span>
+          <h3>{{ area.title }}</h3>
+          <p>{{ area.blurb }}</p>
+          <span class="proj__more">View project →</span>
+        </span>
+      </a>
+      {%- endfor -%}
+    </div>
+    <div style="margin-top:44px">
+      <a class="btn btn--accent btn--lg" href="{{ '/research/' | relative_url }}">Explore all research <span aria-hidden="true">→</span></a>
     </div>
   </div>
 </section>
 
-<section class="section">
-  <div class="container">
-    <div class="cta">
-      <h2>Interested in working with us?</h2>
-      <p>We collaborate with clinicians, engineers and industry partners, and welcome enquiries
-         from prospective researchers and PhD candidates.</p>
-      <a class="btn btn--light" href="{{ '/contact/' | relative_url }}">Get in touch</a>
-    </div>
+<!-- Feature quote -->
+<section class="feature-quote">
+  <div class="feature-quote__inner">
+    <span class="storm-bar" aria-hidden="true"></span>
+    <blockquote>“We strive to improve the quality of life for people undergoing flexible endoscopy and laparoscopic surgery by creating affordable and intelligent robotic solutions.”</blockquote>
+    <div class="feature-quote__who">Prof. Pietro Valdastri</div>
+    <div class="feature-quote__role">Director · STORM Lab UK</div>
   </div>
 </section>
+
+<!-- Sponsors -->
+{% include sponsors.html %}

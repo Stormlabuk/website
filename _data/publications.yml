@@ -1,29 +1,81 @@
-# Selected publications. Newest first. `featured: true` highlights an entry.
-# This is a starter set gathered from public sources; sync with your full list
-# (e.g. Google Scholar / the live site's Publications page) when available.
+# Publications page content (from the design).
+stats:
+  - { value: "248", label: "Total publications" }
+  - { value: "190+", label: "Refereed journals" }
+  - { value: "12", label: "Published 2026" }
+  - { value: "6", label: "Active programme grants" }
 
-- year: 2025
-  title: "The Magnetic Flexible Endoscope: Phase 1 First-in-Human Clinical Trial"
-  authors: "Obstein K., Landewee S., Martin J., Valdastri P., et al."
-  venue: "American Journal of Gastroenterology"
-  featured: true
-  url: ""
+# `fig` = image path under /assets/images/ for the figure thumbnail (optional).
+latest:
+  - authors: "B. Ozdemir, P. Valdastri, J. H. Chandler"
+    title: "Spring-Based Tendon-Driven Continuum Robots for Compact Modular Designs in Endoluminal Applications"
+    venue: "IEEE/ASME Trans. Mechatronics"
+    date: "Jun 2026"
+    doi: "10.1109/TMECH.2026.3694222"
+    fig: ""
+  - authors: "J. Hu, D. Jones, M. Melibary, J. Liu, P. Valdastri"
+    title: "Multiscale deformable objects manipulation via wavelet-decomposed boundary element method"
+    venue: "Int. J. Robotics Research"
+    date: "Apr 2026"
+    doi: "10.1177/02783649261441639"
+    fig: ""
+  - authors: "A. Bacchetti et al."
+    title: "Tapered Magnetic Soft Continuum Catheters with Integrated Microchannels for Cerebral Intra-Arterial Chemotherapy Delivery"
+    venue: "Soft Robotics"
+    date: "Apr 2026"
+    doi: "10.1177/21695172261438681"
+    fig: ""
+  - authors: "X. Li, D. Jones, P. Valdastri, M. Lucas"
+    title: "A miniature ultrasonic surgical device based on a flextensional configuration with a pre-stressed piezoelectric stack"
+    venue: "Commun Eng"
+    date: "Mar 2026"
+    doi: "10.1038/s44172-026-00651-2"
+    fig: ""
+  - authors: "P. Lloyd et al."
+    title: "A concentric tube catheter for endoluminal interventions, steered and imaged via magnetic resonance imaging"
+    venue: "Commun Eng"
+    date: "Mar 2026"
+    doi: "10.1038/s44172-026-00636-1"
+    fig: ""
 
-- year: 2024
-  title: "Magnetic Flexible Endoscope: a novel platform for diagnostic and therapeutic colonoscopy"
-  authors: "Landewee S., Winters C., Martin J., Valdastri P., Obstein K., et al."
-  venue: "Techniques and Innovations in Gastrointestinal Endoscopy, Vol. 3(1)"
-  featured: true
-  url: ""
-
-- year: 2022
-  title: "Robotic Autonomy for Magnetic Endoscope Biopsy"
-  authors: "Martin J., Barducci L., Scaglioni B., Norton J., Winters C., Subramanian V., Arezzo A., Obstein K., Valdastri P."
-  venue: "IEEE Transactions on Medical Robotics and Bionics"
-  url: "https://pubmed.ncbi.nlm.nih.gov/36249558/"
-
-- year: 2019
-  title: "Explicit Model Predictive Control of a Magnetic Flexible Endoscope"
-  authors: "Scaglioni B., Previtera L., Martin J., Norton J., Obstein K., Valdastri P."
-  venue: "IEEE Robotics and Automation Letters"
-  url: "https://pubmed.ncbi.nlm.nih.gov/30931392/"
+refereed:
+  - authors: "B. Ozdemir, P. Valdastri, J. H. Chandler"
+    title: "Spring-Based Tendon-Driven Continuum Robots for Compact Modular Designs in Endoluminal Applications"
+    venue: "IEEE/ASME Trans. Mechatronics"
+    date: "Jun 2026"
+    doi: "10.1109/TMECH.2026.3694222"
+  - authors: "J. Hu, D. Jones, M. Melibary, J. Liu, P. Valdastri"
+    title: "Multiscale deformable objects manipulation via wavelet-decomposed boundary element method"
+    venue: "Int. J. Robotics Research"
+    date: "Apr 2026"
+    doi: "10.1177/02783649261441639"
+  - authors: "A. Bacchetti et al."
+    title: "Tapered Magnetic Soft Continuum Catheters with Integrated Microchannels for Cerebral Intra-Arterial Chemotherapy Delivery"
+    venue: "Soft Robotics"
+    date: "Apr 2026"
+    doi: "10.1177/21695172261438681"
+  - authors: "X. Li, D. Jones, P. Valdastri, M. Lucas"
+    title: "A miniature ultrasonic surgical device based on a flextensional configuration with a pre-stressed piezoelectric stack"
+    venue: "Commun Eng"
+    date: "Mar 2026"
+    doi: "10.1038/s44172-026-00651-2"
+  - authors: "P. Lloyd et al."
+    title: "A concentric tube catheter for endoluminal interventions, steered and imaged via magnetic resonance imaging"
+    venue: "Commun Eng"
+    date: "Mar 2026"
+    doi: "10.1038/s44172-026-00636-1"
+  - authors: "A. Bacchetti et al."
+    title: "Enhancing the Functionality of Soft Continuum Robots for Minimally Invasive and Endoluminal Interventions: A Review"
+    venue: "Prog. Biomed. Eng."
+    date: "Mar 2026"
+    doi: "10.1088/2516-1091/ae4d92"
+  - authors: "B. Ozdemir, M. A. Khalid, M. Chauhan, P. Valdastri, J. H. Chandler"
+    title: "Hybrid Continuum Robot Designs and Architectures for Healthcare Applications"
+    venue: "Advanced Robotics Research"
+    date: "Feb 2026"
+    doi: "10.1002/adrr.202500177"
+  - authors: "G. Pittiglio et al."
+    title: "Patient-specific magnetic catheters for atrial fibrillation ablation"
+    venue: "Science Robotics"
+    date: "Jan 2026"
+    doi: "10.1126/scirobotics.adk0000"

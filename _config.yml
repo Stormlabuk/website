@@ -2,9 +2,9 @@
 title: "STORM Lab UK"
 tagline: "Science and Technology Of Robotics in Medicine"
 description: >-
-  STORM Lab UK, based at the University of Leeds and directed by Professor
-  Pietro Valdastri, develops medical capsule robots, robotic endoscopy, soft
-  surgical robots and autonomy for affordable, intelligent surgery.
+  STORM Lab at the University of Leeds pioneers miniature surgical robots,
+  capsule endoscopes and AI-guided tools for minimally invasive medicine —
+  led by Professor Pietro Valdastri.
 # Set `url` to your published address (e.g. https://stormlabuk.github.io or a custom domain).
 url: ""
 # If the site is served from a project subpath (https://USER.github.io/REPO),
@@ -12,22 +12,19 @@ url: ""
 baseurl: ""
 lang: en-GB
 
-# ── Branding / contact (surfaced in templates) ───────────────────────────────
+# ── Branding / contact ───────────────────────────────────────────────────────
 organisation: "University of Leeds"
 director: "Professor Pietro Valdastri"
-email: "p.valdastri@leeds.ac.uk"
-phone: "+44 (0) 113 343 3706"
+email: "stormlab@leeds.ac.uk"
 address:
-  - "School of Electronic and Electrical Engineering"
-  - "University of Leeds"
-  - "Leeds, LS2 9JT"
+  - "School of Electronic & Electrical Engineering"
+  - "University of Leeds, LS2 9JT"
   - "United Kingdom"
 
-social:
-  twitter: ""        # e.g. "stormlabuk"
-  linkedin: ""
-  youtube: ""
-  github: "stormlabuk"
+# Formspree (or similar) endpoint for the contact form. Leave blank to fall back
+# to a mailto: submission. Create a free form at https://formspree.io and paste
+# its endpoint here, e.g. https://formspree.io/f/abcdwxyz
+contact_form_action: ""
 
 # ── Build settings ───────────────────────────────────────────────────────────
 markdown: kramdown
@@ -35,31 +32,27 @@ highlighter: rouge
 permalink: pretty
 sass:
   style: compressed
-  sass_dir: _sass
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
 
-# Collections
 collections:
   research:
     output: true
     permalink: /research/:path/
-  team:
-    output: false
   news:
     output: true
-    permalink: /news/:year/:month/:slug/
+    permalink: /news/:path/
 
 defaults:
   - scope: { path: "", type: "research" }
-    values: { layout: "research" }
+    values: { layout: "research_detail", nav_section: "Research" }
   - scope: { path: "", type: "news" }
-    values: { layout: "post" }
+    values: { layout: "news_article", nav_section: "News" }
   - scope: { path: "" }
-    values: { layout: "page" }
+    values: { layout: "default" }
 
 exclude:
   - README.md
@@ -68,3 +61,4 @@ exclude:
   - vendor
   - .github
   - scripts
+  - node_modules

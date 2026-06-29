@@ -1,4 +1,5 @@
-// Base element styles — all reading from tokens in _tokens.scss.
+// Base element resets & brand utilities — ported from the design system's
+// base.css and extended for a multi-page static site.
 
 *, *::before, *::after { box-sizing: border-box; }
 
@@ -8,54 +9,32 @@ body {
   margin: 0;
   font-family: var(--font-sans);
   font-size: var(--text-base);
-  line-height: var(--leading);
-  color: var(--color-text);
-  background: var(--color-bg);
+  line-height: var(--leading-normal);
+  color: var(--text-body);
+  background: var(--surface-page);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  // Always use lining (uniform-height) numerals — never Raleway's oldstyle.
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  color: var(--text-strong);
   font-family: var(--font-display);
+  font-weight: var(--heading-weight);
   line-height: var(--leading-tight);
-  color: var(--color-ink);
-  margin: 0 0 var(--space-4);
-  font-weight: 700;
-  letter-spacing: -0.02em;
+  letter-spacing: var(--tracking-tight);
 }
-h1 { font-size: var(--text-3xl); }
-h2 { font-size: var(--text-2xl); }
-h3 { font-size: var(--text-xl); }
-h4 { font-size: var(--text-lg); }
 
-p { margin: 0 0 var(--space-4); }
-
-a {
-  color: var(--color-link);
-  text-decoration: none;
-  transition: color var(--dur) var(--ease);
-}
-a:hover { color: var(--color-link-hover); text-decoration: underline; }
-
-img { max-width: 100%; height: auto; display: block; }
-
-ul, ol { padding-left: 1.25rem; }
-
-hr { border: 0; border-top: 1px solid var(--color-line); margin: var(--space-8) 0; }
-
-code, pre { font-family: var(--font-mono); font-size: 0.92em; }
-
-blockquote {
-  margin: var(--space-6) 0;
-  padding: var(--space-2) var(--space-6);
-  border-left: 3px solid var(--color-brand);
-  color: var(--color-ink-soft);
-}
+p { margin: 0; }
+a { color: var(--text-link); text-decoration: none; }
+img { max-width: 100%; display: block; }
 
 :focus-visible {
-  outline: 3px solid var(--color-accent);
+  outline: 2px solid var(--focus-ring);
   outline-offset: 2px;
-  border-radius: var(--radius-sm);
 }
 
 .visually-hidden {
@@ -64,7 +43,74 @@ blockquote {
   clip: rect(0 0 0 0); white-space: nowrap; border: 0;
 }
 
+// ---- Reusable brand utilities (from base.css) ----
+
+.storm-eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--text-2xs);
+  font-weight: var(--fw-medium);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+// Eyebrow with the leading yellow tick (a core STORM signature)
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: var(--text-2xs);
+  font-weight: var(--fw-medium);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.eyebrow::before {
+  content: "";
+  width: 22px; height: 3px;
+  background: var(--storm-yellow);
+  flex: none;
+}
+.eyebrow--inverse { color: var(--grey-400); }
+.eyebrow--no-tick::before { display: none; }
+
+.storm-mark {
+  background: linear-gradient(transparent 55%, var(--storm-yellow) 55%);
+  padding: 0 0.1em;
+}
+
+.storm-bar {
+  display: inline-block;
+  width: var(--space-6);
+  height: var(--accent-bar);
+  background: var(--storm-yellow);
+}
+
+.storm-display {
+  font-family: var(--font-display);
+  font-weight: var(--display-weight);
+  letter-spacing: var(--display-tracking);
+  line-height: var(--leading-tight);
+  color: var(--text-strong);
+}
+
+.storm-mono { font-family: var(--font-mono); }
+
+// Halftone / dithering texture — brand motif on dark imagery panels.
+.storm-dither {
+  background-image: radial-gradient(var(--grey-700) 1px, transparent 1.4px);
+  background-size: 6px 6px;
+}
+.storm-dither--fade {
+  -webkit-mask-image: linear-gradient(135deg, transparent 30%, #000 100%);
+  mask-image: linear-gradient(135deg, transparent 30%, #000 100%);
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
 }

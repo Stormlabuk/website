@@ -1,33 +1,34 @@
-# Team members. Group values drive the headings on /team/.
-# NOTE: Beyond the director, populate with current members from your records
-# (the live WordPress site was unreachable from this build environment).
-# Photos go in /assets/images/team/ and are referenced by `photo`.
-
-- name: "Professor Pietro Valdastri"
-  role: "Director, STORM Lab UK"
-  group: "Principal Investigator"
-  photo: ""        # e.g. team/valdastri.jpg
-  bio: >-
-    Professor and Chair in Robotics and Autonomous Systems at the University of
-    Leeds, and Director of STORM Lab UK. He holds a PhD in Biomedical Robotics
-    from Scuola Superiore Sant'Anna and leads the lab's work on medical capsule
-    robots, robotic endoscopy and surgical autonomy.
-  links:
-    profile: "https://eps.leeds.ac.uk/electronic-engineering/staff/863/professor-pietro-valdastri"
-    scholar: ""
-    email: "p.valdastri@leeds.ac.uk"
-
-# ── Placeholders — replace with current members ──────────────────────────────
-- name: "Research Fellow"
-  role: "Postdoctoral Research Fellow"
-  group: "Researchers"
+# Team members (from the design). Add `photo:` (path under /assets/images/)
+# to replace the monogram tile with a headshot.
+- name: "Pietro Valdastri"
+  role: "Director · Professor & Chair in Robotics"
+  tag: "Leeds / Vanderbilt"
   photo: ""
-  bio: "Add a short biography for this team member."
-  links: { profile: "", scholar: "", email: "" }
-
-- name: "PhD Researcher"
-  role: "Doctoral Researcher"
-  group: "PhD Researchers"
+- name: "Keith L. Obstein"
+  role: "US Lab Director · Gastroenterology"
+  tag: "Vanderbilt"
   photo: ""
-  bio: "Add a short biography for this team member."
-  links: { profile: "", scholar: "", email: "" }
+- name: "Bruno Scaglioni"
+  role: "Research Fellow · Control & autonomy"
+  tag: "Leeds"
+  photo: ""
+- name: "Joe Norton"
+  role: "Research Fellow · Frugal devices"
+  tag: "Leeds"
+  photo: ""
+- name: "James Martin"
+  role: "Research Fellow · Magnetic actuation"
+  tag: "Leeds"
+  photo: ""
+- name: "Giovanni Pittiglio"
+  role: "Research Fellow · Soft tentacles"
+  tag: "Leeds"
+  photo: ""
+- name: "Ekawahyu Susilo"
+  role: "Capsule robot platforms"
+  tag: "Vanderbilt"
+  photo: ""
+- name: "Addisu Z. Taddese"
+  role: "Soft colonoscopy platform"
+  tag: "Vanderbilt"
+  photo: ""

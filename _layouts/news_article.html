@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<div class="container" style="padding:40px 32px 96px">
+  <nav class="breadcrumb" aria-label="Breadcrumb" style="margin-bottom:40px">
+    <a href="{{ '/' | relative_url }}">Home</a><span>/</span>
+    <a href="{{ '/news/' | relative_url }}">News</a>
+  </nav>
+
+  <div class="news-layout">
+    <article class="article">
+      <span class="tag tag--accent">{{ page.category }}</span>
+      <h1 class="storm-display">{{ page.title }}</h1>
+      <div class="article__date">Posted on {{ page.display_date | default: page.date | date: "%B %-d, %Y" }}</div>
+
+      {%- if page.image and page.image != "" -%}
+      <figure class="article__figure">
+        <div class="frame">
+          <img src="{{ page.image | prepend: '/assets/images/' | relative_url }}" alt="{{ page.title }}">
+        </div>
+        {%- if page.caption -%}<figcaption class="article__caption">{{ page.caption }}</figcaption>{%- endif -%}
+      </figure>
+      {%- endif -%}
+
+      <div class="article__body">
+        {{ content }}
+      </div>
+
+      <div style="margin-top:48px;padding-top:32px;border-top:1px solid var(--border-default)">
+        <a href="{{ '/news/' | relative_url }}" style="font-family:var(--font-mono);font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--text-strong);font-weight:600">← All news</a>
+      </div>
+    </article>
+    {% include news-sidebar.html %}
+  </div>
+</div>

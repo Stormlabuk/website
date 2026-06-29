@@ -1,42 +1,88 @@
 ---
 layout: default
-title: Publications
+title: "Publications"
 permalink: /publications/
-description: "Selected publications from STORM Lab UK."
+description: "Research output from STORM Lab UK — surgical robotics, magnetic endoscopy, soft continuum robots and autonomy."
 ---
 
-<div class="page-head">
-  <div class="container">
-    <h1>Publications</h1>
-    <p>A selection of our work in surgical robotics, magnetic endoscopy and autonomy.</p>
+<section class="pub-hero">
+  <img src="{{ '/assets/images/photo-kuka-duotone.png' | relative_url }}" alt="STORM Lab researchers with a KUKA robotic arm">
+  <div class="dots" aria-hidden="true"></div>
+  <div class="scrim" aria-hidden="true"></div>
+  <div class="pub-hero__cap">
+    <span class="tick" aria-hidden="true"></span>
+    <div class="pub-hero__kicker">Research output</div>
+    <h1 class="storm-display">Publications</h1>
   </div>
-</div>
+</section>
 
-<div class="section">
-  <div class="container">
-    {%- assign pubs = site.data.publications | sort: "year" | reverse -%}
-    <ul class="pub-list">
-      {%- for pub in pubs -%}
-      <li class="pub">
-        <div class="pub__year">{{ pub.year }}</div>
-        <div>
-          <p class="pub__title">
-            {%- if pub.url and pub.url != "" -%}
-              <a href="{{ pub.url }}">{{ pub.title }}</a>
-            {%- else -%}
-              {{ pub.title }}
-            {%- endif -%}
-            {% if pub.featured %}<span class="pill" style="margin-left:.5rem">Featured</span>{% endif %}
-          </p>
-          <p class="pub__meta">{{ pub.authors }}{% if pub.venue %} — <em>{{ pub.venue }}</em>{% endif %}</p>
+<section class="stat-band">
+  <div class="dots" aria-hidden="true"></div>
+  <div class="stat-band__inner">
+    {%- for s in site.data.publications.stats -%}
+    <div class="stat stat--inverse">
+      <div class="stat__value">{{ s.value }}</div>
+      <div class="stat__label">{{ s.label }}</div>
+    </div>
+    {%- endfor -%}
+  </div>
+</section>
+
+<section class="container" style="padding:64px 32px 96px">
+  <div class="pub-cols">
+    <div>
+      <div class="col-head">
+        <span class="eyebrow">Most recent</span>
+        <div class="col-head__row">
+          <h2>Latest Publications</h2>
+          <span class="col-head__count">[{{ site.data.publications.latest | size }}]</span>
         </div>
-      </li>
-      {%- endfor -%}
-    </ul>
-
-    <p style="margin-top:var(--space-8);color:var(--color-ink-soft)">
-      <em>This is a selected list maintained in <code>_data/publications.yml</code>.
-      For the complete and current record, see the lab's Google Scholar profile.</em>
-    </p>
+      </div>
+      <ol class="feature-cite">
+        {%- for c in site.data.publications.latest -%}
+        <li>
+          {%- if c.fig and c.fig != "" -%}
+            <img class="feature-cite__fig" src="{{ c.fig | prepend: '/assets/images/' | relative_url }}" alt="">
+          {%- else -%}
+            <span class="feature-cite__fig feature-cite__fig--empty" aria-hidden="true"><span>Fig</span></span>
+          {%- endif -%}
+          <div style="display:flex;flex-direction:column">
+            <a class="cite__title" style="align-self:flex-start" href="https://doi.org/{{ c.doi }}">{{ c.title }}</a>
+            <div class="cite__authors" style="margin-top:8px">{{ c.authors }}</div>
+            <div class="cite__meta">
+              <span class="tag tag--outline tag--sm">{{ c.venue }}</span>
+              <span class="cite__date">{{ c.date }}</span>
+            </div>
+          </div>
+        </li>
+        {%- endfor -%}
+      </ol>
+    </div>
+    <div>
+      <div class="col-head">
+        <span class="eyebrow">Peer reviewed</span>
+        <div class="col-head__row">
+          <h2>Refereed Journals</h2>
+          <span class="col-head__count">[{{ site.data.publications.refereed | size }}]</span>
+        </div>
+      </div>
+      <ol class="cite-list" style="margin-top:0">
+        {%- for c in site.data.publications.refereed -%}
+        <li class="cite">
+          <span class="cite__n">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
+          <div>
+            <a class="cite__title" href="https://doi.org/{{ c.doi }}">{{ c.title }}</a>
+            <div class="cite__authors">{{ c.authors }}</div>
+            <div class="cite__meta">
+              <span class="tag tag--outline tag--sm">{{ c.venue }}</span>
+              <span class="cite__date">{{ c.date }}</span>
+              <span class="cite__dot" aria-hidden="true"></span>
+              <a class="cite__doi" href="https://doi.org/{{ c.doi }}">doi:{{ c.doi }}</a>
+            </div>
+          </div>
+        </li>
+        {%- endfor -%}
+      </ol>
+    </div>
   </div>
-</div>
+</section>

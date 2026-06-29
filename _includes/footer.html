@@ -1,32 +1,24 @@
 <footer class="site-footer">
-  <div class="container">
+  <div class="dither-layer" aria-hidden="true"></div>
+  <div class="site-footer__inner">
     <div class="footer-grid">
-      <div>
-        <h4>STORM Lab UK</h4>
-        <p>{{ site.description }}</p>
+      <div class="footer-brand">
+        <img src="{{ '/assets/images/logo-storm-lab-white.png' | relative_url }}" alt="STORM LAB UK">
+        <p>Science and Technologies Of Robotics in Medicine. University of Leeds, UK.</p>
       </div>
-      <div>
-        <h4>Contact</h4>
-        <address>
-          {%- for line in site.address -%}
-            {{ line }}<br>
-          {%- endfor -%}
-          <br>
-          <a href="mailto:{{ site.email }}">{{ site.email }}</a><br>
-          {{ site.phone }}
-        </address>
-      </div>
-      <div>
-        <h4>Explore</h4>
-        <ul style="list-style:none;padding:0;line-height:2;">
-          {%- for item in site.data.navigation -%}
-            <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
-          {%- endfor -%}
-        </ul>
-      </div>
+      {%- for col in site.data.footer -%}
+        <div class="footer-col">
+          <div class="storm-eyebrow footer-col__head">{{ col.heading }}</div>
+          <ul>
+            {%- for link in col.links -%}
+              <li><a href="{{ link.url | relative_url }}">{{ link.label }}</a></li>
+            {%- endfor -%}
+          </ul>
+        </div>
+      {%- endfor -%}
     </div>
     <div class="footer-bottom">
-      <span>&copy; {{ 'now' | date: "%Y" }} STORM Lab UK, {{ site.organisation }}.</span>
+      <span>&copy; {{ 'now' | date: "%Y" }} STORM Lab UK · University of Leeds</span>
       <span>Science and Technology Of Robotics in Medicine</span>
     </div>
   </div>

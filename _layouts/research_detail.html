@@ -1,0 +1,130 @@
+---
+layout: default
+---
+{%- assign meta = site.data.research | where: "slug", page.slug | first -%}
+
+<section class="rd-hero">
+  <div class="dither-layer" aria-hidden="true"></div>
+  {%- if page.hero == "tentacle" -%}
+    <canvas id="tentacle-hero" aria-hidden="true"></canvas>
+    <div class="rd-hero__scrim" aria-hidden="true"></div>
+  {%- elsif meta.img -%}
+    <img class="rd-hero__img {% if meta.fit == 'contain' %}fit-contain{% endif %}" src="{{ meta.img | prepend: '/assets/images/' | relative_url }}" alt="" aria-hidden="true">
+  {%- endif -%}
+  <div class="rd-hero__inner">
+    <nav class="breadcrumb" aria-label="Breadcrumb" style="color:var(--grey-500)">
+      <a href="{{ '/' | relative_url }}" style="color:var(--grey-500)">Home</a><span>/</span>
+      <a href="{{ '/research/' | relative_url }}" style="color:var(--grey-500)">Research</a><span>/</span>
+      <span style="color:var(--storm-yellow)">{{ page.title }}</span>
+    </nav>
+    <div class="rd-hero__title-wrap">
+      <span class="tick" aria-hidden="true"></span>
+      <h1 class="storm-display">{{ page.title }}</h1>
+      {%- if page.tagline -%}<p class="rd-hero__tagline">{{ page.tagline }}</p>{%- endif -%}
+    </div>
+  </div>
+</section>
+
+{%- if page.overview -%}
+<section class="rd-section">
+  <div class="rd-overview">
+    <div class="rd-overview__aside">
+      <span class="eyebrow">Overview</span>
+      {%- if page.applications -%}
+      <span class="storm-eyebrow app-head">Applications</span>
+      <div class="rd-apps">
+        {%- for a in page.applications -%}<span class="tag tag--sm">{{ a }}</span>{%- endfor -%}
+      </div>
+      {%- endif -%}
+    </div>
+    <div class="rd-overview__body">
+      {%- for para in page.overview -%}<p>{{ para }}</p>{%- endfor -%}
+      {%- if page.stats -%}
+      <div class="rd-stats">
+        {%- for s in page.stats -%}
+        <div class="stat">
+          <div class="stat__value">{{ s.value }}{% if s.unit %}<span class="unit">{{ s.unit }}</span>{% endif %}</div>
+          <div class="stat__label">{{ s.label }}</div>
+        </div>
+        {%- endfor -%}
+      </div>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+{%- endif -%}
+
+{%- if page.approach -%}
+<section class="rd-section">
+  <span class="eyebrow">How it works</span>
+  <div class="rd-approach">
+    {%- for step in page.approach -%}
+    <div class="rd-step">
+      <div class="rd-step__top">
+        <span class="rd-step__n">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
+        <span class="tag tag--outline tag--sm">{{ step.tag }}</span>
+      </div>
+      <h3>{{ step.k }}</h3>
+      <p>{{ step.t }}</p>
+    </div>
+    {%- endfor -%}
+  </div>
+</section>
+{%- endif -%}
+
+{%- if page.pullquote -%}
+<section class="rd-quote">
+  <div class="dither-layer" aria-hidden="true"></div>
+  <div class="rd-quote__inner">
+    <span class="tick" aria-hidden="true" style="margin-bottom:32px"></span>
+    <blockquote>{{ page.pullquote }}</blockquote>
+  </div>
+</section>
+{%- endif -%}
+
+{%- if page.content and page.content != "" -%}
+<section class="rd-section" style="border-bottom:none">
+  <div class="prose">{{ content }}</div>
+</section>
+{%- endif -%}
+
+{%- if page.publications -%}
+<section class="container" style="padding:72px 32px 40px">
+  <div style="display:flex;align-items:baseline;gap:14px;margin-bottom:8px">
+    <span class="eyebrow">Relevant publications</span>
+    <span class="storm-mono" style="font-size:.75rem;color:var(--text-faint)">[{{ page.publications | size }}]</span>
+  </div>
+  <ol class="cite-list" style="max-width:900px">
+    {%- for c in page.publications -%}
+    <li class="cite">
+      <span class="cite__n">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
+      <div>
+        <a class="cite__title" href="https://doi.org/{{ c.doi }}">{{ c.title }}</a>
+        <div class="cite__authors">{{ c.authors }}</div>
+        <div class="cite__meta">
+          <span class="tag tag--outline tag--sm">{{ c.venue }}</span>
+          <span class="cite__date">{{ c.date }}</span>
+          <span class="cite__dot" aria-hidden="true"></span>
+          <a class="cite__doi" href="https://doi.org/{{ c.doi }}">doi:{{ c.doi }}</a>
+        </div>
+      </div>
+    </li>
+    {%- endfor -%}
+  </ol>
+</section>
+{%- endif -%}
+
+<section class="rd-more">
+  <div class="rd-more__inner">
+    <span class="eyebrow">More research</span>
+    <div class="rd-more__grid">
+      {%- for area in site.data.research -%}
+        {%- unless area.slug == page.slug -%}
+        <a class="rd-more__card" href="{{ '/research/' | append: area.slug | append: '/' | relative_url }}">
+          <h3>{{ area.title }} <span class="arr" aria-hidden="true">→</span></h3>
+        </a>
+        {%- endunless -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</section>

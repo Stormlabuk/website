@@ -1,0 +1,12 @@
+# Sponsors & collaborators (from the design). Logos under /assets/images/sponsors/.
+funders:
+  - { name: "Engineering and Physical Sciences Research Council", src: "sponsors/epsrc.webp" }
+  - { name: "European Research Council", src: "sponsors/erc.png" }
+  - { name: "Horizon 2020", src: "sponsors/horizon-2020.webp" }
+  - { name: "National Institute for Health Research", src: "sponsors/nihr.webp" }
+  - { name: "The Royal Society", src: "sponsors/royal-society.webp" }
+  - { name: "Garfield Weston Foundation", src: "sponsors/garfield-weston.webp" }
+partners:
+  - { name: "Intuitive", src: "sponsors/intuitive.png" }
+  - { name: "Medtronic", src: "sponsors/medtronic.png" }
+  - { name: "KUKA", src: "sponsors/kuka.png" }

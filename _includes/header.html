@@ -1,11 +1,8 @@
+{%- assign cur = page.nav_section | default: page.title -%}
 <header class="site-header">
-  <div class="container site-header__inner">
-    <a class="brand" href="{{ '/' | relative_url }}">
-      <span class="brand__mark">S</span>
-      <span class="brand__text">
-        STORM Lab UK
-        <small>{{ site.tagline }}</small>
-      </span>
+  <div class="site-header__inner">
+    <a class="site-header__logo" href="{{ '/' | relative_url }}" aria-label="STORM Lab UK — home">
+      <img src="{{ '/assets/images/logo-storm-lab-black.webp' | relative_url }}" alt="STORM LAB UK">
     </a>
 
     <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
@@ -13,18 +10,27 @@
     </button>
 
     <nav class="site-nav" id="primary-nav" aria-label="Primary">
-      <ul>
-        {%- for item in site.data.navigation -%}
-          {%- assign item_url = item.url | relative_url -%}
-          {%- assign current = page.url | relative_url -%}
-          <li>
-            <a href="{{ item_url }}"
-               {% if page.url == item.url or (item.url != '/' and page.url contains item.url) %}aria-current="page"{% endif %}>
-              {{ item.title }}
+      {%- for item in site.data.navigation -%}
+        {%- if item.title == "Research" -%}
+          <div class="has-menu">
+            <a class="site-nav__link" href="{{ item.url | relative_url }}"
+               {% if cur == "Research" %}aria-current="page"{% endif %}>
+              Research <span aria-hidden="true" style="font-size:.55rem;color:var(--text-faint)">▼</span>
             </a>
-          </li>
-        {%- endfor -%}
-      </ul>
+            <div class="nav-menu" role="menu" aria-label="Research areas">
+              {%- for area in site.data.research -%}
+                <a class="nav-menu__item" role="menuitem" href="{{ '/research/' | append: area.slug | append: '/' | relative_url }}">
+                  <span class="nav-menu__n">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
+                  <span class="nav-menu__t">{{ area.title }}</span>
+                </a>
+              {%- endfor -%}
+            </div>
+          </div>
+        {%- else -%}
+          <a class="site-nav__link" href="{{ item.url | relative_url }}"
+             {% if cur == item.title %}aria-current="page"{% endif %}>{{ item.title }}</a>
+        {%- endif -%}
+      {%- endfor -%}
     </nav>
   </div>
 </header>

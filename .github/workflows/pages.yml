@@ -44,8 +44,12 @@ jobs:
         uses: actions/upload-pages-artifact@v3
 
   deploy:
-    # Only deploy from the default branch; other branches build for validation only.
-    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+    # Deploy from the default branch, or from the working branch while it's the
+    # live source. Set Settings → Pages → Source to "GitHub Actions".
+    if: >-
+      github.ref == 'refs/heads/main' ||
+      github.ref == 'refs/heads/master' ||
+      github.ref == 'refs/heads/claude/stormlab-github-pages-pxcv5h'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

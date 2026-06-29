@@ -1,0 +1,50 @@
+---
+layout: default
+title: "News"
+permalink: /news/
+description: "News and awards from STORM Lab UK."
+---
+
+<section class="container" style="padding:64px 32px 32px">
+  <span class="eyebrow">Newsroom</span>
+  <h1 class="storm-display" style="margin-top:16px">News &amp; awards</h1>
+</section>
+
+<section class="container" style="padding:24px 32px 96px">
+  <div class="news-layout">
+    <div>
+      {%- assign posts = site.news | sort: "date" | reverse -%}
+      {%- assign featured = posts | first -%}
+      <a class="news-featured" href="{{ featured.url | relative_url }}">
+        {%- if featured.image and featured.image != "" -%}
+        <div class="news-featured__media">
+          <img src="{{ featured.image | prepend: '/assets/images/' | relative_url }}" alt="{{ featured.title }}">
+        </div>
+        {%- endif -%}
+        <div class="news-featured__body">
+          <div class="news-featured__meta">
+            <span class="tag tag--accent">{{ featured.category }}</span>
+            <span class="news-featured__date">{{ featured.display_date | default: featured.date | date: "%B %-d, %Y" }}</span>
+          </div>
+          <h2>{{ featured.title }}</h2>
+          <p>{{ featured.excerpt }}</p>
+          <span class="news-featured__more">Read more →</span>
+        </div>
+      </a>
+
+      <div class="news-rows">
+        {%- for post in posts offset:1 -%}
+        <a class="news-row" href="{{ post.url | relative_url }}">
+          <span class="news-row__date">{{ post.display_date | default: post.date | date: "%B %-d, %Y" }}</span>
+          <div>
+            <span class="tag tag--outline tag--sm">{{ post.category }}</span>
+            <h3>{{ post.title }}</h3>
+            <p>{{ post.excerpt }}</p>
+          </div>
+        </a>
+        {%- endfor -%}
+      </div>
+    </div>
+    {% include news-sidebar.html %}
+  </div>
+</section>

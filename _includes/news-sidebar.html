@@ -1,0 +1,19 @@
+<aside class="sidebar">
+  <div>
+    <div class="storm-eyebrow" style="margin-bottom:14px">Search</div>
+    <form class="form-field" role="search" onsubmit="return false">
+      <label class="visually-hidden" for="news-search">Search news</label>
+      <input id="news-search" type="search" placeholder="Search news…">
+    </form>
+  </div>
+  <div>
+    <div class="storm-eyebrow" style="margin-bottom:16px">Categories</div>
+    <ul class="sidebar__cats">
+      {%- assign cats = "News:38,Publication:10,Uncategorized:6" | split: "," -%}
+      {%- for c in cats -%}
+        {%- assign parts = c | split: ":" -%}
+        <li><a href="{{ '/news/' | relative_url }}"><span class="name">{{ parts[0] }}</span><span class="n">({{ parts[1] }})</span></a></li>
+      {%- endfor -%}
+    </ul>
+  </div>
+</aside>

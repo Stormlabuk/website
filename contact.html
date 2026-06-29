@@ -1,49 +1,61 @@
 ---
 layout: default
-title: Contact
+title: "Contact"
 permalink: /contact/
-description: "Get in touch with STORM Lab UK at the University of Leeds."
+description: "Collaborate with STORM Lab UK at the University of Leeds."
 ---
 
-<div class="page-head">
-  <div class="container">
-    <h1>Contact</h1>
-    <p>We welcome enquiries from clinicians, engineers, industry partners and
-       prospective researchers.</p>
-  </div>
-</div>
-
-<div class="section">
-  <div class="container">
-    <div class="grid grid--2" style="gap:var(--space-16)">
-      <div>
-        <h2>Find us</h2>
-        <address style="font-style:normal;line-height:1.9;font-size:var(--text-lg)">
-          <strong>STORM Lab UK</strong><br>
-          {%- for line in site.address -%}{{ line }}<br>{%- endfor -%}
-        </address>
-
-        <h3 style="margin-top:var(--space-8)">Get in touch</h3>
-        <p>
-          Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a><br>
-          Phone: {{ site.phone }}
-        </p>
-        <p>
-          <a class="btn btn--ghost" href="https://eps.leeds.ac.uk/electronic-engineering/staff/863/professor-pietro-valdastri">
-            Director's university profile &rarr;
-          </a>
-        </p>
-      </div>
-
-      <div>
-        <h2>Join the lab</h2>
-        <p>We regularly host PhD researchers, postdoctoral fellows and visiting
-           collaborators working at the intersection of robotics, control,
-           computer vision and medicine.</p>
-        <p>If you'd like to work with us, please get in touch with a short note
-           about your background and interests, along with your CV.</p>
-        <p><a class="btn btn--primary" href="mailto:{{ site.email }}">Email the lab</a></p>
+<section class="container" style="padding:72px 32px 96px">
+  <div class="contact-grid">
+    <div>
+      <span class="eyebrow">Get in touch</span>
+      <h1 class="storm-display">Collaborate with the lab</h1>
+      <p class="contact-intro">
+        We welcome partnerships with clinicians, industry and academic groups. Tell us about your
+        interest and we'll get back to you.
+      </p>
+      <div class="contact-meta">
+        <div>
+          <div class="storm-eyebrow" style="margin-bottom:8px">Address</div>
+          <p>School of Electronic &amp;<br>Electrical Engineering<br>University of Leeds, LS2 9JT</p>
+        </div>
+        <div>
+          <div class="storm-eyebrow" style="margin-bottom:8px">Email</div>
+          <p><a href="mailto:{{ site.email }}" style="border-bottom:2px solid var(--storm-yellow)">{{ site.email }}</a></p>
+        </div>
       </div>
     </div>
+
+    <div class="contact-card">
+      <span class="storm-bar" aria-hidden="true"></span>
+      {%- assign action = site.contact_form_action | default: "" -%}
+      <form
+        {% if action != "" %}action="{{ action }}" method="POST"{% else %}action="mailto:{{ site.email }}" method="POST" enctype="text/plain"{% endif %}>
+        <div class="form-field">
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" placeholder="Dr Jane Smith" required>
+        </div>
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@institution.ac.uk" required>
+        </div>
+        <div class="form-field">
+          <label for="area">Area of interest</label>
+          <select id="area" name="area">
+            <option value="">Select an area</option>
+            <option>Capsule robots</option>
+            <option>Robotic endoscopy</option>
+            <option>Soft robots</option>
+            <option>Autonomy in surgery</option>
+            <option>Industry partnership</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell us about your interest…"></textarea>
+        </div>
+        <button class="btn btn--accent btn--lg btn--full" type="submit">Send enquiry</button>
+      </form>
+    </div>
   </div>
-</div>
+</section>

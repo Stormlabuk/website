@@ -1,0 +1,41 @@
+<section class="sponsors section">
+  <div class="container">
+    <div class="sponsors__head">
+      <span class="eyebrow">Sponsors &amp; collaborators</span>
+      <h2>Supported by world-leading partners</h2>
+      <p>
+        Research funding and strategic collaborations are crucial to progressing our pioneering
+        research. We gratefully acknowledge and thank each funding body and industrial partner that
+        has contributed to the successes of the STORM Lab.
+      </p>
+    </div>
+
+    <div class="sponsor-group">
+      <div class="sponsor-group__head">
+        <span class="storm-eyebrow">Funding bodies</span>
+        <span class="line" aria-hidden="true"></span>
+      </div>
+      <div class="sponsor-grid">
+        {%- for f in site.data.sponsors.funders -%}
+        <div class="sponsor" title="{{ f.name }}">
+          <img src="{{ f.src | prepend: '/assets/images/' | relative_url }}" alt="{{ f.name }}">
+        </div>
+        {%- endfor -%}
+      </div>
+    </div>
+
+    <div class="sponsor-group">
+      <div class="sponsor-group__head">
+        <span class="storm-eyebrow">Industrial partners</span>
+        <span class="line" aria-hidden="true"></span>
+      </div>
+      <div class="sponsor-grid">
+        {%- for p in site.data.sponsors.partners -%}
+        <div class="sponsor" title="{{ p.name }}">
+          <img src="{{ p.src | prepend: '/assets/images/' | relative_url }}" alt="{{ p.name }}">
+        </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</section>

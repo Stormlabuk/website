@@ -1,0 +1,18 @@
+# Footer link columns (from the design's Footer component).
+- heading: Research
+  links:
+    - { label: "Magnetic flexible endoscopy", url: "/research/magnetic-flexible-endoscopy/" }
+    - { label: "Magnetic tentacles", url: "/research/magnetic-tentacles/" }
+    - { label: "Magnetic vine robots", url: "/research/magnetic-vine-robots/" }
+    - { label: "Autonomy in surgery", url: "/research/autonomy-in-surgical-robotics/" }
+- heading: Lab
+  links:
+    - { label: "About us", url: "/about/" }
+    - { label: "Team", url: "/team/" }
+    - { label: "Publications", url: "/publications/" }
+    - { label: "News", url: "/news/" }
+- heading: Connect
+  links:
+    - { label: "Contact", url: "/contact/" }
+    - { label: "Collaborate", url: "/contact/" }
+    - { label: "Join us", url: "/contact/" }

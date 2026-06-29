@@ -1,76 +1,153 @@
 // ─────────────────────────────────────────────────────────────────────────
-// DESIGN TOKENS
-//
-// This is the single integration point for the Claude Design system.
-// When the design files land on the branch, map their tokens onto these CSS
-// custom properties (colours, type scale, spacing, radii, shadows). Every
-// component below and in _base/_components reads from these variables, so the
-// whole site re-skins by editing this one block.
-//
-// Values here are sensible placeholders (a clean clinical-robotics palette)
-// chosen to look presentable before the real design system is applied.
+// STORM Lab design tokens — ported verbatim from the Claude Design system
+// (project/tokens/*.css). This is the single source of truth for the brand.
 // ─────────────────────────────────────────────────────────────────────────
 
 :root {
-  // Brand palette ----------------------------------------------------------
-  --color-brand:        #0b5fff;   // primary
-  --color-brand-dark:   #0842b0;
-  --color-brand-light:  #e8f0ff;
-  --color-accent:       #00b3a4;   // teal accent (sensing / robotics)
+  // ---- Brand accent ----
+  --storm-yellow: #F8CD04;        // primary highlight — official STORM Yellow
+  --storm-yellow-bright: #FFE000; // hover / max-energy variant
+  --storm-yellow-deep: #C9A800;   // pressed / on-light text-safe
+  --storm-yellow-wash: #FBF4CC;   // tint surface
 
-  // Neutrals ---------------------------------------------------------------
-  --color-ink:          #11161d;   // body text
-  --color-ink-soft:     #4a5563;   // secondary text
-  --color-line:         #e3e8ef;   // borders / hairlines
-  --color-surface:      #ffffff;   // cards / panels
-  --color-bg:           #ffffff;   // page background
-  --color-bg-alt:       #f5f7fb;   // alternating sections
+  // ---- Neutrals (true greys, no warmth) ----
+  --black: #000000;
+  --grey-950: #0A0A0A;
+  --grey-900: #161616;
+  --grey-850: #1E1E1E;
+  --grey-800: #232323;
+  --grey-700: #3A3A3A;
+  --grey-600: #565656;
+  --grey-500: #757575;
+  --grey-400: #9A9A9A;
+  --grey-300: #C2C2C2;
+  --grey-200: #DEDEDE;
+  --grey-150: #E7E7E7;
+  --grey-100: #EFEFEF;
+  --grey-50:  #F7F7F7;
+  --white: #FFFFFF;
 
-  // Semantic ---------------------------------------------------------------
-  --color-text:         var(--color-ink);
-  --color-link:         var(--color-brand);
-  --color-link-hover:   var(--color-brand-dark);
+  // ---- Semantic / status ----
+  --status-positive: #1F8A4C;
+  --status-caution:  #C9870A;
+  --status-critical: #C0392B;
+  --status-info:     #2A6FB0;
 
-  // Typography -------------------------------------------------------------
-  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  --font-display: var(--font-sans);
-  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+  // ---- Surfaces ----
+  --surface-page:    var(--white);
+  --surface-raised:  var(--white);
+  --surface-sunken:  var(--grey-50);
+  --surface-inverse: var(--grey-950);
+  --surface-tint:    var(--storm-yellow-wash);
 
-  --text-xs:   0.78rem;
-  --text-sm:   0.9rem;
+  // ---- Text ----
+  --text-strong:  var(--grey-950);
+  --text-body:    var(--grey-800);
+  --text-muted:   var(--grey-500);
+  --text-faint:   var(--grey-400);
+  --text-inverse: var(--white);
+  --text-on-accent: var(--black);
+  --text-link:    var(--grey-950);
+
+  // ---- Borders & lines ----
+  --border-strong: var(--grey-950);
+  --border-default: var(--grey-200);
+  --border-subtle: var(--grey-100);
+  --border-inverse: var(--grey-800);
+  --border-accent: var(--storm-yellow);
+
+  // ---- Accent roles ----
+  --accent:        var(--storm-yellow);
+  --accent-hover:  var(--storm-yellow-bright);
+  --accent-active: var(--storm-yellow-deep);
+  --accent-ink:    var(--black);
+  --focus-ring:    var(--grey-950);
+
+  // ---- Typography ----
+  --font-display: 'Space Grotesk', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-sans: 'Raleway', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'Space Mono', 'SF Mono', ui-monospace, monospace;
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
+  --fw-black: 900;
+
+  // Type scale (1.250 major-third, 16px base)
+  --text-3xs: 0.694rem;
+  --text-2xs: 0.75rem;
+  --text-xs:  0.833rem;
+  --text-sm:  0.9rem;
   --text-base: 1rem;
-  --text-lg:   1.18rem;
-  --text-xl:   1.5rem;
-  --text-2xl:  2rem;
-  --text-3xl:  2.6rem;
-  --text-4xl:  3.4rem;
-  --leading:   1.6;
-  --leading-tight: 1.2;
+  --text-md:  1.2rem;
+  --text-lg:  1.5rem;
+  --text-xl:  1.953rem;
+  --text-2xl: 2.441rem;
+  --text-3xl: 3.052rem;
+  --text-4xl: 3.815rem;
+  --text-5xl: 4.768rem;
 
-  // Spacing scale ----------------------------------------------------------
+  --leading-tight: 1.04;
+  --leading-snug: 1.18;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.65;
+
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.04em;
+  --tracking-wider: 0.12em;
+  --tracking-widest: 0.22em;
+
+  --display-weight: var(--fw-bold);
+  --display-tracking: -0.03em;
+  --heading-weight: var(--fw-bold);
+  --eyebrow-weight: var(--fw-bold);
+
+  // ---- Spacing (4px base) ----
+  --space-0: 0;
   --space-1: 0.25rem;
   --space-2: 0.5rem;
   --space-3: 0.75rem;
   --space-4: 1rem;
-  --space-6: 1.5rem;
-  --space-8: 2rem;
-  --space-12: 3rem;
-  --space-16: 4rem;
-  --space-24: 6rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+  --space-10: 8rem;
 
-  // Layout -----------------------------------------------------------------
-  --container: 1140px;
-  --container-narrow: 760px;
+  // ---- Radii — sharp & engineered ----
+  --radius-none: 0;
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+  --radius-pill: 999px;
 
-  // Radii & shadows --------------------------------------------------------
-  --radius-sm: 6px;
-  --radius:    12px;
-  --radius-lg: 20px;
-  --shadow-sm: 0 1px 2px rgba(17, 22, 29, 0.06);
-  --shadow:    0 6px 24px rgba(17, 22, 29, 0.08);
-  --shadow-lg: 0 18px 48px rgba(17, 22, 29, 0.12);
+  --border-width: 1px;
+  --border-width-strong: 2px;
 
-  // Motion -----------------------------------------------------------------
-  --ease: cubic-bezier(0.4, 0, 0.2, 1);
-  --dur:  180ms;
+  // ---- Layout ----
+  --container-max: 1200px;
+  --container-wide: 1440px;
+  --gutter: var(--space-5);
+
+  // ---- Effects ----
+  --shadow-none: none;
+  --shadow-xs: 0 1px 2px rgba(10, 10, 10, 0.06);
+  --shadow-sm: 0 1px 3px rgba(10, 10, 10, 0.08), 0 1px 2px rgba(10, 10, 10, 0.04);
+  --shadow-md: 0 4px 16px rgba(10, 10, 10, 0.08);
+  --shadow-lg: 0 12px 40px rgba(10, 10, 10, 0.12);
+  --shadow-focus: 0 0 0 2px var(--white), 0 0 0 4px var(--grey-950);
+
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --dur-fast: 120ms;
+  --dur-base: 200ms;
+  --dur-slow: 320ms;
+
+  --accent-bar: 4px;
 }

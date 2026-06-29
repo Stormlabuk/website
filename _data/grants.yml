@@ -1,0 +1,32 @@
+# Active programme grants (Research listing page). `area` matches a filter.
+# Filters: Capsule robots, Robotic endoscopy, Soft robots, Autonomy.
+- code: IMMERSE
+  area: "Robotic endoscopy"
+  title: "Intelligent Magnetic Multi-scale Robotics for endoluminal Surgical Excellence"
+  funder: "EPSRC Programme Grant"
+  img: photo-kuka-duotone.png
+- code: MAGNIS
+  area: "Capsule robots"
+  title: "Magnetically-Guided Endocisternal Neural Interface Delivery System"
+  funder: "ARIA"
+  img: illustration-mgu.png
+- code: MORPH
+  area: "Soft robots"
+  title: "Muscular Operative Robotic Precision Handler"
+  funder: "EU Horizon"
+  img: illustration-surgical-system.png
+- code: RoboMRI
+  area: "Autonomy"
+  title: "Future cardiovascular healthcare via MRI-driven robotics"
+  funder: "Wellcome Trust"
+  img: illustration-mgu.png
+- code: NoLiMiTs
+  area: "Soft robots"
+  title: "Novel Lifesaving Magnetic Tentacles"
+  funder: "ERC Consolidator"
+  img: illustration-surgical-system.png
+- code: Terabotics
+  area: "Robotic endoscopy"
+  title: "Robots with terahertz imaging to spot and remove cancer tumours"
+  funder: "EPSRC"
+  img: photo-kuka-duotone.png

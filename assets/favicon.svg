@@ -1,11 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="STORM Lab UK">
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0b5fff"/>
-      <stop offset="1" stop-color="#00b3a4"/>
-    </linearGradient>
-  </defs>
-  <rect width="64" height="64" rx="14" fill="url(#g)"/>
-  <text x="50%" y="54%" text-anchor="middle" dominant-baseline="middle"
-        font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800" fill="#fff">S</text>
+  <rect width="64" height="64" rx="4" fill="#0A0A0A"/>
+  <rect x="10" y="10" width="20" height="4" fill="#F8CD04"/>
+  <text x="50%" y="56%" text-anchor="middle" dominant-baseline="middle"
+        font-family="'Space Grotesk', Arial, sans-serif" font-size="30" font-weight="700" fill="#FFFFFF">S</text>
 </svg>

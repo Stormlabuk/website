@@ -1,46 +1,35 @@
 ---
 layout: default
-title: Team
+title: "Team"
 permalink: /team/
-description: "The people of STORM Lab UK at the University of Leeds."
+description: "Engineers, clinicians and scientists working across Leeds and Vanderbilt to translate medical robotics from bench to bedside."
 ---
 
-<div class="page-head">
-  <div class="container">
-    <h1>Team</h1>
-    <p>The people behind STORM Lab UK, led by {{ site.director }}.</p>
-  </div>
-</div>
+<section class="page-head-light">
+  <span class="eyebrow">People</span>
+  <h1 class="storm-display">A multidisciplinary, international team</h1>
+  <p>Engineers, clinicians and scientists working across Leeds and Vanderbilt to translate medical robotics from the bench to the bedside.</p>
+</section>
 
-<div class="section">
-  <div class="container">
-    {%- assign groups = site.data.team | group_by: "group" -%}
-    {%- for group in groups -%}
-      <h2 style="margin-top:var(--space-12)">{{ group.name }}</h2>
-      <div class="grid grid--3">
-        {%- for member in group.items -%}
-        <div class="person card">
-          {%- if member.photo and member.photo != "" -%}
-            <img class="person__photo" src="{{ member.photo | prepend: '/assets/images/' | relative_url }}" alt="{{ member.name }}">
-          {%- else -%}
-            <div class="person__photo person__photo--placeholder" aria-hidden="true">👤</div>
-          {%- endif -%}
-          <p class="person__name">{{ member.name }}</p>
-          <p class="person__role">{{ member.role }}</p>
-          {%- if member.bio -%}<p class="card__p" style="color:var(--color-ink-soft);font-size:var(--text-sm)">{{ member.bio }}</p>{%- endif -%}
-          <div class="person__links">
-            {%- if member.links.profile and member.links.profile != "" -%}<a href="{{ member.links.profile }}">Profile</a>{%- endif -%}
-            {%- if member.links.scholar and member.links.scholar != "" -%}<a href="{{ member.links.scholar }}">Scholar</a>{%- endif -%}
-            {%- if member.links.email and member.links.email != "" -%}<a href="mailto:{{ member.links.email }}">Email</a>{%- endif -%}
-          </div>
+<section class="container" style="padding:32px 32px 88px">
+  <div class="team-grid">
+    {%- for p in site.data.team -%}
+    {%- assign accent = forloop.index0 | modulo: 3 -%}
+    {%- assign initials = p.name | split: " " -%}
+    <div class="person">
+      {%- if p.photo and p.photo != "" -%}
+        <img class="person__photo" src="{{ p.photo | prepend: '/assets/images/' | relative_url }}" alt="{{ p.name }}">
+      {%- else -%}
+        <div class="person__tile {% if accent == 0 %}person__tile--accent{% endif %}" aria-hidden="true">
+          <span class="person__initials">{% for word in initials limit:2 %}{{ word | slice: 0 }}{% endfor %}</span>
         </div>
-        {%- endfor -%}
+      {%- endif -%}
+      <div class="person__body">
+        <h3>{{ p.name }}</h3>
+        <p class="person__role">{{ p.role }}</p>
+        <span class="tag tag--outline tag--sm">{{ p.tag }}</span>
       </div>
+    </div>
     {%- endfor -%}
-
-    <p style="margin-top:var(--space-12);color:var(--color-ink-soft)">
-      <em>Are you a current member who should appear here? Team entries live in
-      <code>_data/team.yml</code>.</em>
-    </p>
   </div>
-</div>
+</section>

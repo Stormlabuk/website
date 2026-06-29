@@ -1,0 +1,40 @@
+---
+layout: default
+title: "Research"
+permalink: /research/
+description: "Active programme grants spanning capsule robots, robotic endoscopy, soft surgical robots and autonomy in robotic surgery."
+---
+
+<section class="page-hero">
+  <div class="dither-layer" aria-hidden="true"></div>
+  <div class="page-hero__inner">
+    <span class="eyebrow eyebrow--inverse">Research</span>
+    <h1 class="storm-display">From hypothesis-driven science to first-in-human trials</h1>
+    <p>Our active programme grants span capsule robots, robotic endoscopy, soft surgical robots and autonomy in robotic surgery.</p>
+  </div>
+</section>
+
+<section class="container" style="padding:48px 32px 88px">
+  <div class="filters" role="group" aria-label="Filter projects by area">
+    {%- assign filters = "All,Capsule robots,Robotic endoscopy,Soft robots,Autonomy" | split: "," -%}
+    {%- for f in filters -%}
+      <button type="button" class="filter{% if forloop.first %} is-active{% endif %}" data-filter="{{ f }}">{{ f }}</button>
+    {%- endfor -%}
+  </div>
+
+  <div class="grant-grid">
+    {%- for g in site.data.grants -%}
+    <div class="card grant" data-area="{{ g.area }}">
+      <div class="card__media grant__media">
+        <img src="{{ g.img | prepend: '/assets/images/' | relative_url }}" alt="{{ g.title }}">
+        <span class="grant__code">{{ g.code }}</span>
+      </div>
+      <div class="card__body grant__body">
+        <span class="tag">{{ g.area }}</span>
+        <h3>{{ g.title }}</h3>
+        <div class="grant__funder">{{ g.funder }}</div>
+      </div>
+    </div>
+    {%- endfor -%}
+  </div>
+</section>

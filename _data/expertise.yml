@@ -1,0 +1,26 @@
+# "Our expertise" cards on the home page. `anim` selects the canvas animation
+# in assets/js/main.js (manip | loc | soft); it degrades gracefully if JS is off.
+- anim: manip
+  seq: "Sequence 01"
+  title: "Magnetic Manipulation"
+  body: >-
+    Magnetic fields offer the possibility of manipulating objects from afar and are safe for
+    medical applications, as they penetrate human tissue without harm to the patient. We leverage
+    magnetic manipulation to enable tiny instruments to reach deep within the body — diagnosing
+    and treating disease while minimising the invasiveness of the procedure.
+- anim: loc
+  seq: "Sequence 02"
+  title: "Magnetic Localisation"
+  body: >-
+    Knowledge of the position and orientation of instruments manipulated inside the body is
+    crucial for intelligent control and reliable operation. We develop real-time localisation
+    techniques for magnetic payloads that are compatible with magnetic manipulation and can be
+    adopted in clinical practice.
+- anim: soft
+  seq: "Sequence 03"
+  title: "Soft Medical Robots"
+  body: >-
+    Soft robots are inherently safe when interacting with people and can be fabricated at low cost.
+    We explore pneumatic, hydraulic and magnetic soft robots for minimally invasive access — with a
+    focus on affordable designs that enable cancer screening in low-resource settings, performed
+    without specialist medical training.
