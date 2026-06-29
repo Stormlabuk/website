@@ -1,3 +1,5 @@
+# SEED DATA — replaced by scripts/fetch_zotero.rb on `make fetch`.
+# Real, hand-checked entries so the site builds before the first Zotero pull.
 # Publications page content (from the design).
 stats:
   - { value: "248", label: "Total publications" }

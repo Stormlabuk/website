@@ -26,6 +26,23 @@ address:
 # its endpoint here, e.g. https://formspree.io/f/abcdwxyz
 contact_form_action: ""
 
+# ── Zotero (publications page) ───────────────────────────────────────────────
+# The Publications page is generated from this library by scripts/fetch_zotero.rb.
+# Run `make fetch` (locally) or the "Refresh publications" GitHub Action.
+zotero:
+  library_type: "group"   # "group" or "user"
+  library_id: ""          # numeric id — e.g. group 1234567 (set this)
+  collection: ""          # optional collection KEY to restrict to (blank = whole library)
+  latest_count: 6         # newest items featured (with thumbnails) at the top
+  include_types:
+    - journalArticle
+    - conferencePaper
+    - preprint
+    - book
+    - bookSection
+    - thesis
+    - report
+
 # ── Build settings ───────────────────────────────────────────────────────────
 markdown: kramdown
 highlighter: rouge
