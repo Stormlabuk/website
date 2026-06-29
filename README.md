@@ -51,17 +51,30 @@ form at [Formspree](https://formspree.io) and paste its endpoint into
 ## Local development
 
 ```bash
-bundle install
-bundle exec jekyll serve   # → http://localhost:4000
+make setup     # bundle install
+make serve     # → http://localhost:4000 (live reload)
 ```
 
-## Deployment
+Or without `make`:
 
-Pushing triggers `.github/workflows/pages.yml`, which builds with Jekyll 4 and
-deploys to GitHub Pages. **In the repository settings, set
-Settings → Pages → Source to "GitHub Actions"** (not "Deploy from a branch" —
-this site uses Jekyll 4 and Dart-Sass `@use`, which the classic branch build
-does not support).
+```bash
+bundle install
+./bin/jekyll serve         # robust across Bundler versions
+# or: bundle exec jekyll serve
+```
 
-If publishing from a project subpath (`https://USER.github.io/REPO`), set
-`baseurl: "/REPO"` in `_config.yml`.
+`make build` produces the static site in `_site/` if you want to inspect or
+host the output yourself.
+
+## Publishing (currently OFF)
+
+The site is set up for **local use only** — nothing is published automatically.
+The GitHub Actions workflow in `.github/workflows/pages.yml` runs **only when
+triggered manually**, so a private repository stays private.
+
+When you want to go live (public repo, or a plan that allows Pages on private
+repos): enable **Settings → Pages → Source: GitHub Actions**, then switch the
+workflow's `on:` trigger to run on push (see the comments at the top of
+`pages.yml`). For a project subpath (`https://USER.github.io/REPO`) also set
+`baseurl: "/REPO"` in `_config.yml`. The site uses Jekyll 4 and Dart-Sass
+`@use`, so use the **GitHub Actions** source, not "Deploy from a branch".
