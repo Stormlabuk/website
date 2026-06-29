@@ -28,65 +28,78 @@ description: "Research output from STORM Lab UK — surgical robotics, magnetic 
   </div>
 </section>
 
-<section class="container" style="padding:64px 32px 96px">
-  <div class="pub-cols">
-    <div>
-      <div class="col-head">
-        <span class="eyebrow">Most recent</span>
-        <div class="col-head__row">
-          <h2>Latest Publications</h2>
-          <span class="col-head__count">[{{ site.data.publications.latest | size }}]</span>
-        </div>
-      </div>
-      <ol class="feature-cite">
-        {%- for c in site.data.publications.latest -%}
-        <li>
-          {%- if c.fig and c.fig != "" -%}
-            <img class="feature-cite__fig" src="{{ c.fig | prepend: '/assets/images/' | relative_url }}" alt="">
-          {%- else -%}
-            <span class="feature-cite__fig feature-cite__fig--empty" aria-hidden="true"><span>Fig</span></span>
-          {%- endif -%}
-          <div style="display:flex;flex-direction:column">
-            <a class="cite__title" style="align-self:flex-start" href="https://doi.org/{{ c.doi }}">{{ c.title }}</a>
-            <div class="cite__authors" style="margin-top:8px">{{ c.authors }}</div>
-            <div class="cite__meta">
-              <span class="tag tag--outline tag--sm">{{ c.venue }}</span>
-              <span class="cite__date">{{ c.date }}</span>
-            </div>
-          </div>
-        </li>
-        {%- endfor -%}
-      </ol>
+<!-- Latest (featured, with thumbnails) -->
+<section class="container" style="padding:64px 32px 16px">
+  <div class="col-head">
+    <span class="eyebrow">Most recent</span>
+    <div class="col-head__row">
+      <h2>Latest Publications</h2>
+      <span class="col-head__count">[{{ site.data.publications.latest | size }}]</span>
     </div>
-    <div>
-      <div class="col-head">
-        <span class="eyebrow">Peer reviewed</span>
-        <div class="col-head__row">
-          <h2>Refereed Journals</h2>
-          <span class="col-head__count">[{{ site.data.publications.refereed | size }}]</span>
-        </div>
-      </div>
-      <ol class="cite-list" style="margin-top:0">
-        {%- for c in site.data.publications.refereed -%}
-        <li class="cite">
-          <span class="cite__n">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
-          <div>
-            <a class="cite__title" href="https://doi.org/{{ c.doi }}">{{ c.title }}</a>
-            <div class="cite__authors">{{ c.authors }}</div>
-            <div class="cite__meta">
-              <span class="tag tag--outline tag--sm">{{ c.venue }}</span>
-              <span class="cite__date">{{ c.date }}</span>
-              <span class="cite__dot" aria-hidden="true"></span>
-              <a class="cite__doi" href="https://doi.org/{{ c.doi }}">doi:{{ c.doi }}</a>
-            </div>
-          </div>
-        </li>
-        {%- endfor -%}
-      </ol>
-    </div>
-
-    <p class="storm-eyebrow" style="margin-top:48px;color:var(--text-faint)">
-      Maintained automatically from the lab's Zotero library.
-    </p>
   </div>
+  <div class="feature-grid">
+    {%- for c in site.data.publications.latest -%}
+    <div class="feature-item">
+      {%- if c.fig and c.fig != "" -%}
+        <img class="feature-cite__fig" src="{{ c.fig | prepend: '/assets/images/' | relative_url }}" alt="">
+      {%- else -%}
+        <span class="feature-cite__fig feature-cite__fig--empty" aria-hidden="true"><span>Fig</span></span>
+      {%- endif -%}
+      <div style="display:flex;flex-direction:column">
+        <a class="cite__title" style="align-self:flex-start" href="https://doi.org/{{ c.doi }}">{{ c.title }}</a>
+        <div class="cite__authors" style="margin-top:8px">{{ c.authors }}</div>
+        <div class="cite__meta">
+          <span class="tag tag--outline tag--sm">{{ c.venue }}</span>
+          <span class="cite__date">{{ c.date }}</span>
+        </div>
+      </div>
+    </div>
+    {%- endfor -%}
+  </div>
+</section>
+
+<!-- Refereed journals, grouped by year -->
+<section class="container" style="padding:48px 32px 96px">
+  <div class="col-head">
+    <span class="eyebrow">Peer reviewed</span>
+    <div class="col-head__row">
+      <h2>Refereed Journals</h2>
+      <span class="col-head__count">[{{ site.data.publications.refereed | size }}]</span>
+    </div>
+  </div>
+
+  {%- assign refs = site.data.publications.refereed -%}
+  {%- assign years = refs | map: "year" | uniq | sort | reverse -%}
+  {%- for y in years -%}
+  {%- assign yitems = refs | where: "year", y -%}
+  <div class="pub-year-group">
+    <div class="pub-year-head">
+      <span class="pub-year">{{ y | default: "Other" }}</span>
+      <span class="pub-year__line" aria-hidden="true"></span>
+      <span class="pub-year__n">[{{ yitems | size }}]</span>
+    </div>
+    <ol class="cite-list cite-list--grouped">
+      {%- for c in yitems -%}
+      <li class="cite cite--plain">
+        <div>
+          <a class="cite__title" href="https://doi.org/{{ c.doi }}">{{ c.title }}</a>
+          <div class="cite__authors">{{ c.authors }}</div>
+          <div class="cite__meta">
+            <span class="tag tag--outline tag--sm">{{ c.venue }}</span>
+            <span class="cite__date">{{ c.date }}</span>
+            {%- if c.doi -%}
+            <span class="cite__dot" aria-hidden="true"></span>
+            <a class="cite__doi" href="https://doi.org/{{ c.doi }}">doi:{{ c.doi }}</a>
+            {%- endif -%}
+          </div>
+        </div>
+      </li>
+      {%- endfor -%}
+    </ol>
+  </div>
+  {%- endfor -%}
+
+  <p class="storm-eyebrow" style="margin-top:48px;color:var(--text-faint)">
+    Maintained automatically from the lab's Zotero library.
+  </p>
 </section>

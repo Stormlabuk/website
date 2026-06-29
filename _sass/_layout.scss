@@ -292,6 +292,20 @@
 .feature-cite__fig--empty span { font-family: var(--font-mono); font-size: 0.62rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--grey-500); }
 @media (max-width: 860px) { .pub-cols { grid-template-columns: 1fr; gap: 48px; } }
 
+// Featured "Latest" — two-up grid of thumbnail + citation
+.feature-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 56px; margin-top: 8px; }
+.feature-item { display: grid; grid-template-columns: 120px 1fr; gap: 18px; padding: 20px 0; border-bottom: 1px solid var(--border-subtle); }
+@media (max-width: 860px) { .feature-grid { grid-template-columns: 1fr; } }
+
+// Refereed grouped by year
+.pub-year-group + .pub-year-group { margin-top: 8px; }
+.pub-year-head { display: flex; align-items: baseline; gap: 18px; margin: 40px 0 0; }
+.pub-year { font-family: var(--font-display); font-size: var(--text-2xl); font-weight: 700; letter-spacing: var(--tracking-tight); color: var(--text-strong); }
+.pub-year__line { flex: 1; height: 1px; background: var(--border-default); }
+.pub-year__n { font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-faint); letter-spacing: 0.06em; }
+.cite-list--grouped { border-top: none; margin-top: 0; }
+.cite--plain { grid-template-columns: 1fr; }
+
 // ── News page ────────────────────────────────────────────────────────────
 .news-layout { display: grid; grid-template-columns: minmax(0,1fr) 300px; gap: 72px; align-items: start; }
 .news-featured { display: block; border: 1px solid var(--border-default); border-radius: var(--radius-md); overflow: hidden; background: var(--white); }

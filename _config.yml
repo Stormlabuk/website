@@ -31,8 +31,8 @@ contact_form_action: ""
 # Run `make fetch` (locally) or the "Refresh publications" GitHub Action.
 zotero:
   library_type: "group"   # "group" or "user"
-  library_id: ""          # numeric id — e.g. group 1234567 (set this)
-  collection: ""          # optional collection KEY to restrict to (blank = whole library)
+  library_id: "5599357"   # zotero.org/groups/5599357/stormlab
+  collection: "853N8SBR"  # zotero.org/groups/5599357/stormlab/collections/853N8SBR
   latest_count: 6         # newest items featured (with thumbnails) at the top
   include_types:
     - journalArticle
