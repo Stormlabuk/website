@@ -13,3 +13,5 @@ node_modules/
 package.json
 package-lock.json
 preview-home.html
+preview-publications.html
+preview-publications-live.html
