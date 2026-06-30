@@ -29,20 +29,6 @@ latest:
     year: 2026
     doi: "10.1177/21695172261438681"
     fig: ""
-  - authors: "X. Li, D. Jones, P. Valdastri, M. Lucas"
-    title: "A miniature ultrasonic surgical device based on a flextensional configuration with a pre-stressed piezoelectric stack"
-    venue: "Commun Eng"
-    date: "Mar 2026"
-    year: 2026
-    doi: "10.1038/s44172-026-00651-2"
-    fig: ""
-  - authors: "P. Lloyd et al."
-    title: "A concentric tube catheter for endoluminal interventions, steered and imaged via magnetic resonance imaging"
-    venue: "Commun Eng"
-    date: "Mar 2026"
-    year: 2026
-    doi: "10.1038/s44172-026-00636-1"
-    fig: ""
 
 refereed:
   - authors: "B. Ozdemir, P. Valdastri, J. H. Chandler"
