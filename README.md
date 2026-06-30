@@ -84,21 +84,45 @@ form at [Formspree](https://formspree.io) and paste its endpoint into
 
 ## Local development
 
+### macOS / Linux
+
 ```bash
 make setup     # bundle install
 make serve     # → http://localhost:4000 (live reload)
 ```
 
-Or without `make`:
+Or without `make`: `bundle install` then `bundle exec jekyll serve`.
 
-```bash
-bundle install
-./bin/jekyll serve         # robust across Bundler versions
-# or: bundle exec jekyll serve
-```
+### Windows
 
-`make build` produces the static site in `_site/` if you want to inspect or
-host the output yourself.
+1. Install **Ruby+Devkit** from [rubyinstaller.org](https://rubyinstaller.org/)
+   (pick a current 3.x "with Devkit"). At the end of the installer let it run
+   `ridk install` and choose the **MSYS2 and MINGW development toolchain**.
+2. Open a fresh terminal (PowerShell or Command Prompt) in the project folder
+   and install dependencies:
+
+   ```bat
+   gem install bundler
+   bundle install
+   ```
+
+3. Use the bundled helper scripts (no `make` needed):
+
+   ```bat
+   serve.cmd      :: refresh publications from Zotero, then serve
+   build.cmd      :: refresh, then build into _site\
+   fetch.cmd      :: just refresh _data\publications.yml from Zotero
+   ```
+
+   Then open <http://localhost:4000>. (Equivalent manual command:
+   `bundle exec jekyll serve --livereload`.)
+
+   The Zotero collection is public, so no key is needed. For a private library,
+   set it first — PowerShell: `$env:ZOTERO_API_KEY="xxxx"`, or
+   Command Prompt: `set ZOTERO_API_KEY=xxxx`.
+
+`make build` / `build.cmd` produces the static site in `_site/` if you want to
+inspect or host the output yourself.
 
 ## Publishing (currently OFF)
 
