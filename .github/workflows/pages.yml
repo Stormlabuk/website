@@ -1,27 +1,20 @@
 # ─────────────────────────────────────────────────────────────────────────
-# Publishing is OFF by default.
+# Builds the site with Jekyll and publishes to GitHub Pages.
+# Requires Settings → Pages → Source: "GitHub Actions".
 #
-# This workflow does NOT run on push — it only runs when you trigger it
-# manually (Actions tab → "Build and deploy Jekyll to GitHub Pages" → Run
-# workflow), and the deploy step additionally needs GitHub Pages enabled
-# (Settings → Pages → Source: GitHub Actions), which requires a public repo or
-# a GitHub plan that allows Pages on private repos.
-#
-# For day-to-day work, build/preview locally instead:
-#     bundle install
-#     ./bin/jekyll serve        # or: bundle exec jekyll serve
-#     # → http://localhost:4000
-#
-# When you're ready to publish, change the `on:` block to:
-#     on:
-#       push:
-#         branches: [main]
-#       workflow_dispatch:
-# and enable Pages in the repo settings.
+# Runs automatically on every push to the branch that serves the site, and can
+# also be triggered manually from the Actions tab. For day-to-day work, preview
+# locally instead: `bundle install` then `./bin/jekyll serve` (or
+# `bundle exec jekyll serve`) → http://localhost:4000
 # ─────────────────────────────────────────────────────────────────────────
 name: Build and deploy Jekyll to GitHub Pages
 
 on:
+  push:
+    branches:
+      - main
+      - master
+      - claude/stormlab-github-pages-pxcv5h
   workflow_dispatch:
 
 permissions:
