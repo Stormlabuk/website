@@ -3,30 +3,156 @@ layout: default
 title: "About"
 nav_section: "About"
 permalink: /about/
-description: "STORM Lab UK — Science and Technology Of Robotics in Medicine, at the University of Leeds."
+description: "STORM Lab UK — our expertise, the people behind the science, and the grants that fund our work in medical robotics at the University of Leeds."
 ---
 
-<section class="page-head-light">
-  <span class="eyebrow">About us</span>
-  <h1 class="storm-display">Science and Technology Of Robotics in Medicine</h1>
-  <p>Intelligent, affordable robotics for earlier diagnosis and more effective, less invasive treatment.</p>
+<!-- Hero: heading + expertise -->
+<section class="about-hero">
+  <div class="about-hero__grid">
+    <div class="about-hero__copy">
+      <span class="eyebrow">About STORM Lab UK</span>
+      <h1 class="storm-display about-hero__title">Our expertise</h1>
+      <p class="about-hero__lead">We have deep expertise in the magnetic manipulation and localization of medical capsules and soft robots — which we leverage to reach deep inside the human body and treat life-threatening, inoperable disease.</p>
+      <p class="about-hero__sub">Soft robotics, intelligent control, frugal design, advanced proprioceptive sensing, innovative manufacturing and smart actuation are among the scientific tools we use to create <a href="{{ '/research/' | relative_url }}">affordable, lifesaving medical technologies</a>.</p>
+    </div>
+    <div class="about-hero__media">
+      <div class="dither-layer" aria-hidden="true"></div>
+      <img src="{{ '/assets/images/illustration-mgu.png' | relative_url }}" alt="Magnetic guidance unit">
+    </div>
+  </div>
 </section>
 
-<section class="container" style="padding:24px 32px 88px">
-  <div class="prose">
-    <p>The <strong>STORM Lab</strong> develops intelligent robotic technology for medicine. Our research spans several fields of surgical robotics, with particular focus on <strong>medical capsule robots, robotic endoscopy, soft surgical robots, affordable medical devices and autonomy in robotic surgery</strong>.</p>
+<!-- Stats band -->
+<section class="stat-band">
+  <div class="stat-band__inner">
+    {%- for s in site.data.funding.stats -%}
+    <div class="stat stat--inverse">
+      <div class="stat__value">{{ s.value }}</div>
+      <div class="stat__label">{{ s.label }}</div>
+    </div>
+    {%- endfor -%}
+  </div>
+</section>
 
-    <p>We strive to enable earlier diagnosis, wider screening and more effective treatment for life-threatening diseases such as cancer. By creating affordable and intelligent robotic solutions, we aim to improve the quality of life for people undergoing flexible endoscopy and laparoscopic surgery — including in settings with limited access to healthcare infrastructure.</p>
+<!-- Director feature -->
+<section class="about-director">
+  <div class="about-director__grid">
+    <div class="about-director__card">
+      <div class="member">
+        <div class="member__frame">
+          <img class="member__photo" src="{{ '/assets/images/team/valdastri.jpg' | relative_url }}" alt="Pietro Valdastri">
+          <span class="member__tab" aria-hidden="true"></span>
+          <div class="member__overlay"><span>Professor &amp; Chair in Robotics and Autonomous Systems · IEEE Fellow · Ph.D. in Medical Robotics, Scuola Superiore Sant'Anna</span></div>
+        </div>
+        <div class="member__name">Pietro Valdastri</div>
+        <div class="member__role">Director of STORM Lab UK</div>
+      </div>
+    </div>
+    <div>
+      <span class="eyebrow">STORM Lab Director</span>
+      <blockquote class="about-quote">"We strive to improve the quality of life for people undergoing flexible endoscopy and laparoscopic surgery by creating <span class="storm-mark">affordable and intelligent robotic solutions</span>."</blockquote>
+      <div class="about-quote__attr">
+        <span class="about-quote__bar" aria-hidden="true"></span>
+        <div>
+          <div class="about-quote__name">Pietro Valdastri</div>
+          <div class="about-quote__role">Director of the Institute of Robotics, Autonomous Systems and Sensing</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <h2>Two labs, one mission</h2>
-    <p>STORM Lab operates on both sides of the Atlantic: <strong>STORM Lab UK</strong>, based at the University of Leeds and directed by Professor Pietro Valdastri, and <strong>STORM Lab USA</strong>, directed by Keith Obstein. The two groups collaborate closely on the science and translation of robotics in medicine.</p>
+<!-- Team -->
+<section class="container about-team" id="team">
+  <span class="eyebrow">The team</span>
+  <h2 class="storm-display about-h2">The people behind the science</h2>
+  <p class="about-intro">Engineers, clinicians and scientists advancing intelligent, affordable robotics for minimally invasive medicine. Hover any portrait for background.</p>
 
-    <h2>Our approach</h2>
-    <p>We hold deep expertise in the <strong>magnetic manipulation and localisation</strong> of medical capsules and soft robots, which we use to reach deep inside the human body to diagnose and treat life-threatening and inoperable diseases. We pair this with <strong>computer vision, control and autonomy</strong> so that robotic systems can navigate safely — always under clinical oversight.</p>
+  {%- for group in site.data.team.groups -%}
+  <div class="team-group">
+    <div class="team-group__head">
+      <h3>{{ group.title }}</h3>
+      <span class="team-group__n">{{ group.members | size | prepend: '0' | slice: -2, 2 }}</span>
+    </div>
+    <div class="member-grid">
+      {%- for m in group.members -%}
+        {% include member-card.html m=m %}
+      {%- endfor -%}
+    </div>
+  </div>
+  {%- endfor -%}
+</section>
 
-    <blockquote>“We strive to improve the quality of life for people undergoing flexible endoscopy and laparoscopic surgery by creating affordable and intelligent robotic solutions.”</blockquote>
+<!-- Alumni -->
+<section class="about-alumni">
+  <div class="container">
+    <span class="eyebrow">Alumni</span>
+    <h2 class="storm-display about-h2 about-h2--sm">Where our people have moved on from</h2>
+    <p class="about-intro">Former fellows, students and staff who helped build STORM Lab's research over the years.</p>
+    <div class="alumni-grid">
+      {%- for a in site.data.alumni -%}
+      {%- assign aw = a.name | split: " " -%}
+      <div class="alum">
+        <span class="alum__av" aria-hidden="true">{% for w in aw limit:2 %}{{ w | slice: 0 | upcase }}{% endfor %}</span>
+        <div class="alum__meta">
+          <div class="alum__name">{{ a.name }}</div>
+          <div class="alum__role">{{ a.role }}</div>
+        </div>
+      </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
 
-    <h2>Where we are</h2>
-    <p>STORM Lab UK is based in the School of Electronic and Electrical Engineering at the University of Leeds. See the <a href="{{ '/contact/' | relative_url }}">contact page</a> for how to reach us, or explore <a href="{{ '/research/' | relative_url }}">our research</a>.</p>
+<!-- Grants -->
+<section class="container about-grants">
+  <span class="eyebrow">Funding</span>
+  <h2 class="storm-display about-h2">Our grants enable us to work towards&hellip;</h2>
+  <p class="about-intro about-intro--lead">Surgical robotics, affordable intelligent endoscopy, medical capsule robots, soft magnetic continuum manipulators and autonomy in robotic surgery.</p>
+
+  <div class="grants-block">
+    <div class="grants-subhead">
+      <span class="tick tick--sm" aria-hidden="true"></span>
+      <h3>Active grants</h3>
+    </div>
+    <div class="grants-2">
+      {%- for g in site.data.funding.active -%}
+      <div class="card card--accent grant-card">
+        <div class="grant-card__body">
+          <div class="grant-card__funder">
+            {%- if g.logo and g.logo != "" -%}
+              <img src="{{ g.logo | prepend: '/assets/images/' | relative_url }}" alt="{{ g.funder }}">
+            {%- else -%}
+              <span class="tag tag--accent">{{ g.funder }}</span>
+            {%- endif -%}
+          </div>
+          <p class="grant-card__title grant-card__title--lg">{{ g.title }}</p>
+        </div>
+      </div>
+      {%- endfor -%}
+    </div>
+  </div>
+
+  <div class="grants-block">
+    <div class="grants-subhead">
+      <span class="tick tick--sm tick--grey" aria-hidden="true"></span>
+      <h3>Major completed grants</h3>
+    </div>
+    <div class="grants-3">
+      {%- for g in site.data.funding.completed -%}
+      <div class="card grant-card">
+        <div class="grant-card__body grant-card__body--sm">
+          <div class="grant-card__funder grant-card__funder--sm">
+            {%- if g.logo and g.logo != "" -%}
+              <img src="{{ g.logo | prepend: '/assets/images/' | relative_url }}" alt="{{ g.funder }}">
+            {%- else -%}
+              <span class="tag tag--outline">{{ g.funder }}</span>
+            {%- endif -%}
+          </div>
+          <p class="grant-card__title">{{ g.title }}</p>
+        </div>
+      </div>
+      {%- endfor -%}
+    </div>
   </div>
 </section>

@@ -1,11 +1,11 @@
 # Primary navigation (matches the design). The logo links Home.
 # The "Research" item renders a dropdown of the research areas in _data/research.yml.
+- title: About
+  url: /about/
 - title: Research
   url: /research/
 - title: Publications
   url: /publications/
-- title: Team
-  url: /team/
 - title: News
   url: /news/
 - title: Contact

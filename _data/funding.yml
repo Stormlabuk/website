@@ -1,0 +1,36 @@
+# Grants for the About page. `logo` (path under assets/images/) shows the
+# funder's mark; leave blank to show the funder name as a tag instead.
+stats:
+  - { value: "5",  label: "Academic staff" }
+  - { value: "5",  label: "Research fellows" }
+  - { value: "11", label: "Ph.D. students" }
+  - { value: "24", label: "Research grants" }
+
+active:
+  - { funder: "ARIA Seed", logo: "", title: "MAGNIS — Magnetically-Guided Endocisternal Neural Interface Delivery System" }
+  - { funder: "EPSRC", logo: "sponsors/epsrc.webp", title: "Terabotics Programme Grant — robots with terahertz imaging to spot and remove cancer tumours" }
+  - { funder: "ARIA Seed", logo: "", title: "MORPH — Muscular Operative Robotic Precision Handler" }
+  - { funder: "ERC", logo: "sponsors/erc.png", title: "RoboMRI: future cardiovascular healthcare via MRI-driven robotics" }
+  - { funder: "Leeds NIHR BRC", logo: "sponsors/nihr.webp", title: "Leeds NIHR Biomedical Research Centre" }
+  - { funder: "EPSRC", logo: "sponsors/epsrc.webp", title: "IMMERSE — Intelligent Magnetic Multi-scale Robotics for endoluminal Surgical Excellence" }
+  - { funder: "Intuitive Surgical", logo: "sponsors/intuitive.png", title: "Intuitive Surgical da Vinci Research Kit" }
+
+completed:
+  - { funder: "European Research Council", logo: "sponsors/erc.png", title: "ERC Consolidator Grant: NoLiMiTs — Novel Lifesaving Magnetic Tentacles" }
+  - { funder: "H2020 EU", logo: "sponsors/horizon-2020.webp", title: "AUTOCAPSULE — autonomous multimodal implantable endoscopic capsule for the GI tract" }
+  - { funder: "NIH", logo: "", title: "Magnetic Capsule Endoscope for Colonoscopy in patients with IBD" }
+  - { funder: "EPSRC", logo: "sponsors/epsrc.webp", title: "New minimally invasive technologies for the treatment of pancreatic cancer" }
+  - { funder: "NSF", logo: "", title: "CAREER: Lifesaving Capsule Robots" }
+  - { funder: "EPSRC", logo: "sponsors/epsrc.webp", title: "Surgery Enabled by Ultrasonics Programme Grant" }
+  - { funder: "Cystic Fibrosis Trust", logo: "", title: "A technical innovation in bowel preparation" }
+  - { funder: "Garfield Weston Foundation", logo: "sponsors/garfield-weston.webp", title: "Accelerating Innovative Robotic Technologies to Fight Cancer" }
+  - { funder: "NIHR / LTHT", logo: "sponsors/nihr.webp", title: "NIHR MedTech and in vitro diagnostic Co-operative Surgical Technologies" }
+  - { funder: "Cancer Research UK", logo: "", title: "A robotic magnetic flexible endoscope for painless colorectal cancer screening, surveillance and intervention" }
+  - { funder: "Royal Society", logo: "sponsors/royal-society.webp", title: "Wolfson Research Merit Award" }
+  - { funder: "NSF", logo: "", title: "Integrated Modeling, Analysis and Synthesis of Miniature Medical Devices" }
+  - { funder: "EPSRC", logo: "sponsors/epsrc.webp", title: "EPSRC GCRF: Ultra-low-cost endoscopy for gastric cancer screening in rural China" }
+  - { funder: "GCRF HEGCE", logo: "", title: "Ultra-low-cost diagnosis of Helicobacter Pylori in rural India" }
+  - { funder: "H2020 EU", logo: "sponsors/horizon-2020.webp", title: "H. Pylori-Scopy — Marie Curie Fellowship for Manish Chauhan" }
+  - { funder: "Italian Ministry of Health", logo: "", title: "Pre-clinical validation of a soft tethered endoscopic robot to replace colonoscopy for colorectal cancer screening" }
+  - { funder: "EPSRC", logo: "sponsors/epsrc.webp", title: "SonoPill Programme Grant" }
+  - { funder: "NIHR / LTHT", logo: "sponsors/nihr.webp", title: "NIHR Global Health Research Group on Global Surgical Technologies" }

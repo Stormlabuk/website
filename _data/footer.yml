@@ -8,7 +8,7 @@
 - heading: Lab
   links:
     - { label: "About us", url: "/about/" }
-    - { label: "Team", url: "/team/" }
+    - { label: "Team", url: "/about/#team" }
     - { label: "Publications", url: "/publications/" }
     - { label: "News", url: "/news/" }
 - heading: Connect

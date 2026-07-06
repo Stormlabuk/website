@@ -1,0 +1,19 @@
+{%- comment -%}Expects `m` with name, role, photo (optional), detail (optional).{%- endcomment -%}
+{%- assign words = m.name | split: " " -%}
+<div class="member">
+  <div class="member__frame">
+    {%- if m.photo and m.photo != "" -%}
+      <img class="member__photo" src="{{ m.photo | prepend: '/assets/images/' | relative_url }}" alt="{{ m.name }}" loading="lazy">
+    {%- else -%}
+      <div class="member__placeholder" aria-hidden="true">
+        <span>{% for w in words limit:2 %}{{ w | slice: 0 | upcase }}{% endfor %}</span>
+      </div>
+    {%- endif -%}
+    <span class="member__tab" aria-hidden="true"></span>
+    {%- if m.detail and m.detail != "" -%}
+      <div class="member__overlay"><span>{{ m.detail }}</span></div>
+    {%- endif -%}
+  </div>
+  <div class="member__name">{{ m.name }}</div>
+  <div class="member__role">{{ m.role }}</div>
+</div>

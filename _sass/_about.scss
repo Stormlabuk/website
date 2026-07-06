@@ -1,0 +1,122 @@
+// About page — hero, director, team member cards, alumni, grants.
+
+// ── Member card (portrait with hover-reveal detail) ─────────────────────────
+.member { transition: transform 220ms var(--ease-out); }
+.member:hover { transform: translateY(-4px); }
+.member__frame {
+  position: relative; aspect-ratio: 3 / 4; border-radius: 18px; overflow: hidden;
+  background: var(--grey-950); border: 1px solid var(--border-default);
+}
+.member__photo {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  filter: grayscale(1) contrast(1.03); transform: scale(1);
+  transition: transform 500ms var(--ease-out), filter 320ms var(--ease-standard);
+}
+.member:hover .member__photo { filter: grayscale(0) contrast(1); transform: scale(1.05); }
+.member__placeholder {
+  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+  background-image: radial-gradient(var(--grey-700) 1px, transparent 1.6px); background-size: 7px 7px;
+}
+.member__placeholder span { font-family: var(--font-mono); font-weight: 700; font-size: 1.6rem; letter-spacing: 0.04em; color: var(--grey-500); }
+.member__tab { position: absolute; top: 14px; left: 14px; width: 30px; height: 4px; border-radius: 2px; background: var(--storm-yellow); z-index: 2; }
+.member__overlay {
+  position: absolute; left: 0; right: 0; bottom: 0; padding: 16px 15px;
+  background: linear-gradient(to top, rgba(10,10,10,0.96) 55%, rgba(10,10,10,0));
+  transform: translateY(102%); transition: transform 340ms var(--ease-out);
+}
+.member:hover .member__overlay,
+.member:focus-within .member__overlay { transform: translateY(0); }
+.member__overlay span { font-family: var(--font-mono); font-size: 0.66rem; line-height: 1.55; letter-spacing: 0.01em; color: var(--grey-100); }
+.member__name { font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; letter-spacing: -0.015em; line-height: 1.2; color: var(--text-strong); margin-top: 13px; }
+.member__role { font-family: var(--font-mono); font-size: 0.66rem; letter-spacing: 0.055em; text-transform: uppercase; color: var(--text-muted); margin-top: 6px; line-height: 1.5; }
+
+// ── Hero ────────────────────────────────────────────────────────────────────
+.about-hero { border-bottom: 1px solid var(--border-default); }
+.about-hero__grid { max-width: var(--container-max); margin: 0 auto; display: grid; grid-template-columns: 1.15fr 0.85fr; }
+.about-hero__copy { padding: 84px 56px 84px 32px; display: flex; flex-direction: column; justify-content: center; }
+.about-hero__title { font-size: 3.4rem; margin-top: 22px; }
+.about-hero__lead { font-size: 1.2rem; color: var(--text-body); margin-top: 26px; max-width: 520px; line-height: 1.6; }
+.about-hero__sub { font-size: 1rem; color: var(--text-muted); margin-top: 20px; max-width: 520px; line-height: 1.7; }
+.about-hero__sub a { color: var(--grey-950); border-bottom: 2px solid var(--storm-yellow); }
+.about-hero__media { position: relative; background: var(--black); overflow: hidden; min-height: 460px; }
+.about-hero__media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.about-hero__media .dither-layer {
+  position: absolute; inset: 0; z-index: 1;
+  background-image: radial-gradient(var(--grey-700) 1px, transparent 1.6px); background-size: 8px 8px; opacity: 0.5;
+  -webkit-mask-image: linear-gradient(135deg, transparent 20%, #000); mask-image: linear-gradient(135deg, transparent 20%, #000);
+}
+
+// ── Director feature ────────────────────────────────────────────────────────
+.about-director { border-bottom: 1px solid var(--border-default); }
+.about-director__grid { max-width: var(--container-max); margin: 0 auto; padding: 80px 32px; display: grid; grid-template-columns: 300px 1fr; gap: 56px; align-items: center; }
+.about-director__card { max-width: 300px; }
+.about-quote { font-family: var(--font-display); font-size: 2.1rem; font-weight: 500; letter-spacing: -0.02em; line-height: 1.28; color: var(--text-strong); margin: 22px 0 0; }
+.about-quote__attr { margin-top: 28px; display: flex; align-items: center; gap: 14px; }
+.about-quote__bar { width: 34px; height: 3px; background: var(--storm-yellow); flex: none; }
+.about-quote__name { font-weight: 700; color: var(--text-strong); font-size: 1rem; }
+.about-quote__role { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); margin-top: 3px; }
+
+// ── Shared section bits ─────────────────────────────────────────────────────
+.about-h2 { font-size: var(--text-2xl); letter-spacing: -0.025em; margin: 16px 0 8px; }
+.about-h2--sm { font-size: var(--text-xl); letter-spacing: -0.02em; }
+.about-intro { font-size: 1.05rem; color: var(--text-muted); max-width: 620px; line-height: 1.65; margin: 0 0 8px; }
+.about-intro--lead { font-size: 1.15rem; color: var(--text-body); max-width: 720px; margin-bottom: 12px; }
+
+// ── Team ────────────────────────────────────────────────────────────────────
+.about-team { padding-block: 84px 40px; }
+.team-group { margin-top: 56px; }
+.team-group__head { display: flex; align-items: baseline; gap: 14px; border-bottom: 1px solid var(--border-default); padding-bottom: 14px; margin-bottom: 32px; }
+.team-group__head h3 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; letter-spacing: -0.015em; color: var(--text-strong); }
+.team-group__n { font-family: var(--font-mono); font-size: 0.75rem; color: var(--storm-yellow-deep); letter-spacing: 0.04em; }
+.member-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 28px 24px; }
+
+// ── Alumni ──────────────────────────────────────────────────────────────────
+.about-alumni { border-top: 1px solid var(--border-default); background: var(--grey-50); margin-top: 72px; }
+.about-alumni .container { padding-top: 72px; padding-bottom: 72px; }
+.alumni-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 34px; }
+.alum { display: flex; align-items: center; gap: 12px; padding: 11px 14px; background: var(--white); border: 1px solid var(--border-default); border-radius: var(--radius-md); }
+.alum__av { width: 38px; height: 38px; border-radius: 50%; flex: none; background: var(--grey-950); color: var(--storm-yellow); display: flex; align-items: center; justify-content: center; font-family: var(--font-mono); font-weight: 700; font-size: 0.72rem; letter-spacing: 0.03em; }
+.alum__meta { min-width: 0; }
+.alum__name { font-weight: 700; color: var(--text-strong); font-size: 0.92rem; line-height: 1.25; }
+.alum__role { font-family: var(--font-mono); font-size: 0.62rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-muted); margin-top: 3px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+// ── Grants ──────────────────────────────────────────────────────────────────
+.about-grants { padding-block: 88px; }
+.grants-block { margin-top: 48px; }
+.grants-block + .grants-block { margin-top: 56px; }
+.grants-subhead { display: flex; align-items: center; gap: 12px; margin-bottom: 26px; }
+.grants-subhead h3 { font-family: var(--font-display); font-size: 1.35rem; font-weight: 700; letter-spacing: -0.01em; color: var(--text-strong); }
+.tick--grey { background: var(--grey-300); }
+.grants-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.grants-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.grant-card { transition: transform var(--dur-base) var(--ease-out), box-shadow var(--dur-base) var(--ease-out), border-color var(--dur-base) var(--ease-standard); }
+.grant-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border-color: color-mix(in srgb, var(--grey-950) 40%, var(--border-default)); }
+.grant-card__body { padding: 22px 24px 24px; }
+.grant-card__body--sm { padding: 18px 20px 20px; }
+.grant-card__funder { margin-bottom: 16px; height: 30px; display: flex; align-items: center; }
+.grant-card__funder--sm { margin-bottom: 12px; height: 24px; }
+.grant-card__funder img { max-height: 28px; max-width: 150px; object-fit: contain; object-position: left center; }
+.grant-card__funder--sm img { max-height: 22px; max-width: 130px; }
+.grant-card__title { font-size: 0.92rem; font-weight: 500; color: var(--text-strong); line-height: 1.45; margin: 0; }
+.grant-card__title--lg { font-family: var(--font-display); font-size: 1.1rem; font-weight: 500; letter-spacing: -0.01em; line-height: 1.35; }
+
+// ── Responsive ──────────────────────────────────────────────────────────────
+@media (max-width: 900px) {
+  .about-hero__grid { grid-template-columns: 1fr; }
+  .about-hero__media { min-height: 300px; order: -1; }
+  .about-hero__copy { padding: 56px 24px 52px; }
+  .about-hero__title { font-size: 2.8rem; }
+  .about-director__grid { grid-template-columns: 1fr; gap: 36px; padding: 60px 24px; }
+  .about-director__card { max-width: 240px; }
+  .member-grid { grid-template-columns: repeat(3, 1fr); }
+  .alumni-grid { grid-template-columns: repeat(2, 1fr); }
+  .grants-3 { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .about-hero__title { font-size: 2.2rem; }
+  .about-h2 { font-size: 1.7rem; }
+  .about-quote { font-size: 1.55rem; }
+  .member-grid { grid-template-columns: repeat(2, 1fr); gap: 22px 16px; }
+  .alumni-grid { grid-template-columns: 1fr; }
+  .grants-2, .grants-3 { grid-template-columns: 1fr; }
+}
