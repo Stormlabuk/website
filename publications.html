@@ -2,110 +2,104 @@
 layout: default
 title: "Publications"
 permalink: /publications/
-description: "Research output from STORM Lab UK — surgical robotics, magnetic endoscopy, soft continuum robots and autonomy."
+description: "Research output from STORM Lab UK — pulled from the group Zotero library, featured latest work and a complete index by year."
 ---
 
+{%- assign pubs = site.data.publications.all | default: site.data.publications.refereed -%}
+{%- assign latest = site.data.publications.latest -%}
+{%- assign years = pubs | map: "year" | uniq | sort | reverse -%}
+{%- assign total = pubs | size -%}
+{%- assign count2026 = pubs | where: "year", 2026 | size -%}
+{%- assign refereed = pubs | where: "type", "journalArticle" | size -%}
+{%- assign zoteroHref = "https://www.zotero.org/groups/" | append: site.zotero.library_id | append: "/library" -%}
+
+<!-- Hero: dark dithered, with stats -->
 <section class="pub-hero">
-  <img src="{{ '/assets/images/photo-kuka-duotone.png' | relative_url }}" alt="STORM Lab researchers with a KUKA robotic arm">
-  <div class="dots" aria-hidden="true"></div>
-  <div class="scrim" aria-hidden="true"></div>
-  <div class="pub-hero__cap">
+  <div class="dither-layer" aria-hidden="true"></div>
+  <div class="container pub-hero__inner">
     <span class="tick" aria-hidden="true"></span>
-    <div class="pub-hero__kicker">Research output</div>
-    <h1 class="storm-display">Publications</h1>
+    <div class="pub-hero__kicker">Research output · Group library</div>
+    <h1 class="storm-display pub-hero-h1">Publications</h1>
+    <div class="pub-hero-stats">
+      <div class="pub-stat">
+        <div class="pub-stat-num pub-stat-num--accent">{{ total }}</div>
+        <div class="pub-stat-label">Total in library</div>
+      </div>
+      <div class="pub-stat">
+        <div class="pub-stat-num">{{ count2026 }}</div>
+        <div class="pub-stat-label">Published 2026</div>
+      </div>
+      <div class="pub-stat">
+        <div class="pub-stat-num">{{ refereed }}</div>
+        <div class="pub-stat-label">Refereed journals</div>
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="stat-band">
-  <div class="dots" aria-hidden="true"></div>
-  <div class="stat-band__inner">
-    {%- for s in site.data.publications.stats -%}
-    <div class="stat stat--inverse">
-      <div class="stat__value">{{ s.value }}</div>
-      <div class="stat__label">{{ s.label }}</div>
+<!-- Body -->
+<div class="container pub-body">
+
+  <!-- LEFT: Latest / Featured -->
+  <div>
+    <div class="pub-colhead">
+      <span class="pub-colhead__label">Latest / Featured</span>
+      <span class="pub-colhead__n">[ {{ latest | size }} ]</span>
+    </div>
+    <div class="pub-latest-grid">
+      {%- for p in latest -%}
+      <a href="https://doi.org/{{ p.doi }}" class="feat-card">
+        <div class="feat-card__fig">
+          {%- if p.fig and p.fig != "" -%}
+            <img src="{{ p.fig | prepend: '/assets/images/' | relative_url }}" alt="">
+          {%- else -%}
+            <span class="feat-card__dither" aria-hidden="true"></span>
+            <span class="feat-card__figno">FIG {{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
+          {%- endif -%}
+          <span class="feat-card__date">{{ p.date }}</span>
+        </div>
+        <div class="feat-card__body">
+          <span class="pub-link feat-card__title">{{ p.title }}</span>
+          <div class="feat-card__authors">{{ p.authors }}</div>
+          <div class="feat-card__venue">{{ p.venue }}</div>
+        </div>
+      </a>
+      {%- endfor -%}
+    </div>
+  </div>
+
+  <!-- RIGHT: Complete index -->
+  <div>
+    <div class="pub-colhead pub-colhead--between">
+      <span class="pub-colhead__label">Complete index [ {{ total }} ]</span>
+      <a href="{{ zoteroHref }}" class="doi-link pub-colhead__zotero" target="_blank" rel="noopener">View Zotero library →</a>
+    </div>
+
+    {%- assign n = 0 -%}
+    {%- for y in years -%}
+    <div class="pub-year-row">
+      <div class="pub-year-num">{% if y == 0 %}Undated{% else %}{{ y }}{% endif %}</div>
+      <ol class="pub-index">
+        {%- assign yitems = pubs | where: "year", y -%}
+        {%- for p in yitems -%}
+        {%- assign n = n | plus: 1 -%}
+        <li class="pub-row pub-item">
+          <span class="pub-item__n">{% if n < 10 %}0{% endif %}{{ n }}</span>
+          <div>
+            <a href="https://doi.org/{{ p.doi }}" class="pub-link pub-item__title">{{ p.title }}</a>
+            <div class="pub-item__authors">{{ p.authors }}</div>
+            <div class="pub-item__meta">
+              <span class="pub-item__venue">{{ p.venue }}</span>
+              {%- if p.doi -%}
+              <span class="pub-item__dot" aria-hidden="true"></span>
+              <a href="https://doi.org/{{ p.doi }}" class="doi-link">doi: {{ p.doi }}</a>
+              {%- endif -%}
+            </div>
+          </div>
+        </li>
+        {%- endfor -%}
+      </ol>
     </div>
     {%- endfor -%}
   </div>
-</section>
-
-<section class="container" style="padding:64px 32px 96px">
-  <div class="pub-cols">
-
-    <!-- Left column: Latest (large featured cards) -->
-    <div>
-      <div class="col-head">
-        <span class="eyebrow">Most recent</span>
-        <div class="col-head__row">
-          <h2>Latest Publications</h2>
-          <span class="col-head__count">[{{ site.data.publications.latest | size }}]</span>
-        </div>
-      </div>
-      <div class="latest-stack">
-        {%- for c in site.data.publications.latest -%}
-        <a class="latest-card" href="https://doi.org/{{ c.doi }}">
-          {%- if c.fig and c.fig != "" -%}
-            <img class="latest-card__thumb" src="{{ c.fig | prepend: '/assets/images/' | relative_url }}" alt="">
-          {%- else -%}
-            <span class="latest-card__thumb latest-card__thumb--empty" aria-hidden="true"><span>Figure</span></span>
-          {%- endif -%}
-          <span class="latest-card__body">
-            <span class="latest-card__title">{{ c.title }}</span>
-            <span class="cite__authors">{{ c.authors }}</span>
-            <span class="cite__meta">
-              <span class="tag tag--outline tag--sm">{{ c.venue }}</span>
-              <span class="cite__date">{{ c.date }}</span>
-            </span>
-          </span>
-        </a>
-        {%- endfor -%}
-      </div>
-    </div>
-
-    <!-- Right column: Refereed journals, grouped by year -->
-    <div>
-      <div class="col-head">
-        <span class="eyebrow">Peer reviewed</span>
-        <div class="col-head__row">
-          <h2>Refereed Journals</h2>
-          <span class="col-head__count">[{{ site.data.publications.refereed | size }}]</span>
-        </div>
-      </div>
-
-      {%- assign refs = site.data.publications.refereed -%}
-      {%- assign years = refs | map: "year" | uniq | sort | reverse -%}
-      {%- for y in years -%}
-      {%- assign yitems = refs | where: "year", y -%}
-      <div class="pub-year-group">
-        <div class="pub-year-head">
-          <span class="pub-year">{{ y | default: "Other" }}</span>
-          <span class="pub-year__line" aria-hidden="true"></span>
-          <span class="pub-year__n">[{{ yitems | size }}]</span>
-        </div>
-        <ol class="cite-list cite-list--grouped">
-          {%- for c in yitems -%}
-          <li class="cite cite--plain">
-            <div>
-              <a class="cite__title" href="https://doi.org/{{ c.doi }}">{{ c.title }}</a>
-              <div class="cite__authors">{{ c.authors }}</div>
-              <div class="cite__meta">
-                <span class="tag tag--outline tag--sm">{{ c.venue }}</span>
-                <span class="cite__date">{{ c.date }}</span>
-                {%- if c.doi -%}
-                <span class="cite__dot" aria-hidden="true"></span>
-                <a class="cite__doi" href="https://doi.org/{{ c.doi }}">doi:{{ c.doi }}</a>
-                {%- endif -%}
-              </div>
-            </div>
-          </li>
-          {%- endfor -%}
-        </ol>
-      </div>
-      {%- endfor -%}
-    </div>
-
-  </div>
-
-  <p class="storm-eyebrow" style="margin-top:56px;color:var(--text-faint)">
-    Maintained automatically from the lab's Zotero library.
-  </p>
-</section>
+</div>
