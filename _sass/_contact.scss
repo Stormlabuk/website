@@ -1,0 +1,69 @@
+// Contact page — hero details, enquiry form, map card, dark addresses.
+
+.c-2col { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
+
+// ── Hero + details ──────────────────────────────────────────────────────────
+.c-hero { padding-block: 80px 56px; }
+.c-title { font-size: var(--text-4xl); line-height: 1; margin: 0; }
+.c-lead { font-size: 1.2rem; color: var(--text-body); margin-top: 24px; max-width: 440px; line-height: 1.55; }
+.c-detail { display: grid; grid-template-columns: 1fr 1fr; gap: 32px 40px; }
+.c-detail__full { grid-column: 1 / -1; }
+.c-label { font-family: var(--font-mono); font-size: 0.75rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 10px; }
+a.c-phone { font-family: var(--font-display); font-size: 1.75rem; font-weight: 700; letter-spacing: -0.02em; color: var(--text-strong); }
+a.c-phone:hover { text-decoration: none; color: var(--storm-yellow-deep); }
+.c-addr { font-size: 0.95rem; color: var(--text-body); line-height: 1.6; margin: 0; }
+.c-emaillink { font-size: 0.95rem; color: var(--text-strong); font-weight: 600; box-shadow: inset 0 -2px 0 var(--storm-yellow); }
+.c-emaillink:hover { text-decoration: none; background: var(--storm-yellow-wash); }
+
+// ── Enquiry form ─────────────────────────────────────────────────────────────
+.c-form-sec { padding-bottom: 88px; }
+.c-h2 { font-size: var(--text-2xl); line-height: 1.05; letter-spacing: -0.025em; margin: 0; }
+.c-form-intro { font-size: 1.05rem; color: var(--text-body); margin: 20px 0 0; max-width: 400px; line-height: 1.6; }
+.c-prefer { margin-top: 32px; padding-top: 28px; border-top: 1px solid var(--border-default); }
+.contact-card textarea { min-height: 96px; resize: vertical; }
+.c-thanks { padding: 44px 0; text-align: center; }
+.c-thanks__title { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: var(--text-strong); margin-bottom: 10px; }
+.c-thanks p { color: var(--text-muted); margin: 0 0 24px; line-height: 1.6; }
+
+// ── Map card ─────────────────────────────────────────────────────────────────
+.c-map-sec { padding-bottom: 88px; }
+.c-map { display: grid; grid-template-columns: 380px 1fr; border: 1px solid var(--border-default); border-radius: var(--radius-md); overflow: hidden; background: var(--white); }
+.c-map-info { padding: 40px; position: relative; }
+.c-map-info .storm-bar { position: absolute; top: 0; left: 0; width: 48px; }
+.c-map-info h2 { font-family: var(--font-display); font-size: 1.75rem; font-weight: 700; letter-spacing: -0.02em; color: var(--text-strong); margin: 0 0 16px; }
+.c-map-info p { font-size: 0.95rem; color: var(--text-body); line-height: 1.65; margin: 0 0 28px; }
+.c-map-info strong { color: var(--text-strong); }
+.c-map-links { display: flex; flex-direction: column; }
+.c-map-links a { display: flex; align-items: center; justify-content: space-between; font-family: var(--font-mono); font-size: 0.8rem; letter-spacing: 0.03em; color: var(--text-strong); padding: 12px 0; border-bottom: 1px solid var(--border-default); }
+.c-map-links a span { color: var(--text-muted); transition: transform var(--dur-base) var(--ease-out); }
+.c-map-links a:hover { text-decoration: none; }
+.c-map-links a:hover span { color: var(--storm-yellow-deep); transform: translateX(4px); }
+.c-map-embed { position: relative; min-height: 420px; background: var(--grey-100); }
+.c-map-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; filter: grayscale(0.35) contrast(1.05); }
+.c-map-embed__link { position: absolute; bottom: 12px; right: 12px; background: rgba(10,10,10,0.85); color: #fff; font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.04em; padding: 7px 12px; border-radius: var(--radius-sm); }
+.c-map-embed__link:hover { color: #fff; background: var(--grey-950); text-decoration: none; }
+
+// ── Dark addresses ───────────────────────────────────────────────────────────
+.c-addresses { background: var(--grey-950); color: var(--grey-300); position: relative; overflow: hidden; }
+.c-addresses .dither-layer { position: absolute; inset: 0; opacity: 0.35; background-image: radial-gradient(var(--grey-700) 1px, transparent 1.6px); background-size: 8px 8px; -webkit-mask-image: linear-gradient(180deg, #000, transparent 70%); mask-image: linear-gradient(180deg, #000, transparent 70%); }
+.c-addresses__inner { position: relative; max-width: var(--container-max); margin: 0 auto; padding: 72px 32px; }
+.c-addr-label { font-family: var(--font-mono); font-size: 0.75rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--storm-yellow); margin-bottom: 16px; }
+.c-addresses p { font-size: 1rem; color: var(--grey-200); line-height: 1.7; margin: 0; }
+.c-usa { border-left: 1px solid var(--grey-800); padding-left: 56px; }
+.c-usa__link { display: inline-block; margin-top: 18px; font-family: var(--font-mono); font-size: 0.8rem; letter-spacing: 0.03em; color: var(--white); box-shadow: inset 0 -2px 0 var(--storm-yellow); }
+.c-usa__link:hover { color: var(--white); background: rgba(248,205,4,0.15); text-decoration: none; }
+
+// ── Responsive ───────────────────────────────────────────────────────────────
+@media (max-width: 860px) {
+  .c-2col { grid-template-columns: 1fr; gap: 40px; }
+  .c-map { grid-template-columns: 1fr; }
+  .c-map-info { border-bottom: 1px solid var(--border-default); }
+  .c-hero { padding-block: 48px 40px; }
+  .c-title { font-size: 2.6rem; }
+  .c-usa { border-left: 0; padding-left: 0; padding-top: 40px; border-top: 1px solid var(--grey-800); }
+}
+@media (max-width: 520px) {
+  .c-detail { grid-template-columns: 1fr; }
+  .c-title { font-size: 2.1rem; }
+  .c-phone { font-size: 1.4rem; }
+}

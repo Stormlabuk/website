@@ -2,35 +2,52 @@
 layout: default
 title: "Contact"
 permalink: /contact/
-description: "Collaborate with STORM Lab UK at the University of Leeds."
+description: "Contact STORM Lab UK at the University of Leeds — partnerships with clinicians, industry and academic groups welcome."
 ---
 
-<section class="container" style="padding:72px 32px 96px">
-  <div class="contact-grid">
+{%- assign action = site.contact_form_action | default: "" -%}
+
+<!-- Hero + contact details -->
+<section class="container c-hero">
+  <div class="c-2col">
     <div>
-      <span class="eyebrow">Get in touch</span>
-      <h1 class="storm-display">Collaborate with the lab</h1>
-      <p class="contact-intro">
-        We welcome partnerships with clinicians, industry and academic groups. Tell us about your
-        interest and we'll get back to you.
-      </p>
-      <div class="contact-meta">
-        <div>
-          <div class="storm-eyebrow" style="margin-bottom:8px">Address</div>
-          <p>School of Electronic &amp;<br>Electrical Engineering<br>University of Leeds, LS2 9JT</p>
-        </div>
-        <div>
-          <div class="storm-eyebrow" style="margin-bottom:8px">Email</div>
-          <p><a href="mailto:{{ site.email }}" style="border-bottom:2px solid var(--storm-yellow)">{{ site.email }}</a></p>
-        </div>
+      <h1 class="storm-display c-title">Contact us</h1>
+      <p class="c-lead">We welcome partnerships with clinicians, industry and academic groups. Get in touch with the lab in Leeds.</p>
+    </div>
+
+    <div class="c-detail">
+      <div class="c-detail__full">
+        <div class="c-label">For more information, call us</div>
+        <a href="tel:+441133437686" class="c-phone">+44 (0)113 34 37686</a>
+      </div>
+      <div>
+        <div class="c-label">Address</div>
+        <p class="c-addr">School of Electronic and Electrical Engineering<br>University of Leeds<br>LS2 9JT</p>
+      </div>
+      <div>
+        <div class="c-label">Send e-mail</div>
+        <a href="mailto:p.valdastri@leeds.ac.uk" class="c-emaillink">p.valdastri [at] leeds.ac.uk</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Enquiry form -->
+<section class="container c-form-sec">
+  <div class="c-2col">
+    <div>
+      <h2 class="storm-display c-h2">Send us an enquiry</h2>
+      <p class="c-form-intro">Tell us about your interest — a research collaboration, an industry partnership, or joining the lab — and we'll get back to you within two working days.</p>
+      <div class="c-prefer">
+        <div class="c-label">Prefer email?</div>
+        <a href="mailto:p.valdastri@leeds.ac.uk" class="c-emaillink">p.valdastri [at] leeds.ac.uk</a>
       </div>
     </div>
 
     <div class="contact-card">
       <span class="storm-bar" aria-hidden="true"></span>
-      {%- assign action = site.contact_form_action | default: "" -%}
-      <form
-        {% if action != "" %}action="{{ action }}" method="POST"{% else %}action="mailto:{{ site.email }}" method="POST" enctype="text/plain"{% endif %}>
+      <form id="enquiry-form"
+            {% if action != "" %}action="{{ action }}" method="POST" data-ajax="true"{% else %}action="mailto:p.valdastri@leeds.ac.uk" method="POST" enctype="text/plain"{% endif %}>
         <div class="form-field">
           <label for="name">Full name</label>
           <input id="name" name="name" type="text" placeholder="Dr Jane Smith" required>
@@ -56,6 +73,47 @@ description: "Collaborate with STORM Lab UK at the University of Leeds."
         </div>
         <button class="btn btn--accent btn--lg btn--full" type="submit">Send enquiry</button>
       </form>
+      <div id="enquiry-thanks" class="c-thanks" hidden>
+        <div class="c-thanks__title">Thank you</div>
+        <p>We've received your enquiry and will be in touch within two working days.</p>
+        <button class="btn btn--secondary" type="button" id="enquiry-reset">Send another</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How to find us + map -->
+<section class="container c-map-sec">
+  <div class="c-map">
+    <div class="c-map-info">
+      <span class="storm-bar" aria-hidden="true"></span>
+      <h2>How to find us</h2>
+      <p>The School of Electronic and Electrical Engineering is located in <strong>building 51</strong> on the campus map. Further information is available at the following links:</p>
+      <div class="c-map-links">
+        <a href="https://eps.leeds.ac.uk/electronic-engineering" target="_blank" rel="noopener">University web page <span aria-hidden="true">→</span></a>
+        <a href="https://www.leeds.ac.uk/campusmap" target="_blank" rel="noopener">Campus map <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+    <div class="c-map-embed">
+      <iframe title="University of Leeds map" loading="lazy"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=-1.5640%2C53.8035%2C-1.5430%2C53.8130&layer=mapnik&marker=53.8085%2C-1.5535"></iframe>
+      <a class="c-map-embed__link" href="https://www.openstreetmap.org/?mlat=53.8085&mlon=-1.5535#map=16/53.8085/-1.5535" target="_blank" rel="noopener">View larger map ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- Shipping + USA addresses -->
+<section class="c-addresses">
+  <div class="dither-layer" aria-hidden="true"></div>
+  <div class="c-addresses__inner c-2col">
+    <div>
+      <div class="c-addr-label">Shipping address</div>
+      <p>Faculty of Engineering — Goods inwards<br>c/o School of Civil Engineering<br>The University of Leeds<br>Woodhouse Lane<br>LS2 9JT — Leeds, UK</p>
+    </div>
+    <div class="c-usa">
+      <div class="c-addr-label">STORM Lab USA</div>
+      <p>Department of Mechanical Engineering<br>Vanderbilt University<br>Olin Hall, Room 101<br>2400 Highland Avenue<br>Nashville, TN 37212</p>
+      <a href="https://stormlab.engineering.vanderbilt.edu" target="_blank" rel="noopener" class="c-usa__link">More information at STORM Lab USA →</a>
     </div>
   </div>
 </section>

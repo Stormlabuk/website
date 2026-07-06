@@ -32,6 +32,33 @@
     });
   }
 
+  // ── Contact enquiry form (AJAX submit → inline thank-you) ────────────────────
+  var eForm = document.getElementById('enquiry-form');
+  if (eForm && eForm.dataset.ajax === 'true') {
+    var thanks = document.getElementById('enquiry-thanks');
+    var resetBtn = document.getElementById('enquiry-reset');
+    eForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var btn = eForm.querySelector('button[type="submit"]');
+      if (btn) { btn.disabled = true; btn.textContent = 'Sending…'; }
+      fetch(eForm.action, { method: 'POST', body: new FormData(eForm), headers: { 'Accept': 'application/json' } })
+        .then(function (res) {
+          if (res.ok) { eForm.hidden = true; if (thanks) thanks.hidden = false; }
+          else { throw new Error('bad status'); }
+        })
+        .catch(function () {
+          if (btn) { btn.disabled = false; btn.textContent = 'Send enquiry'; }
+          alert('Something went wrong sending your enquiry — please email us directly instead.');
+        });
+    });
+    if (resetBtn) resetBtn.addEventListener('click', function () {
+      if (thanks) thanks.hidden = true;
+      eForm.hidden = false; eForm.reset();
+      var btn = eForm.querySelector('button[type="submit"]');
+      if (btn) { btn.disabled = false; btn.textContent = 'Send enquiry'; }
+    });
+  }
+
   // ── Canvas helpers ──────────────────────────────────────────────────────────
   var INK = '#1E1E1E', GREY = '#C2C2C2', FAINT = '#E7E7E7', YELLOW = '#F8CD04';
 
