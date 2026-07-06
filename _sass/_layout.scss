@@ -116,9 +116,11 @@
 .hero__actions { display: flex; gap: 12px; margin-top: 34px; flex-wrap: wrap; }
 .hero__media { position: relative; background: var(--black); overflow: hidden; min-height: 360px; }
 .hero__media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-// MFE technical drawing: black line-art on white → invert to white-on-dark to
-// sit on the black hero panel, and contain so the whole device shows.
-.hero__media img.hero__mfe { object-fit: contain; filter: invert(1); padding: 6%; }
+// MFE technical drawing: keep the original black-on-white line-art on a white
+// panel; contain so the whole device shows.
+.hero__media--light { background: var(--white); border-left: 1px solid var(--border-default); }
+.hero__media img.hero__mfe { object-fit: contain; padding: 6%; }
+@media (max-width: 860px) { .hero__media--light { border-left: 0; border-top: 1px solid var(--border-default); } }
 .hero__media .dither-layer {
   position: absolute; inset: 0; opacity: 0.5;
   background-image: radial-gradient(var(--grey-700) 1px, transparent 1.4px); background-size: 6px 6px;
