@@ -48,6 +48,8 @@ description: "Contact STORM Lab UK at the University of Leeds — partnerships w
       <span class="storm-bar" aria-hidden="true"></span>
       <form id="enquiry-form"
             {% if action != "" %}action="{{ action }}" method="POST" data-ajax="true"{% else %}action="mailto:p.valdastri@leeds.ac.uk" method="POST" enctype="text/plain"{% endif %}>
+        <input type="hidden" name="_subject" value="New enquiry from stormlabuk.com">
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden">
         <div class="form-field">
           <label for="name">Full name</label>
           <input id="name" name="name" type="text" placeholder="Dr Jane Smith" required>

@@ -24,7 +24,7 @@ address:
 # Formspree (or similar) endpoint for the contact form. Leave blank to fall back
 # to a mailto: submission. Create a free form at https://formspree.io and paste
 # its endpoint here, e.g. https://formspree.io/f/abcdwxyz
-contact_form_action: ""
+contact_form_action: "https://formspree.io/f/mojorgny"
 
 # ── Zotero (publications page) ───────────────────────────────────────────────
 # The Publications page is generated from this library by scripts/fetch_zotero.rb.
