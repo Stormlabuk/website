@@ -40,11 +40,11 @@ zotero:
   collections:
     main: "853N8SBR"                       # parent — Publications page
     magnetic-tentacles: "2JHCZZCZ"
-    magnetic-flexible-endoscopy: ""        # add collection key
-    magnetic-vine-robots: ""               # add collection key
-    mri-actuated-instruments: ""           # add collection key
-    magnetically-guided-ultrasound: ""     # add collection key
-    autonomy-in-surgical-robotics: ""      # add collection key
+    magnetic-flexible-endoscopy: "XQYZ8LQA"
+    magnetic-vine-robots: "IDE3IXBF"
+    mri-actuated-instruments: "9WUPBCJJ"
+    magnetically-guided-ultrasound: "U3KD946C"
+    autonomy-in-surgical-robotics: "WMUS7FW7"
 
 # ── Build settings ───────────────────────────────────────────────────────────
 markdown: kramdown
