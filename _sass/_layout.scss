@@ -49,6 +49,9 @@
   opacity: 0; visibility: hidden; transform: translateY(-4px);
   transition: opacity var(--dur-fast) var(--ease-standard), transform var(--dur-fast) var(--ease-standard), visibility var(--dur-fast);
 }
+// Invisible bridge across the gap between the trigger and the menu so moving
+// the mouse toward the submenu keeps .has-menu:hover alive (menu stays open).
+.nav-menu::before { content: ""; position: absolute; left: 0; right: 0; top: -12px; height: 12px; }
 .has-menu:hover .nav-menu,
 .has-menu:focus-within .nav-menu { opacity: 1; visibility: visible; transform: translateY(0); }
 .nav-menu__item { display: flex; align-items: baseline; gap: 12px; padding: 11px 12px; border-radius: var(--radius-sm); }
@@ -76,6 +79,7 @@
   .site-nav__link[aria-current="page"]::after { display: none; }
   .has-menu { position: static; }
   .nav-menu { position: static; width: auto; box-shadow: none; border: 0; border-top: 0; padding: 0 0 8px 16px; opacity: 1; visibility: visible; transform: none; }
+  .nav-menu::before { display: none; }
 }
 
 // ── Footer ───────────────────────────────────────────────────────────────
