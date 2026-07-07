@@ -16,9 +16,8 @@ Most updates are data-only — no templates to touch:
 | Research areas (home grid, nav dropdown) | `_data/research.yml` |
 | Research project pages | `_research/<slug>.md` (front matter drives the layout) |
 | Programme grants (Research page) | `_data/grants.yml` |
-| Publications | **automatic from Zotero** — see below (don't edit `_data/publications.yml` by hand) |
+| Publications | **automatic from Zotero** — see below (don't edit `_data/zotero/*.yml` by hand) |
 | Team members | `_data/team.yml` (add `photo:` to replace the monogram tile) |
-| Publications | `_data/publications.yml` |
 | Home "expertise" cards | `_data/expertise.yml` |
 | Sponsors & partners | `_data/sponsors.yml` |
 | News posts | `_news/<slug>.md` |
@@ -44,19 +43,28 @@ Brand assets (logos, illustrations, research/news/sponsor imagery) are in
 
 ## Publications (automatic from Zotero)
 
-The Publications page is generated from a Zotero library by
-[`scripts/fetch_zotero.rb`](scripts/fetch_zotero.rb), which writes
-`_data/publications.yml`. The committed file is a seed; refreshing replaces it
-with live data.
+Publication lists are generated from Zotero collections by
+[`scripts/fetch_zotero.rb`](scripts/fetch_zotero.rb), which writes one file per
+collection: `_data/zotero/<slug>.yml`. The committed files are seeds; refreshing
+replaces them with live data.
 
-**Configure** the library in `_config.yml` under `zotero:` — set `library_type`
-(`group`/`user`) and the numeric `library_id`. Optionally restrict to one
-`collection`, and set how many items are featured (`latest_count`).
+**One collection per page.** Configure them in `_config.yml` under
+`zotero.collections` — a map of `slug: "COLLECTION_KEY"` (the key is the code in
+the Zotero URL, `…/collections/<KEY>/collection`):
+
+- `main` drives the **Publications** page (`site.data.zotero.main`).
+- Each **research** page reads the collection named after its slug — e.g. the
+  page `_research/magnetic-tentacles.md` uses `_data/zotero/magnetic-tentacles.yml`.
+  Leave a slug's key blank to skip it (the page then falls back to any
+  `publications:` list in its front matter).
+
+Also set `library_type` (`group`/`user`), the numeric `library_id`, and
+`latest_count` (how many items are featured).
 
 **Refresh:**
 
 ```bash
-make fetch        # pulls Zotero → _data/publications.yml
+make fetch        # pulls every configured collection → _data/zotero/*.yml
 make serve        # serve/build already run fetch for you
 ```
 
@@ -65,10 +73,9 @@ For a **private** library, set a read-only key first:
 `ZOTERO_API_KEY` for the "Refresh publications from Zotero" Action
 (`.github/workflows/refresh-publications.yml`, manual by default).
 
-The page splits into **Latest** (the newest `latest_count` items, with
-thumbnails) and **Refereed Journals** (every `journalArticle`). Stats
-(total / refereed / published-this-year) are computed automatically; the grant
-count comes from `_data/grants.yml`.
+The Publications page shows **Latest / Featured** (the newest `latest_count`
+items) and a **complete index grouped by year**; hero stats (total /
+published-this-year / refereed) are computed automatically.
 
 **Thumbnails** (Latest items only): drop an image in `assets/images/pubs/` named
 after the DOI with non-alphanumerics turned to `-`
@@ -111,7 +118,7 @@ Or without `make`: `bundle install` then `bundle exec jekyll serve`.
    ```bat
    serve.cmd      :: refresh publications from Zotero, then serve
    build.cmd      :: refresh, then build into _site\
-   fetch.cmd      :: just refresh _data\publications.yml from Zotero
+   fetch.cmd      :: just refresh _data\zotero\*.yml from Zotero
    ```
 
    Then open <http://localhost:4000>. (Equivalent manual command:

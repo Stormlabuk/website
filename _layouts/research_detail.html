@@ -88,14 +88,18 @@ layout: default
 </section>
 {%- endif -%}
 
-{%- if page.publications -%}
+{%- comment -%}Publications for this project come from its Zotero collection
+(named after the page slug); fall back to any hand-authored front-matter list.{%- endcomment -%}
+{%- assign pubcoll = site.data.zotero[page.slug] -%}
+{%- assign publist = pubcoll.all | default: page.publications -%}
+{%- if publist and publist.size > 0 -%}
 <section class="container" style="padding:72px 32px 40px">
   <div style="display:flex;align-items:baseline;gap:14px;margin-bottom:8px">
     <span class="eyebrow">Relevant publications</span>
-    <span class="storm-mono" style="font-size:.75rem;color:var(--text-faint)">[{{ page.publications | size }}]</span>
+    <span class="storm-mono" style="font-size:.75rem;color:var(--text-faint)">[{{ publist | size }}]</span>
   </div>
   <ol class="cite-list" style="max-width:900px">
-    {%- for c in page.publications -%}
+    {%- for c in publist -%}
     <li class="cite">
       <span class="cite__n">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
       <div>

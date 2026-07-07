@@ -5,8 +5,9 @@ permalink: /publications/
 description: "Research output from STORM Lab UK — pulled from the group Zotero library, featured latest work and a complete index by year."
 ---
 
-{%- assign pubs = site.data.publications.all | default: site.data.publications.refereed -%}
-{%- assign latest = site.data.publications.latest -%}
+{%- assign main = site.data.zotero.main -%}
+{%- assign pubs = main.all -%}
+{%- assign latest = main.latest -%}
 {%- assign years = pubs | map: "year" | uniq | sort | reverse -%}
 {%- assign total = pubs | size -%}
 {%- assign count2026 = pubs | where: "year", 2026 | size -%}

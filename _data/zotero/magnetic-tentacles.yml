@@ -1,0 +1,284 @@
+# SEED - replaced by scripts/fetch_zotero.rb on `make fetch` (collection 2JHCZZCZ).
+---
+generated: seed
+source: group 5599357 / collection 2JHCZZCZ (seed)
+latest:
+- title: Tapered Magnetic Soft Continuum Catheters with Integrated Microchannels for
+    Cerebral Intra-Arterial Chemotherapy Delivery
+  authors: A. Bacchetti et al.
+  venue: Soft Robotics
+  date: Apr 2026
+  year: 2026
+  type: journalArticle
+  doi: 10.1177/21695172261438681
+  fig:
+- title: A concentric tube catheter for endoluminal interventions, steered and imaged
+    via magnetic resonance imaging
+  authors: P. Lloyd et al.
+  venue: Commun Eng
+  date: Mar 2026
+  year: 2026
+  type: journalArticle
+  doi: 10.1038/s44172-026-00636-1
+  fig:
+- title: Miniaturized Magnetic Tip Design for Endoluminal Vine Robot Navigation
+  authors: A. Yanez Trujillo, J. Davy, J. H. Chandler, J. Avery, P. Valdastri
+  venue: Advanced Robotics Research
+  date: Feb 2026
+  year: 2026
+  type: journalArticle
+  doi: 10.1002/adrr.202500188
+  fig:
+all:
+- title: Tapered Magnetic Soft Continuum Catheters with Integrated Microchannels for
+    Cerebral Intra-Arterial Chemotherapy Delivery
+  authors: A. Bacchetti et al.
+  venue: Soft Robotics
+  date: Apr 2026
+  year: 2026
+  type: journalArticle
+  doi: 10.1177/21695172261438681
+- title: A concentric tube catheter for endoluminal interventions, steered and imaged
+    via magnetic resonance imaging
+  authors: P. Lloyd et al.
+  venue: Commun Eng
+  date: Mar 2026
+  year: 2026
+  type: journalArticle
+  doi: 10.1038/s44172-026-00636-1
+- title: Miniaturized Magnetic Tip Design for Endoluminal Vine Robot Navigation
+  authors: A. Yanez Trujillo, J. Davy, J. H. Chandler, J. Avery, P. Valdastri
+  venue: Advanced Robotics Research
+  date: Feb 2026
+  year: 2026
+  type: journalArticle
+  doi: 10.1002/adrr.202500188
+- title: Ultrasound-Triggered Release of Anticancer Nanoparticles from Electrospun
+    Fabrics Integrated with Soft Robotic Tentacles
+  authors: S. C. T. Moorcroft et al.
+  venue: Advanced NanoBiomed Research
+  date: Jan 2026
+  year: 2026
+  type: journalArticle
+  doi: 10.1002/anbr.202500052
+- title: Combining tethered and untethered magnetic robots via a magnetically triggerable
+    latch for target payload delivery and retrieval
+  authors: M. Brockdorff et al.
+  venue: Science Advances
+  date: Jan 2026
+  year: 2026
+  type: journalArticle
+  doi: 10.1126/sciadv.adu6025
+- title: Gradient pulling of a tethered robot via a magnetic resonance imaging system
+  authors: N. Murasovs et al.
+  venue: Device
+  date: Jul 2025
+  year: 2025
+  type: journalArticle
+  doi: 10.1016/j.device.2025.100870
+- title: Closed-Loop Shape-Forming Control of a Magnetic Soft Continuum Robot
+  authors: V. Francescon, N. Murasovs, P. Lloyd, O. Onaizah, D. S. Chathuranga, P.
+    Valdastri
+  venue: IEEE Robotics and Automation Letters
+  date: Apr 2025
+  year: 2025
+  type: journalArticle
+  doi: 10.1109/LRA.2025.3565124
+- title: Magnetic localization during manipulation by two robotized permanent magnets
+  authors: T. da Veiga, M. Brockdorff, G. Pittiglio, J. H. Chandler, P. Valdastri
+  venue: Int. J. Robotics Research
+  date: Apr 2025
+  year: 2025
+  type: journalArticle
+  doi: 10.1177/02783649251317212
+- title: Magnetic Fluid-Driven Vine Robots for Minimally Invasive Tissue Biopsy Sampling
+  authors: J. Davy et al.
+  venue: Advanced Intelligent Systems
+  date: Mar 2025
+  year: 2025
+  type: journalArticle
+  doi: 10.1002/aisy.202400827
+- title: Utilizing Field Gradient Measurements for Object Tracking in Permanent Magnet
+    based Manipulation Systems
+  authors: J. Davy, M. Brockdorff, P. Valdastri
+  venue: IEEE Transactions on Magnetics
+  date: Mar 2025
+  year: 2025
+  type: journalArticle
+  doi: 10.1109/TMAG.2025.3553740
+- title: High-Resolution Self-Assembly of Functional Materials and Microscale Devices
+    via Selective Plasma Induced Surface Energy Programming
+  authors: L. J. Tinsley, P. Karipoth, J. H. Chandler, S. Taccola, P. Valdastri, R.
+    A. Harris
+  venue: Small
+  date: Feb 2025
+  year: 2025
+  type: journalArticle
+  doi: 10.1002/smll.202408822
+- title: Hybrid Tendon-Actuated and Soft Magnetic Robotic Platform for Pancreatic
+    Applications
+  authors: B. Calmé et al.
+  venue: IEEE Robotics and Automation Letters
+  date: Jan 2025
+  year: 2025
+  type: journalArticle
+  doi: 10.1109/LRA.2024.3524889
+- title: Vine Robots with Magnetic Skin for Surgical Navigations
+  authors: J. Davy et al.
+  venue: IEEE Robotics and Automation Letters
+  date: Aug 2024
+  year: 2024
+  type: journalArticle
+  doi: 10.1109/LRA.2024.3412637
+- title: Future cardiovascular healthcare via magnetic resonance imaging-driven robotics
+  authors: P. Lloyd, E. Dall'Armellina, J. E. Schneider, P. Valdastri
+  venue: European Heart Journal
+  date: Jul 2024
+  year: 2024
+  type: journalArticle
+  doi: 10.1093/eurheartj/ehae095
+- title: Dual-Material Aerosol Jet Printing of Magneto-Responsive Polymers with In-Process
+    Tailorable Composition for Small-Scale Soft Robotics
+  authors: S. Taccola et al.
+  venue: Advanced Materials Technologies
+  date: Jun 2024
+  year: 2024
+  type: journalArticle
+  doi: 10.1002/ADMT.202400463
+- title: Assisted Magnetic Soft Continuum Robot Navigation via Rotating Magnetic Fields
+  authors: D. Chathuranga, P. Lloyd, J. H. Chandler, R. A. Harris, P. Valdastri
+  venue: IEEE Robotics and Automation Letters
+  date: Jan 2024
+  year: 2024
+  type: journalArticle
+  doi: 10.1109/LRA.2023.3331292
+- title: Independently Actuated Soft Magnetic Manipulators for Bimanual Operations
+    in Confined Anatomical Cavities
+  authors: Z. Koszowska et al.
+  venue: Advanced Intelligent Systems
+  date: '2024'
+  year: 2024
+  type: journalArticle
+  doi: 10.1002/aisy.202300062
+- title: Breathing Compensation in Magnetic Robotic Bronchoscopy via Shape Forming
+  authors: N. Murasovs et al.
+  venue: IEEE Robotics and Automation Letters
+  date: '2024'
+  year: 2024
+  type: journalArticle
+  doi: 10.1109/LRA.2024.3426385
+- title: Personalized magnetic tentacles for targeted photothermal cancer therapy
+    in peripheral lungs
+  authors: G. Pittiglio et al.
+  venue: Communications Engineering
+  date: Jul 2023
+  year: 2023
+  type: journalArticle
+  doi: 10.1038/s44172-023-00098-9
+- title: Closed Loop Static Control of Multi-Magnet Soft Continuum Robots
+  authors: G. Pittiglio et al.
+  venue: IEEE Robotics and Automation Letters
+  date: Jul 2023
+  year: 2023
+  type: journalArticle
+  doi: 10.1109/LRA.2023.3274431
+- title: A Framework for Simulation of Magnetic Soft Robots Using the Material Point
+    Method
+  authors: J. Davy, P. Lloyd, J. H. Chandler, P. Valdastri
+  venue: IEEE Robotics and Automation Letters
+  date: Jun 2023
+  year: 2023
+  type: journalArticle
+  doi: 10.1109/LRA.2023.3268016
+- title: A Magnetically-Actuated Coiling Soft Robot With Variable Stiffness
+  authors: P. Lloyd et al.
+  venue: IEEE Robotics and Automation Letters
+  date: Jun 2023
+  year: 2023
+  type: journalArticle
+  doi: 10.1109/LRA.2023.3264770
+- title: Six-Degree-of-Freedom Localization under Multiple Permanent Magnets Actuation
+  authors: T. Da Veiga, G. Pittiglio, M. Brockdorff, J. H. Chandler, P. Valdastri
+  venue: IEEE Robotics and Automation Letters
+  date: Jun 2023
+  year: 2023
+  type: journalArticle
+  doi: 10.1109/LRA.2023.3268588
+- title: Collaborative Magnetic Manipulation via Two Robotically Actuated Permanent
+    Magnets
+  authors: G. Pittiglio, M. Brockdorff, T. Da Veiga, J. Davy, J. H. Chandler, P. Valdastri
+  venue: IEEE Transactions on Robotics
+  date: Apr 2023
+  year: 2023
+  type: journalArticle
+  doi: 10.1109/TRO.2022.3209038
+- title: Independent and Hybrid Magnetic Manipulation for Full Body Controlled Soft
+    Continuum Robots
+  authors: K. Abolfathi et al.
+  venue: IEEE Robotics and Automation Letters
+  date: '2023'
+  year: 2023
+  type: journalArticle
+  doi: 10.1109/LRA.2023.3280749
+- title: 'Independent Control of Two Magnetic Robots using External Permanent Magnets:
+    A Feasibility Study'
+  authors: J. Davy, T. Da Veiga, G. Pittiglio, J. H. Chandler, P. Valdastri
+  venue: Int. Symp. on Medical Robotics (ISMR)
+  date: '2023'
+  year: 2023
+  type: journalArticle
+  doi: 10.1109/ISMR57123.2023.10130246
+- title: Patient-Specific Magnetic Catheters for Atraumatic Autonomous Endoscopy
+  authors: G. Pittiglio et al.
+  venue: Soft Robotics
+  date: Dec 2022
+  year: 2022
+  type: journalArticle
+  doi: 10.1089/soro.2021.0090
+- title: 'Optimization and fabrication of programmable domains for soft magnetic robots:
+    A review'
+  authors: A. Bacchetti et al.
+  venue: Frontiers in Robotics and AI
+  date: Nov 2022
+  year: 2022
+  type: journalArticle
+  doi: 10.3389/frobt.2022.1040984
+- title: Magnetic Soft Continuum Robots With Braided Reinforcement
+  authors: P. Lloyd, O. Onaizah, G. Pittiglio, D. K. Vithanage, J. H. Chandler, P.
+    Valdastri
+  venue: IEEE Robotics and Automation Letters
+  date: Oct 2022
+  year: 2022
+  type: journalArticle
+  doi: 10.1109/LRA.2022.3191552
+- title: 'Evolutionary Inverse Material Identification: Bespoke Characterization of
+    Soft Materials Using a Metaheuristic Algorithm'
+  authors: M. Di Lecce, O. Onaizah, P. Lloyd, J. H. Chandler, P. Valdastri
+  venue: Frontiers in Robotics and AI
+  date: '2022'
+  year: 2022
+  type: journalArticle
+  doi: 10.3389/frobt.2021.790571
+- title: Feasibility of Fiber Reinforcement Within Magnetically Actuated Soft Continuum
+    Robots
+  authors: P. Lloyd, Z. Koszowska, M. Di Lecce, O. Onaizah, J. H. Chandler, P. Valdastri
+  venue: Frontiers in Robotics and AI
+  date: '2021'
+  year: 2021
+  type: journalArticle
+  doi: 10.3389/frobt.2021.715662
+- title: A Learnt Approach for the Design of Magnetically Actuated Shape Forming Soft
+    Tentacle Robots
+  authors: P. Lloyd et al.
+  venue: IEEE Robotics and Automation Letters
+  date: '2020'
+  year: 2020
+  type: journalArticle
+  doi: 10.1109/LRA.2020.2983704
+- title: 'Challenges of continuum robots in clinical context: A review'
+  authors: T. Da Veiga et al.
+  venue: Progress in Biomedical Engineering
+  date: '2020'
+  year: 2020
+  type: journalArticle
+  doi: 10.1088/2516-1091/ab9f41
