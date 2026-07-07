@@ -3,36 +3,42 @@
 # `img` is relative to /assets/images/. `fit` is cover | contain.
 - slug: magnetic-flexible-endoscopy
   title: "Magnetic flexible endoscopy"
+  short: "Magnetic endoscopy"
   img: research/endoscopy-capsule-dark.png
   fit: cover
   blurb: "We are disrupting colonoscopy with a new design of robotic endoscope — magnetically guided from outside the body to enable painless, safer and more affordable investigation of the large intestine."
 
 - slug: magnetic-tentacles
   title: "Magnetic Tentacles"
+  short: "Magnetic tentacles"
   img: research/tentacles-bronchial-white.png
   fit: contain
   blurb: "Sub-millimetre soft continuum robots steered by external magnetic fields, reaching deep and tortuous anatomy such as the lungs for earlier diagnosis and targeted treatment."
 
 - slug: magnetic-vine-robots
   title: "Magnetic Vine Robots"
+  short: "Vine robots"
   img: research/vine-lumen-white.png
   fit: cover
   blurb: "Growing, vine-inspired robots that navigate confined pathways by extending from their tip, combining magnetic steering with controlled growth for minimally invasive access."
 
 - slug: mri-actuated-instruments
   title: "MRI actuated instruments"
+  short: "MRI instruments"
   img: research/mri-instrument-white.png
   fit: contain
   blurb: "Instruments powered and guided directly by the magnetic field of an MRI scanner, so imaging and intervention can happen in the same place, at the same time."
 
 - slug: magnetically-guided-ultrasound
   title: "Magnetically Guided Ultrasound"
+  short: "Guided ultrasound"
   img: research/mgu-capsule-dark.png
   fit: cover
   blurb: "Developed with the University of Glasgow — a capsule capable of performing diagnostic micro-ultrasound within the gastrointestinal tract under intelligent magnetic control."
 
 - slug: autonomy-in-surgical-robotics
   title: "Autonomy in Surgical Robotics"
+  short: "Surgical autonomy"
   img: research/surgical-robot-dark.png
   fit: cover
   blurb: "Intelligent control and machine learning that bring autonomy to surgical robots, reducing operator burden and making complex procedures more reliable and accessible."

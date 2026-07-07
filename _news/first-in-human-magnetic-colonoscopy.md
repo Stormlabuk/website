@@ -2,7 +2,9 @@
 title: "STORM Lab begins first-in-human trial of magnetic flexible colonoscopy"
 slug: first-in-human-magnetic-colonoscopy
 category: "News"
+hub: magnetic-flexible-endoscopy
 date: 2026-03-02
+image: research/endoscopy-capsule-dark.png
 excerpt: "Our magnetically steered endoscope enters its first clinical study, aiming to make colorectal screening painless and sedation-free."
 ---
 

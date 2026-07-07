@@ -2,49 +2,89 @@
 layout: default
 title: "News"
 permalink: /news/
-description: "News and awards from STORM Lab UK."
+description: "Paper announcements, awards and milestones from STORM Lab UK — each linked to the research it advances."
 ---
 
-<section class="container" style="padding:64px 32px 32px">
-  <span class="eyebrow">Newsroom</span>
-  <h1 class="storm-display" style="margin-top:16px">News &amp; awards</h1>
-</section>
+{%- assign posts = site.news | sort: "date" | reverse -%}
 
-<section class="container" style="padding:24px 32px 96px">
-  <div class="news-layout">
-    <div>
-      {%- assign posts = site.news | sort: "date" | reverse -%}
-      {%- assign featured = posts | first -%}
-      <a class="news-featured" href="{{ featured.url | relative_url }}">
-        {%- if featured.image and featured.image != "" -%}
-        <div class="news-featured__media">
-          <img src="{{ featured.image | prepend: '/assets/images/' | relative_url }}" alt="{{ featured.title }}">
-        </div>
-        {%- endif -%}
-        <div class="news-featured__body">
-          <div class="news-featured__meta">
-            <span class="tag tag--accent">{{ featured.category }}</span>
-            <span class="news-featured__date">{{ featured.display_date | default: featured.date | date: "%B %-d, %Y" }}</span>
-          </div>
-          <h2>{{ featured.title }}</h2>
-          <p>{{ featured.excerpt }}</p>
-          <span class="news-featured__more">Read more →</span>
-        </div>
-      </a>
+<section class="container news-sec">
+  <div class="news-head">
+    <h1 class="storm-display news-title">News &amp; awards</h1>
+    <p class="news-intro">Paper announcements, awards and milestones from STORM Lab UK — each linked to the research it advances.</p>
+  </div>
 
-      <div class="news-rows">
-        {%- for post in posts offset:1 -%}
-        <a class="news-row" href="{{ post.url | relative_url }}">
-          <span class="news-row__date">{{ post.display_date | default: post.date | date: "%B %-d, %Y" }}</span>
-          <div>
-            <span class="tag tag--outline tag--sm">{{ post.category }}</span>
-            <h3>{{ post.title }}</h3>
-            <p>{{ post.excerpt }}</p>
-          </div>
-        </a>
-        {%- endfor -%}
-      </div>
+  <div class="news-filters">
+    {%- assign news_types = "All,News,Award,Publication" | split: "," -%}
+    <div class="news-chips" role="group" aria-label="Filter by type">
+      {%- for t in news_types -%}
+      <button type="button" class="news-chip{% if forloop.first %} is-active{% endif %}" data-type="{{ t }}">{{ t }}</button>
+      {%- endfor -%}
     </div>
-    {% include news-sidebar.html %}
+    <div class="news-tools">
+      <select class="news-select" aria-label="Filter by research area">
+        <option value="All">ALL RESEARCH</option>
+        {%- for h in site.data.research -%}
+        <option value="{{ h.slug }}">{{ forloop.index | prepend: '0' | slice: -2, 2 }} · {{ h.title }}</option>
+        {%- endfor -%}
+      </select>
+      <input type="search" class="news-search" placeholder="Search news" aria-label="Search news">
+    </div>
+  </div>
+
+  <p class="news-empty" role="status" hidden>No items match these filters.</p>
+
+  <div class="news-grid">
+    {%- for post in posts -%}
+      {%- assign type = post.category | default: "News" -%}
+      {%- assign hubcode = "" -%}{%- assign hubshort = "" -%}{%- assign hubtitle = "" -%}
+      {%- for h in site.data.research -%}
+        {%- if h.slug == post.hub -%}
+          {%- assign hubcode = forloop.index | prepend: '0' | slice: -2, 2 -%}
+          {%- assign hubshort = h.short | default: h.title -%}
+          {%- assign hubtitle = h.title -%}
+        {%- endif -%}
+      {%- endfor -%}
+      {%- capture searchtext -%}{{ post.title }} {{ post.excerpt }} {{ hubtitle }}{%- endcapture -%}
+
+      {%- if forloop.first -%}
+      <article class="news-item news-featured" data-type="{{ type }}" data-hub="{{ post.hub }}" data-search="{{ searchtext | downcase | strip }}">
+        <span class="news-featured__tick" aria-hidden="true"></span>
+        <div class="news-featured__body">
+          <div class="news-meta">
+            <span class="news-badge news-badge--{{ type | downcase }}">{{ type }}</span>
+            <span class="news-date">{{ post.date | date: "%d %b %Y" }}</span>
+          </div>
+          <h2 class="news-featured__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+          <p class="news-featured__excerpt">{{ post.excerpt }}</p>
+          <div class="news-featured__foot">
+            {%- if hubcode != "" -%}
+            <a class="news-hub" href="{{ '/research/' | append: post.hub | append: '/' | relative_url }}"><span class="news-hub__code">{{ hubcode }}</span> {{ hubshort }} →</a>
+            {%- endif -%}
+            <a class="news-readmore" href="{{ post.url | relative_url }}">Read more →</a>
+          </div>
+        </div>
+        <a class="news-featured__media" href="{{ post.url | relative_url }}" aria-hidden="true" tabindex="-1">
+          {%- if post.image -%}<img src="{{ post.image | prepend: '/assets/images/' | relative_url }}" alt="">{%- endif -%}
+        </a>
+      </article>
+      {%- else -%}
+      <article class="news-item news-tile" data-type="{{ type }}" data-hub="{{ post.hub }}" data-search="{{ searchtext | downcase | strip }}">
+        <a class="news-tile__media" href="{{ post.url | relative_url }}" aria-hidden="true" tabindex="-1">
+          {%- if post.image -%}<img src="{{ post.image | prepend: '/assets/images/' | relative_url }}" alt="">{%- endif -%}
+        </a>
+        <div class="news-tile__body">
+          <div class="news-meta">
+            <span class="news-badge news-badge--{{ type | downcase }}">{{ type }}</span>
+            <span class="news-date">{{ post.date | date: "%d %b %Y" }}</span>
+          </div>
+          <h3 class="news-tile__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+          <p class="news-tile__excerpt">{{ post.excerpt }}</p>
+          {%- if hubcode != "" -%}
+          <a class="news-hub" href="{{ '/research/' | append: post.hub | append: '/' | relative_url }}"><span class="news-hub__code">{{ hubcode }}</span> {{ hubshort }} →</a>
+          {%- endif -%}
+        </div>
+      </article>
+      {%- endif -%}
+    {%- endfor -%}
   </div>
 </section>

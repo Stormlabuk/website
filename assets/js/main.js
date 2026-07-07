@@ -59,6 +59,39 @@
     });
   }
 
+  // ── News filtering (type chips + research select + search) ───────────────────
+  var newsGrid = document.querySelector('.news-grid');
+  if (newsGrid) {
+    var chips = document.querySelectorAll('.news-chip');
+    var sel = document.querySelector('.news-select');
+    var search = document.querySelector('.news-search');
+    var items = newsGrid.querySelectorAll('.news-item');
+    var emptyMsg = document.querySelector('.news-empty');
+    var nstate = { type: 'All', hub: 'All', q: '' };
+    function applyNews() {
+      var shown = 0;
+      items.forEach(function (el) {
+        var okType = nstate.type === 'All' || el.getAttribute('data-type') === nstate.type;
+        var okHub = nstate.hub === 'All' || el.getAttribute('data-hub') === nstate.hub;
+        var okQ = nstate.q === '' || (el.getAttribute('data-search') || '').indexOf(nstate.q) !== -1;
+        var show = okType && okHub && okQ;
+        el.style.display = show ? '' : 'none';
+        if (show) shown++;
+      });
+      if (emptyMsg) emptyMsg.hidden = shown !== 0;
+    }
+    chips.forEach(function (c) {
+      c.addEventListener('click', function () {
+        chips.forEach(function (x) { x.classList.remove('is-active'); });
+        c.classList.add('is-active');
+        nstate.type = c.getAttribute('data-type');
+        applyNews();
+      });
+    });
+    if (sel) sel.addEventListener('change', function () { nstate.hub = sel.value; applyNews(); });
+    if (search) search.addEventListener('input', function () { nstate.q = search.value.trim().toLowerCase(); applyNews(); });
+  }
+
   // ── Canvas helpers ──────────────────────────────────────────────────────────
   var INK = '#1E1E1E', GREY = '#C2C2C2', FAINT = '#E7E7E7', YELLOW = '#F8CD04';
 

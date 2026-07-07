@@ -1,7 +1,8 @@
 ---
 title: "Congratulations to Dr. Benjamin Calmé on RoboSoft 2026 Best Paper Award"
 slug: robosoft-2026-best-paper
-category: "News"
+category: "Award"
+hub: magnetic-vine-robots
 date: 2026-04-24
 image: news/robosoft-2026-growing-robot.png
 caption: "Cross-section of the magnetic soft growing robot — 1.8 mm diameter, star-lumen geometry. Scale bars 2 mm."

@@ -1,35 +1,48 @@
 ---
 layout: default
 ---
-<div class="container" style="padding:40px 32px 96px">
-  <nav class="breadcrumb" aria-label="Breadcrumb" style="margin-bottom:40px">
+{%- assign type = page.category | default: "News" -%}
+{%- assign hubcode = "" -%}{%- assign hubtitle = "" -%}
+{%- for h in site.data.research -%}
+  {%- if h.slug == page.hub -%}
+    {%- assign hubcode = forloop.index | prepend: '0' | slice: -2, 2 -%}
+    {%- assign hubtitle = h.title -%}
+  {%- endif -%}
+{%- endfor -%}
+
+<div class="container article" style="padding:40px 32px 96px;max-width:820px">
+  <nav class="breadcrumb" aria-label="Breadcrumb" style="margin-bottom:32px">
     <a href="{{ '/' | relative_url }}">Home</a><span>/</span>
     <a href="{{ '/news/' | relative_url }}">News</a>
   </nav>
 
-  <div class="news-layout">
-    <article class="article">
-      <span class="tag tag--accent">{{ page.category }}</span>
-      <h1 class="storm-display">{{ page.title }}</h1>
-      <div class="article__date">Posted on {{ page.display_date | default: page.date | date: "%B %-d, %Y" }}</div>
+  <div class="news-meta">
+    <span class="news-badge news-badge--{{ type | downcase }}">{{ type }}</span>
+    <span class="news-date">{{ page.date | date: "%d %b %Y" }}</span>
+  </div>
 
-      {%- if page.image and page.image != "" -%}
-      <figure class="article__figure">
-        <div class="frame">
-          <img src="{{ page.image | prepend: '/assets/images/' | relative_url }}" alt="{{ page.title }}">
-        </div>
-        {%- if page.caption -%}<figcaption class="article__caption">{{ page.caption }}</figcaption>{%- endif -%}
-      </figure>
-      {%- endif -%}
+  <h1 class="storm-display" style="margin-top:18px">{{ page.title }}</h1>
 
-      <div class="article__body">
-        {{ content }}
-      </div>
+  {%- if hubcode != "" -%}
+  <p style="margin-top:20px">
+    <a class="news-hub" href="{{ '/research/' | append: page.hub | append: '/' | relative_url }}"><span class="news-hub__code">{{ hubcode }}</span> {{ hubtitle }} →</a>
+  </p>
+  {%- endif -%}
 
-      <div style="margin-top:48px;padding-top:32px;border-top:1px solid var(--border-default)">
-        <a href="{{ '/news/' | relative_url }}" style="font-family:var(--font-mono);font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--text-strong);font-weight:600">← All news</a>
-      </div>
-    </article>
-    {% include news-sidebar.html %}
+  {%- if page.image and page.image != "" -%}
+  <figure class="article__figure">
+    <div class="frame">
+      <img src="{{ page.image | prepend: '/assets/images/' | relative_url }}" alt="{{ page.title }}">
+    </div>
+    {%- if page.caption -%}<figcaption class="article__caption">{{ page.caption }}</figcaption>{%- endif -%}
+  </figure>
+  {%- endif -%}
+
+  <div class="article__body">
+    {{ content }}
+  </div>
+
+  <div style="margin-top:48px;padding-top:32px;border-top:1px solid var(--border-default)">
+    <a href="{{ '/news/' | relative_url }}" style="font-family:var(--font-mono);font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--text-strong);font-weight:600">← All news</a>
   </div>
 </div>
