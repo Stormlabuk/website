@@ -1,5 +1,14 @@
 // About page — hero, director, team member cards, alumni, grants.
 
+// ── Section label (sans, yellow tick) ───────────────────────────────────────
+.about-label {
+  display: inline-flex; align-items: center; gap: 12px;
+  font-family: var(--font-sans); font-size: 0.95rem; font-weight: 600;
+  letter-spacing: 0.01em; color: var(--text-muted);
+}
+.about-label__tick { width: 28px; height: 3px; background: var(--storm-yellow); flex: none; }
+.about-label--hero { color: var(--storm-yellow); }
+
 // ── Member card (portrait with hover-reveal detail) ─────────────────────────
 .member { transition: transform 220ms var(--ease-out); }
 .member:hover { transform: translateY(-4px); }
@@ -30,21 +39,17 @@
 .member__name { font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; letter-spacing: -0.015em; line-height: 1.2; color: var(--text-strong); margin-top: 13px; }
 .member__role { font-family: var(--font-mono); font-size: 0.66rem; letter-spacing: 0.055em; text-transform: uppercase; color: var(--text-muted); margin-top: 6px; line-height: 1.5; }
 
-// ── Hero ────────────────────────────────────────────────────────────────────
-.about-hero { border-bottom: 1px solid var(--border-default); }
-.about-hero__grid { max-width: var(--container-max); margin: 0 auto; display: grid; grid-template-columns: 1.15fr 0.85fr; }
-.about-hero__copy { padding: 84px 56px 84px 32px; display: flex; flex-direction: column; justify-content: center; }
-.about-hero__title { font-size: 3.4rem; margin-top: 22px; }
-.about-hero__lead { font-size: 1.2rem; color: var(--text-body); margin-top: 26px; max-width: 520px; line-height: 1.6; }
-.about-hero__sub { font-size: 1rem; color: var(--text-muted); margin-top: 20px; max-width: 520px; line-height: 1.7; }
-.about-hero__sub a { color: var(--grey-950); border-bottom: 2px solid var(--storm-yellow); }
-.about-hero__media { position: relative; background: var(--black); overflow: hidden; min-height: 460px; }
-.about-hero__media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.about-hero__media .dither-layer {
-  position: absolute; inset: 0; z-index: 1;
-  background-image: radial-gradient(var(--grey-700) 1px, transparent 1.6px); background-size: 8px 8px; opacity: 0.5;
-  -webkit-mask-image: linear-gradient(135deg, transparent 20%, #000); mask-image: linear-gradient(135deg, transparent 20%, #000);
+// ── Hero (full-bleed team photo + scrim) ────────────────────────────────────
+.about-hero { position: relative; background: var(--black); overflow: hidden; border-bottom: 1px solid var(--border-default); }
+.about-hero__photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 38%; }
+.about-hero__scrim { position: absolute; inset: 0; background: linear-gradient(0deg, rgba(10,10,10,0.94) 0%, rgba(10,10,10,0.58) 34%, rgba(10,10,10,0.12) 72%); }
+.about-hero__copy {
+  position: relative; padding-block: 120px 60px;
+  min-height: clamp(380px, 44vw, 580px);
+  display: flex; flex-direction: column; justify-content: flex-end;
 }
+.about-hero__title { font-size: 3.6rem; color: var(--white); margin-top: 18px; letter-spacing: -0.03em; line-height: 1.02; }
+.about-hero__lead { font-size: 1.2rem; color: var(--grey-100); margin-top: 20px; max-width: 640px; line-height: 1.55; }
 
 // ── Director feature ────────────────────────────────────────────────────────
 .about-director { border-bottom: 1px solid var(--border-default); }
@@ -54,7 +59,7 @@
 .about-quote__attr { margin-top: 28px; display: flex; align-items: center; gap: 14px; }
 .about-quote__bar { width: 34px; height: 3px; background: var(--storm-yellow); flex: none; }
 .about-quote__name { font-weight: 700; color: var(--text-strong); font-size: 1rem; }
-.about-quote__role { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); margin-top: 3px; }
+.about-quote__role { font-family: var(--font-sans); font-size: 0.85rem; letter-spacing: 0.005em; color: var(--text-muted); margin-top: 4px; line-height: 1.5; }
 
 // ── Shared section bits ─────────────────────────────────────────────────────
 .about-h2 { font-size: var(--text-2xl); letter-spacing: -0.025em; margin: 16px 0 8px; }
@@ -67,18 +72,17 @@
 .team-group { margin-top: 56px; }
 .team-group__head { display: flex; align-items: baseline; gap: 14px; border-bottom: 1px solid var(--border-default); padding-bottom: 14px; margin-bottom: 32px; }
 .team-group__head h3 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; letter-spacing: -0.015em; color: var(--text-strong); }
-.team-group__n { font-family: var(--font-mono); font-size: 0.75rem; color: var(--storm-yellow-deep); letter-spacing: 0.04em; }
+.team-group__n { font-family: var(--font-sans); font-weight: 600; font-size: 0.9rem; color: var(--storm-yellow-deep); letter-spacing: 0.01em; font-variant-numeric: tabular-nums lining-nums; }
 .member-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 28px 24px; }
 
-// ── Alumni ──────────────────────────────────────────────────────────────────
+// ── Alumni (chips, no avatar) ───────────────────────────────────────────────
 .about-alumni { border-top: 1px solid var(--border-default); background: var(--grey-50); margin-top: 72px; }
 .about-alumni .container { padding-top: 72px; padding-bottom: 72px; }
 .alumni-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 34px; }
-.alum { display: flex; align-items: center; gap: 12px; padding: 11px 14px; background: var(--white); border: 1px solid var(--border-default); border-radius: var(--radius-md); }
-.alum__av { width: 38px; height: 38px; border-radius: 50%; flex: none; background: var(--grey-950); color: var(--storm-yellow); display: flex; align-items: center; justify-content: center; font-family: var(--font-mono); font-weight: 700; font-size: 0.72rem; letter-spacing: 0.03em; }
+.alum { display: flex; align-items: center; gap: 12px; padding: 11px 14px; background: var(--white); border: 1px solid var(--border-default); border-radius: 4px; }
 .alum__meta { min-width: 0; }
 .alum__name { font-weight: 700; color: var(--text-strong); font-size: 0.92rem; line-height: 1.25; }
-.alum__role { font-family: var(--font-mono); font-size: 0.62rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-muted); margin-top: 3px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.alum__role { font-family: var(--font-sans); font-size: 0.78rem; letter-spacing: 0.005em; color: var(--text-muted); margin-top: 3px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
 // ── Grants ──────────────────────────────────────────────────────────────────
 .about-grants { padding-block: 88px; }
@@ -91,20 +95,29 @@
 .grants-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .grant-card { transition: transform var(--dur-base) var(--ease-out), box-shadow var(--dur-base) var(--ease-out), border-color var(--dur-base) var(--ease-standard); }
 .grant-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border-color: color-mix(in srgb, var(--grey-950) 40%, var(--border-default)); }
-.grant-card__body { padding: 22px 24px 24px; }
-.grant-card__body--sm { padding: 18px 20px 20px; }
-.grant-card__funder { margin-bottom: 16px; height: 30px; display: flex; align-items: center; }
-.grant-card__funder--sm { margin-bottom: 12px; height: 24px; }
-.grant-card__funder img { max-height: 28px; max-width: 150px; object-fit: contain; object-position: left center; }
-.grant-card__funder--sm img { max-height: 22px; max-width: 130px; }
+.grant-card__body { padding: 24px; display: flex; flex-direction: column; height: 100%; }
+.grant-card__body--sm { padding: 20px; }
+
+// Logo at top → divider → funder name → title
+.grant-card__logo { height: 52px; display: flex; align-items: center; }
+.grant-card__logo--sm { height: 44px; }
+.grant-card__logo img { max-height: 52px; max-width: 100%; object-fit: contain; object-position: left center; }
+.grant-card__logo--sm img { max-height: 44px; }
+.grant-card__funder { margin: 16px 0 10px; padding-top: 14px; border-top: 1px solid var(--border-default); font-family: var(--font-sans); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.01em; color: var(--text-muted); }
+.grant-card__funder--sm { margin: 14px 0 9px; padding-top: 12px; font-size: 0.72rem; }
+
+// No-logo funders: name shown big
+.grant-card__funder-big { min-height: 52px; display: flex; align-items: center; font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; letter-spacing: -0.015em; color: var(--text-strong); line-height: 1.1; }
+.grant-card__funder-big--sm { min-height: 44px; font-size: 1.2rem; }
+.grant-card__divider { margin: 16px 0 10px; padding-top: 14px; border-top: 1px solid var(--border-default); }
+.grant-card__body--sm .grant-card__divider { margin: 14px 0 9px; padding-top: 12px; }
+
 .grant-card__title { font-size: 0.92rem; font-weight: 500; color: var(--text-strong); line-height: 1.45; margin: 0; }
 .grant-card__title--lg { font-family: var(--font-display); font-size: 1.1rem; font-weight: 500; letter-spacing: -0.01em; line-height: 1.35; }
 
 // ── Responsive ──────────────────────────────────────────────────────────────
 @media (max-width: 900px) {
-  .about-hero__grid { grid-template-columns: 1fr; }
-  .about-hero__media { min-height: 300px; order: -1; }
-  .about-hero__copy { padding: 56px 24px 52px; }
+  .about-hero__copy { padding-block: 92px 56px; min-height: 360px; }
   .about-hero__title { font-size: 2.8rem; }
   .about-director__grid { grid-template-columns: 1fr; gap: 36px; padding: 60px 24px; }
   .about-director__card { max-width: 240px; }
@@ -113,10 +126,15 @@
   .grants-3 { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 600px) {
+  .about-hero__copy { padding-block: 68px 44px; min-height: 320px; }
   .about-hero__title { font-size: 2.2rem; }
+  .about-hero__lead { font-size: 1.05rem; }
   .about-h2 { font-size: 1.7rem; }
   .about-quote { font-size: 1.55rem; }
   .member-grid { grid-template-columns: repeat(2, 1fr); gap: 22px 16px; }
   .alumni-grid { grid-template-columns: 1fr; }
   .grants-2, .grants-3 { grid-template-columns: 1fr; }
+}
+@media (max-width: 400px) {
+  .member-grid { grid-template-columns: 1fr 1fr; gap: 18px 14px; }
 }

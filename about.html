@@ -6,31 +6,14 @@ permalink: /about/
 description: "STORM Lab UK — our expertise, the people behind the science, and the grants that fund our work in medical robotics at the University of Leeds."
 ---
 
-<!-- Hero: heading + expertise -->
+<!-- Full-bleed hero: team photo + scrim -->
 <section class="about-hero">
-  <div class="about-hero__grid">
-    <div class="about-hero__copy">
-      <span class="eyebrow">About STORM Lab UK</span>
-      <h1 class="storm-display about-hero__title">Our expertise</h1>
-      <p class="about-hero__lead">We have deep expertise in the magnetic manipulation and localization of medical capsules and soft robots — which we leverage to reach deep inside the human body and treat life-threatening, inoperable disease.</p>
-      <p class="about-hero__sub">Soft robotics, intelligent control, frugal design, advanced proprioceptive sensing, innovative manufacturing and smart actuation are among the scientific tools we use to create <a href="{{ '/research/' | relative_url }}">affordable, lifesaving medical technologies</a>.</p>
-    </div>
-    <div class="about-hero__media">
-      <div class="dither-layer" aria-hidden="true"></div>
-      <img src="{{ '/assets/images/illustration-mgu.png' | relative_url }}" alt="Magnetic guidance unit">
-    </div>
-  </div>
-</section>
-
-<!-- Stats band -->
-<section class="stat-band">
-  <div class="stat-band__inner">
-    {%- for s in site.data.funding.stats -%}
-    <div class="stat stat--inverse">
-      <div class="stat__value">{{ s.value }}</div>
-      <div class="stat__label">{{ s.label }}</div>
-    </div>
-    {%- endfor -%}
+  <img class="about-hero__photo" src="{{ '/assets/images/team-hero.png' | relative_url }}" alt="The STORM Lab UK team outside the University of Leeds">
+  <div class="about-hero__scrim" aria-hidden="true"></div>
+  <div class="about-hero__copy container">
+    <span class="about-label about-label--hero"><span class="about-label__tick" aria-hidden="true"></span>About STORM Lab UK</span>
+    <h1 class="storm-display about-hero__title">Our expertise</h1>
+    <p class="about-hero__lead">We magnetically manipulate and localize medical capsules and soft robots to reach deep inside the human body and treat life-threatening, inoperable disease.</p>
   </div>
 </section>
 
@@ -49,7 +32,7 @@ description: "STORM Lab UK — our expertise, the people behind the science, and
       </div>
     </div>
     <div>
-      <span class="eyebrow">STORM Lab Director</span>
+      <span class="about-label"><span class="about-label__tick" aria-hidden="true"></span>STORM Lab Director</span>
       <blockquote class="about-quote">"We strive to improve the quality of life for people undergoing flexible endoscopy and laparoscopic surgery by creating <span class="storm-mark">affordable and intelligent robotic solutions</span>."</blockquote>
       <div class="about-quote__attr">
         <span class="about-quote__bar" aria-hidden="true"></span>
@@ -64,7 +47,7 @@ description: "STORM Lab UK — our expertise, the people behind the science, and
 
 <!-- Team -->
 <section class="container about-team" id="team">
-  <span class="eyebrow">The team</span>
+  <span class="about-label"><span class="about-label__tick" aria-hidden="true"></span>The team</span>
   <h2 class="storm-display about-h2">The people behind the science</h2>
   <p class="about-intro">Engineers, clinicians and scientists advancing intelligent, affordable robotics for minimally invasive medicine. Hover any portrait for background.</p>
 
@@ -86,14 +69,12 @@ description: "STORM Lab UK — our expertise, the people behind the science, and
 <!-- Alumni -->
 <section class="about-alumni">
   <div class="container">
-    <span class="eyebrow">Alumni</span>
+    <span class="about-label"><span class="about-label__tick" aria-hidden="true"></span>Alumni</span>
     <h2 class="storm-display about-h2 about-h2--sm">Where our people have moved on from</h2>
     <p class="about-intro">Former fellows, students and staff who helped build STORM Lab's research over the years.</p>
     <div class="alumni-grid">
       {%- for a in site.data.alumni -%}
-      {%- assign aw = a.name | split: " " -%}
       <div class="alum">
-        <span class="alum__av" aria-hidden="true">{% for w in aw limit:2 %}{{ w | slice: 0 | upcase }}{% endfor %}</span>
         <div class="alum__meta">
           <div class="alum__name">{{ a.name }}</div>
           <div class="alum__role">{{ a.role }}</div>
@@ -106,7 +87,7 @@ description: "STORM Lab UK — our expertise, the people behind the science, and
 
 <!-- Grants -->
 <section class="container about-grants">
-  <span class="eyebrow">Funding</span>
+  <span class="about-label"><span class="about-label__tick" aria-hidden="true"></span>Funding</span>
   <h2 class="storm-display about-h2">Our grants enable us to work towards&hellip;</h2>
   <p class="about-intro about-intro--lead">Surgical robotics, affordable intelligent endoscopy, medical capsule robots, soft magnetic continuum manipulators and autonomy in robotic surgery.</p>
 
@@ -119,13 +100,15 @@ description: "STORM Lab UK — our expertise, the people behind the science, and
       {%- for g in site.data.funding.active -%}
       <div class="card card--accent grant-card">
         <div class="grant-card__body">
-          <div class="grant-card__funder">
-            {%- if g.logo and g.logo != "" -%}
-              <img src="{{ g.logo | prepend: '/assets/images/' | relative_url }}" alt="{{ g.funder }}">
-            {%- else -%}
-              <span class="tag tag--accent">{{ g.funder }}</span>
-            {%- endif -%}
+          {%- if g.logo and g.logo != "" -%}
+          <div class="grant-card__logo">
+            <img src="{{ g.logo | prepend: '/assets/images/' | relative_url }}" alt="{{ g.funder }}">
           </div>
+          <div class="grant-card__funder">{{ g.funder }}</div>
+          {%- else -%}
+          <div class="grant-card__funder-big">{{ g.funder }}</div>
+          <div class="grant-card__divider" aria-hidden="true"></div>
+          {%- endif -%}
           <p class="grant-card__title grant-card__title--lg">{{ g.title }}</p>
         </div>
       </div>
@@ -142,13 +125,15 @@ description: "STORM Lab UK — our expertise, the people behind the science, and
       {%- for g in site.data.funding.completed -%}
       <div class="card grant-card">
         <div class="grant-card__body grant-card__body--sm">
-          <div class="grant-card__funder grant-card__funder--sm">
-            {%- if g.logo and g.logo != "" -%}
-              <img src="{{ g.logo | prepend: '/assets/images/' | relative_url }}" alt="{{ g.funder }}">
-            {%- else -%}
-              <span class="tag tag--outline">{{ g.funder }}</span>
-            {%- endif -%}
+          {%- if g.logo and g.logo != "" -%}
+          <div class="grant-card__logo grant-card__logo--sm">
+            <img src="{{ g.logo | prepend: '/assets/images/' | relative_url }}" alt="{{ g.funder }}">
           </div>
+          <div class="grant-card__funder grant-card__funder--sm">{{ g.funder }}</div>
+          {%- else -%}
+          <div class="grant-card__funder-big grant-card__funder-big--sm">{{ g.funder }}</div>
+          <div class="grant-card__divider" aria-hidden="true"></div>
+          {%- endif -%}
           <p class="grant-card__title">{{ g.title }}</p>
         </div>
       </div>
