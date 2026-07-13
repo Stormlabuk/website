@@ -14,9 +14,12 @@ body {
   background: var(--surface-page);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  // Always use lining (uniform-height) numerals — never Raleway's oldstyle.
-  font-variant-numeric: lining-nums;
-  font-feature-settings: "lnum" 1;
+  // Uniform-height, uniform-width numerals so columns of figures line up —
+  // never Raleway's default oldstyle/proportional numerals.
+  font-variant-numeric: tabular-nums lining-nums;
+  -moz-font-feature-settings: "lnum" 1, "tnum" 1;
+  -webkit-font-feature-settings: "lnum" 1, "tnum" 1;
+  font-feature-settings: "lnum" 1, "tnum" 1;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -44,6 +47,17 @@ img { max-width: 100%; display: block; }
 }
 
 // ---- Reusable brand utilities (from base.css) ----
+
+// Canonical small tracked-caps label — Raleway (NOT mono, which was retired).
+// Use for field/data labels, tags, footer column heads and spec callouts.
+.storm-label {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 0.6875rem;      // 11px
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--grey-500);
+}
 
 .storm-eyebrow {
   font-family: var(--font-mono);

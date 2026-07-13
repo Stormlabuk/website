@@ -66,7 +66,9 @@
   // ---- Typography ----
   --font-display: 'Space Grotesk', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --font-sans: 'Raleway', system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --font-mono: 'Space Mono', 'SF Mono', ui-monospace, monospace;
+  // Deprecated alias — the monospace face (Space Mono) was retired; resolves to
+  // Raleway. Do not use in new work; set labels with the .storm-label treatment.
+  --font-mono: var(--font-sans);
 
   --fw-light: 300;
   --fw-regular: 400;
