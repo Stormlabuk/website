@@ -67,29 +67,46 @@
     var search = document.querySelector('.news-search');
     var items = newsGrid.querySelectorAll('.news-item');
     var emptyMsg = document.querySelector('.news-empty');
-    var nstate = { type: 'All', hub: 'All', q: '' };
+    var more = document.querySelector('.news-more');
+    var moreBtn = more && more.querySelector('.news-more__btn');
+    var range = more && more.querySelector('.news-range');
+    var INITIAL = 6, BATCH = 6;
+    var nstate = { type: 'All', hub: 'All', q: '', visible: INITIAL };
     function applyNews() {
-      var shown = 0;
+      var matched = 0;
       items.forEach(function (el) {
         var okType = nstate.type === 'All' || el.getAttribute('data-type') === nstate.type;
         var okHub = nstate.hub === 'All' || el.getAttribute('data-hub') === nstate.hub;
         var okQ = nstate.q === '' || (el.getAttribute('data-search') || '').indexOf(nstate.q) !== -1;
-        var show = okType && okHub && okQ;
+        var show = okType && okHub && okQ && matched < nstate.visible;
+        if (okType && okHub && okQ) matched++;
         el.style.display = show ? '' : 'none';
-        if (show) shown++;
       });
-      if (emptyMsg) emptyMsg.hidden = shown !== 0;
+      if (emptyMsg) emptyMsg.hidden = matched !== 0;
+      if (more) {
+        var showing = Math.min(nstate.visible, matched);
+        var remaining = matched - showing;
+        more.hidden = matched === 0;
+        if (moreBtn) {
+          moreBtn.hidden = remaining <= 0;
+          moreBtn.textContent = 'Load ' + Math.min(remaining, BATCH) + ' more ↓';
+        }
+        if (range) range.textContent = 'Showing ' + showing + ' of ' + matched;
+      }
     }
+    function resetAndApply() { nstate.visible = INITIAL; applyNews(); }
     chips.forEach(function (c) {
       c.addEventListener('click', function () {
         chips.forEach(function (x) { x.classList.remove('is-active'); });
         c.classList.add('is-active');
         nstate.type = c.getAttribute('data-type');
-        applyNews();
+        resetAndApply();
       });
     });
-    if (sel) sel.addEventListener('change', function () { nstate.hub = sel.value; applyNews(); });
-    if (search) search.addEventListener('input', function () { nstate.q = search.value.trim().toLowerCase(); applyNews(); });
+    if (sel) sel.addEventListener('change', function () { nstate.hub = sel.value; resetAndApply(); });
+    if (search) search.addEventListener('input', function () { nstate.q = search.value.trim().toLowerCase(); resetAndApply(); });
+    if (moreBtn) moreBtn.addEventListener('click', function () { nstate.visible += BATCH; applyNews(); });
+    applyNews();
   }
 
   // ── Canvas helpers ──────────────────────────────────────────────────────────

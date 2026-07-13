@@ -64,12 +64,15 @@ description: "Paper announcements, awards and milestones from STORM Lab UK — e
           </div>
         </div>
         <a class="news-featured__media" href="{{ post.url | relative_url }}" aria-hidden="true" tabindex="-1">
+          <span class="news-dither news-dither--feat" aria-hidden="true"></span>
           {%- if post.image -%}<img src="{{ post.image | prepend: '/assets/images/' | relative_url }}" alt="">{%- endif -%}
         </a>
       </article>
       {%- else -%}
+      {%- assign dv = forloop.index0 | modulo: 5 -%}
       <article class="news-item news-tile" data-type="{{ type }}" data-hub="{{ post.hub }}" data-search="{{ searchtext | downcase | strip }}">
         <a class="news-tile__media" href="{{ post.url | relative_url }}" aria-hidden="true" tabindex="-1">
+          <span class="news-dither news-dither--v{{ dv }}" aria-hidden="true"></span>
           {%- if post.image -%}<img src="{{ post.image | prepend: '/assets/images/' | relative_url }}" alt="">{%- endif -%}
         </a>
         <div class="news-tile__body">
@@ -86,5 +89,10 @@ description: "Paper announcements, awards and milestones from STORM Lab UK — e
       </article>
       {%- endif -%}
     {%- endfor -%}
+  </div>
+
+  <div class="news-more" hidden>
+    <button type="button" class="news-more__btn">Load more ↓</button>
+    <span class="news-range" role="status"></span>
   </div>
 </section>
