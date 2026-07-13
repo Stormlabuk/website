@@ -20,15 +20,23 @@ jobs:
         uses: actions/checkout@v4
       - name: Download images
         run: bash scripts/fetch_news_images.sh
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Optimize images
+        run: |
+          python -m pip install --quiet Pillow
+          python scripts/optimize_images.py assets/images/news
       - name: Commit if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/images/news
+          git add assets/images/news scripts/.image-optim-ledger.json
           # Stage first, then check the index — new files are untracked and would
           # not show up in a plain `git diff`.
           if ! git diff --cached --quiet; then
-            git commit -m "Fetch news images from WordPress export"
+            git commit -m "Fetch and optimize news images from WordPress export"
             git push
           else
             echo "No new images."
