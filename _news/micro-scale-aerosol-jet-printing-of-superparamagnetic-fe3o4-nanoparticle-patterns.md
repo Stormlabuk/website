@@ -1,7 +1,7 @@
 ---
 title: "Micro-scale aerosol jet printing of superparamagnetic Fe3O4 nanoparticle patterns"
 slug: micro-scale-aerosol-jet-printing-of-superparamagnetic-fe3o4-nanoparticle-patterns
-category: "News"
+category: "Publication"
 hub: ""
 date: 2022-12-06 13:00:13
 image: "news/ApplicationFrameHost_F8fGljqF3r.png"

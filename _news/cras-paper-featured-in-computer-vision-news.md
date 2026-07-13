@@ -1,7 +1,7 @@
 ---
 title: "CRAS paper featured in Computer Vision News"
 slug: cras-paper-featured-in-computer-vision-news
-category: "News"
+category: "Publication"
 hub: ""
 date: 2022-06-06 09:48:49
 image: "news/image-1.jpg"

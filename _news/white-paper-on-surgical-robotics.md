@@ -1,7 +1,7 @@
 ---
 title: "White Paper on Surgical Robotics"
 slug: white-paper-on-surgical-robotics
-category: "News"
+category: "Publication"
 hub: ""
 date: 2021-09-16 10:08:22
 image: "news/Capture.png"

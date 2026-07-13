@@ -1,7 +1,7 @@
 ---
 title: "Tiny Surgical Robots: A Revolution in Cancer Detection and Treatment"
 slug: tiny-surgical-robots-a-revolution-in-cancer-detection-and-treatment
-category: "News"
+category: "Publication"
 hub: ""
 date: 2023-07-31 10:12:18
 image: "news/First_demonstration_of_bimanual_magnetic_soft_robots_for_skull_base_surgery.jpg"

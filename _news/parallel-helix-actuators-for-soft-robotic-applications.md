@@ -1,7 +1,7 @@
 ---
 title: "Parallel Helix Actuators for Soft Robotic Applications"
 slug: parallel-helix-actuators-for-soft-robotic-applications
-category: "News"
+category: "Publication"
 hub: ""
 date: 2020-10-09 10:24:22
 image: "news/Chandler_Figure_1.png"

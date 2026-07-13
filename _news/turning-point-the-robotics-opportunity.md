@@ -1,7 +1,7 @@
 ---
 title: "Turning Point: The Robotics Opportunity"
 slug: turning-point-the-robotics-opportunity
-category: "News"
+category: "Publication"
 hub: ""
 date: 2024-11-18 11:12:15
 image: "news/Screenshot_20241118-111251.png"
