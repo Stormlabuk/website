@@ -1,15 +1,13 @@
 ---
-title: "Congratulations to Dr. Benjamin Calmé on RoboSoft 2026 Best Paper Award"
-slug: robosoft-2026-best-paper
+title: "Congratulations to Dr. Benjamin Calme on RoboSoft 2026 Best Paper Award"
+slug: congratulations-to-dr-benjamin-calme-on-robosoft-2026-best-paper-award
 category: "Award"
-hub: magnetic-vine-robots
-date: 2026-04-24
-image: news/robosoft-2026-growing-robot.png
-caption: "Cross-section of the magnetic soft growing robot — 1.8 mm diameter, star-lumen geometry. Scale bars 2 mm."
-excerpt: "Researchers from the STORM Lab, with UC San Diego, have won the Best Paper Award at IEEE RoboSoft 2026 for a pressure-free magnetic soft growing robot with integrated shape control and sensing."
+hub: magnetic-flexible-endoscopy
+date: 2026-04-24 09:00:12
+image: "news/3Robosoft_BestPaper_FeatureArticle.png.webp"
+excerpt: "Researchers from the STORM Lab at the University of Leeds, in collaboration with the University of California San Diego, have been awarded the Best Paper Award at the IEEE International Conference on…"
 ---
-
-Researchers from the STORM Lab at the University of Leeds, in collaboration with the University of California San Diego, have been awarded the Best Paper Award at the IEEE International Conference on Soft Robotics (RoboSoft 2026).
+Researchers from the STORM Lab at the University of Leeds, in collaboration with the University of California San Diego, have been awarded the **Best Paper Award at the IEEE International Conference on Soft Robotics (RoboSoft 2026).**
 
 The awarded paper presents a pressure-free magnetic soft growing robot with integrated real-time shape control and sensing, designed for minimally invasive medical applications. The system has a diameter of 1.8 mm and is capable of simultaneous growth and steering using external magnetic fields, removing the need for internal pressurisation.
 
