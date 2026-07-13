@@ -1,0 +1,40 @@
+# Optimize images under assets/images and commit any savings.
+#
+# Manual-only (Actions tab → Run workflow). Runs scripts/optimize_images.py,
+# which resizes oversized images and recompresses them in place. It is
+# idempotent — an sha256 ledger (scripts/.image-optim-ledger.json) records
+# already-optimized files, so re-runs only touch new or changed images. Run it
+# after adding new images (e.g. a news post) if you didn't optimize locally.
+name: Optimize images
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  optimize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Optimize
+        run: |
+          python -m pip install --quiet Pillow
+          python scripts/optimize_images.py assets/images
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/images scripts/.image-optim-ledger.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Optimize images"
+            git push
+          else
+            echo "Nothing to optimize."
+          fi
