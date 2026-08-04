@@ -2,7 +2,7 @@
 layout: default
 title: "Research"
 permalink: /research/
-description: "Active programme grants spanning capsule robots, robotic endoscopy, soft surgical robots and autonomy in robotic surgery."
+description: "Our research streams span soft magnetic surgical robots, medical capsule robots, robotic endoscopy, image-guided intervention and the translation of surgical robotics to clinical use."
 ---
 
 <section class="page-hero">
@@ -10,31 +10,21 @@ description: "Active programme grants spanning capsule robots, robotic endoscopy
   <div class="page-hero__inner">
     <span class="eyebrow eyebrow--inverse">Research</span>
     <h1 class="storm-display">From hypothesis-driven science to first-in-human trials</h1>
-    <p>Our active programme grants span capsule robots, robotic endoscopy, soft surgical robots and autonomy in robotic surgery.</p>
+    <p>Our active research streams span soft magnetic surgical robots, medical capsule robots, robotic endoscopy, image-guided intervention, and the translation of surgical robotics from laboratory concept to clinical use.</p>
   </div>
 </section>
 
-<section class="container" style="padding:48px 32px 88px">
-  <div class="filters" role="group" aria-label="Filter projects by area">
-    {%- assign filters = "All,Capsule robots,Robotic endoscopy,Soft robots,Autonomy" | split: "," -%}
-    {%- for f in filters -%}
-      <button type="button" class="filter{% if forloop.first %} is-active{% endif %}" data-filter="{{ f }}">{{ f }}</button>
-    {%- endfor -%}
-  </div>
-
-  <div class="grant-grid">
-    {%- for g in site.data.grants -%}
-    <div class="card grant" data-area="{{ g.area }}">
-      <div class="card__media grant__media">
-        <img src="{{ g.img | prepend: '/assets/images/' | relative_url }}" alt="{{ g.title }}">
-        <span class="grant__code">{{ g.code }}</span>
-      </div>
-      <div class="card__body grant__body">
-        <span class="tag">{{ g.area }}</span>
-        <h3>{{ g.title }}</h3>
-        <div class="grant__funder">{{ g.funder }}</div>
-      </div>
-    </div>
+<section class="container" style="padding:56px 32px 88px">
+  <div class="rarea-grid">
+    {%- for area in site.data.research -%}
+    <a class="rarea" href="{{ '/research/' | append: area.slug | append: '/' | relative_url }}">
+      <span class="rarea__media">
+        <span class="dither-layer" aria-hidden="true"></span>
+        <img class="{% if area.fit == 'contain' %}fit-contain{% endif %}" src="{{ area.img | prepend: '/assets/images/' | relative_url }}" alt="{{ area.title }}">
+        <span class="rarea__n">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
+      </span>
+      <span class="rarea__title">{{ area.title }} <span class="arr" aria-hidden="true">→</span></span>
+    </a>
     {%- endfor -%}
   </div>
 </section>

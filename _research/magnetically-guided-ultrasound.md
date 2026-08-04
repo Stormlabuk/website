@@ -2,12 +2,13 @@
 title: "Magnetically Guided Ultrasound"
 slug: magnetically-guided-ultrasound
 order: 5
-tagline: "A capsule performing diagnostic micro-ultrasound inside the GI tract under magnetic control"
+tagline: "Innovative approaches to leverage ultrasound deep inside the human body in a minimally invasive way"
 applications:
   - "Gastrointestinal diagnostics"
   - "Micro-ultrasound imaging"
   - "Early disease detection"
+  - "Gastrointestinal cancer"
 overview:
-  - "Developed in collaboration with the University of Glasgow, this pioneering capsule is capable of performing diagnostic micro-ultrasound within the gastrointestinal tract under intelligent magnetic control."
-  - "Bringing the ultrasound transducer right up to the tissue enables high-resolution imaging beneath the surface that conventional camera-based endoscopy cannot provide — combining precise magnetic positioning with in-situ sensing for earlier, more accurate diagnosis."
+  - "We pioneered using intelligent magnetic manipulation to obtain ultrasound images of anatomical features deep inside the human body. We demonstrated the feasibility of acquiring diagnostic-grade virtual biopsies in the gastrointestinal tract."
+  - "We are now focusing on multi-scale approaches, where a mini- or milli-scale magnetic ultrasound robot can deliver and activate micro-robots to cure deadly diseases like colorectal cancer."
 ---

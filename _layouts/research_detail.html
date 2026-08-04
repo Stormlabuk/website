@@ -54,6 +54,28 @@ layout: default
 </section>
 {%- endif -%}
 
+{%- if page.youtube or page.video or page.infographic -%}
+<section class="rd-section rd-media">
+  {%- if page.youtube and page.youtube != "" -%}
+  <div class="rd-video">
+    <iframe src="https://www.youtube-nocookie.com/embed/{{ page.youtube }}" title="{{ page.title }} — video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  {%- elsif page.video and page.video != "" -%}
+  <div class="rd-video">
+    <video controls preload="metadata"{% if page.video_poster %} poster="{{ page.video_poster | prepend: '/assets/images/' | relative_url }}"{% endif %}>
+      <source src="{{ page.video | prepend: '/assets/videos/' | relative_url }}">
+    </video>
+  </div>
+  {%- endif -%}
+  {%- if page.infographic and page.infographic != "" -%}
+  <figure class="rd-figure">
+    <img src="{{ page.infographic | prepend: '/assets/images/' | relative_url }}" alt="{{ page.infographic_alt | default: page.title }}">
+    {%- if page.infographic_caption -%}<figcaption>{{ page.infographic_caption }}</figcaption>{%- endif -%}
+  </figure>
+  {%- endif -%}
+</section>
+{%- endif -%}
+
 {%- if page.approach -%}
 <section class="rd-section">
   <span class="eyebrow">How it works</span>

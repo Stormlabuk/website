@@ -3,24 +3,21 @@ title: "Magnetic Tentacles"
 slug: magnetic-tentacles
 order: 2
 hero: tentacle
-tagline: "A highly flexible body controlled by external robotic magnetic arms"
-pullquote: "Magnetic fields pass harmlessly through tissue — so we can steer a soft instrument from outside the body, reaching places a rigid tool never could."
+tagline: "Catheters with highly flexible body controlled by external magnetic fields"
 applications:
   - "Lung tumour biopsy"
   - "Cardiovascular surgery"
   - "Bronchoscopy"
   - "Targeted drug delivery"
+  - "Pancreatic Cancer"
+  - "Skull Base Surgery"
+  - "Neurosurgery"
 overview:
-  - "We are exploring the idea of using miniature magnetic tentacles to reach many areas of the body that are currently difficult for surgeons to access. Potential uses could be in lung tumour biopsies or cardiovascular surgery, where currently the risk of tissue perforations is very high."
-  - "The tiny tentacles are a few millimetres in diameter and have a very soft, highly flexible body made up of a series of tiny magnets embedded along their length that can be controlled by external robotic magnetic arms. We can control the tentacle shape, or stiffen the body and control the tip. We are still working on how best to drive the device from the outside, and are trialling different options."
+  - "Magnetic tentacle robots have the potential to be thin, extremely soft and scalable, and to conform to curvilinear trajectories by leveraging magnetic control over their entire length. The surgeon needing to access difficult to reach targets such as peripheral nodules in the lungs, deadly diseases in the pancreas and regions deep inside the skull, will be able to design personalised tentacles and fabricate them on demand. At the STORM Lab, we are exploring new robotic architectures, as well as the design and fabrication processes integral to this novel concept."
 stats:
   - { value: "few", unit: "mm", label: "Tentacle diameter" }
   - { value: "17%", label: "Perforation risk in current practice" }
   - { value: "33", label: "Relevant publications" }
-approach:
-  - { k: "External magnets", t: "Robotic arms carry permanent magnets that move around the patient — no contact, no pressurisation.", tag: "Actuation" }
-  - { k: "Magnetic field", t: "The field penetrates tissue safely and couples to magnets embedded along the tentacle body.", tag: "Coupling" }
-  - { k: "Soft tentacle", t: "A sub-millimetre silicone body bends to follow the field — shape-forming along its length or steering from the tip.", tag: "Response" }
 publications:
   - { authors: "A. Bacchetti et al.", title: "Tapered Magnetic Soft Continuum Catheters with Integrated Microchannels for Cerebral Intra-Arterial Chemotherapy Delivery", venue: "Soft Robotics", date: "Apr 2026", doi: "10.1177/21695172261438681" }
   - { authors: "P. Lloyd et al.", title: "A concentric tube catheter for endoluminal interventions, steered and imaged via magnetic resonance imaging", venue: "Commun Eng", date: "Mar 2026", doi: "10.1038/s44172-026-00636-1" }
