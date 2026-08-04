@@ -25,10 +25,13 @@ LEDGER = os.path.join(ROOT, "scripts", ".image-optim-ledger.json")
 DEFAULT_MAX_W = 1600
 JPEG_Q = 82
 WEBP_Q = 80
-# Narrower ceilings for images that only ever render small.
+# Narrower ceilings for images that only ever render small. Portraits render at
+# ~210px in the team grid and up to 300px for the director — 600px keeps them
+# crisp at 2x/retina without the graininess of the browser downscaling a much
+# larger source.
 DIR_MAX_W = {
     os.path.join("assets", "images", "sponsors"): 480,
-    os.path.join("assets", "images", "team"): 900,
+    os.path.join("assets", "images", "team"): 600,
 }
 SKIP_EXT = {".gif", ".svg", ".ico"}
 IMG_EXT = {".jpg", ".jpeg", ".png", ".webp"}
@@ -110,11 +113,8 @@ def main():
         if ext in SKIP_EXT or ext not in IMG_EXT:
             continue
         cur = sha256(path)
-        if cur in done:
-            n_skip += 1
-            continue
-
         relpath = os.path.relpath(path, ROOT)
+        target_max = max_width_for(relpath)
         before = os.path.getsize(path)
         try:
             with Image.open(path) as im:
@@ -122,14 +122,21 @@ def main():
                 if getattr(im, "is_animated", False):
                     n_skip += 1
                     continue
-                data = encode(im, ext, max_width_for(relpath))
+                # Re-process if it's new/changed OR still wider than its target —
+                # so lowering a max width (or a stray oversized upload) always
+                # gets resized, even if it was optimized under an older setting.
+                oversized = im.width > target_max
+                if cur in done and not oversized:
+                    n_skip += 1
+                    continue
+                data = encode(im, ext, target_max)
         except Exception as e:  # corrupt/unsupported -> leave as-is
             print("  ! skip %s (%s)" % (relpath, e))
             continue
 
-        # Only replace if we actually saved bytes; otherwise keep original but
-        # still record its hash so we don't re-probe it every run.
-        if len(data) < before:
+        # Replace when we saved bytes or when a resize was required; otherwise
+        # keep the original but record its hash so we don't re-probe it.
+        if oversized or len(data) < before:
             with open(path, "wb") as f:
                 f.write(data)
             after = len(data)
