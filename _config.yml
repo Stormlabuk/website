@@ -33,12 +33,13 @@ zotero:
   library_type: "group"   # "group" or "user"
   library_id: "5599357"   # zotero.org/groups/5599357/stormlab
   latest_count: 3         # newest items featured
-  # One Zotero collection per page → written to _data/zotero/<slug>.yml.
+  # One source per page → written to _data/zotero/<slug>.yml.
   # `main` drives the Publications page; each research page reads the collection
-  # named after its slug. Fill in the collection KEY from the Zotero URL
-  # (…/collections/<KEY>/collection). Leave blank to skip a page.
+  # named after its slug. Use "*" for the whole (deduplicated) library, or a
+  # collection KEY from the Zotero URL (…/collections/<KEY>/collection). Leave
+  # blank to skip a page.
   collections:
-    main: "853N8SBR"                       # parent — Publications page
+    main: "*"                              # whole library — Publications page
     magnetic-tentacles: "2JHCZZCZ"
     magnetic-flexible-endoscopy: "XQYZ8LQA"
     magnetic-vine-robots: "IDE3IXBF"

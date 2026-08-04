@@ -42,9 +42,17 @@ OUT_DIR = File.join(ROOT, "_data", "zotero")
 
 def log(msg) = warn("[fetch_zotero] #{msg}")
 
-# ── Fetch every item in a collection (paginated) ─────────────────────────────
+# ── Fetch every item (paginated) ─────────────────────────────────────────────
+# A key of "*" (or "library") fetches the whole library's top-level items;
+# any other value fetches that collection.
+def whole_library?(key) = key == "*" || key.to_s.downcase == "library"
+
 def fetch_all_items(collection_key)
-  base = "https://api.zotero.org/#{LIBRARY_TYPE}s/#{LIBRARY_ID}/collections/#{collection_key}/items"
+  base = if whole_library?(collection_key)
+           "https://api.zotero.org/#{LIBRARY_TYPE}s/#{LIBRARY_ID}/items/top"
+         else
+           "https://api.zotero.org/#{LIBRARY_TYPE}s/#{LIBRARY_ID}/collections/#{collection_key}/items"
+         end
   items = []
   start = 0
   limit = 100
@@ -147,9 +155,10 @@ COLLECTIONS.each do |slug, key|
          .reverse
   latest = pubs.first(LATEST_COUNT).map { |p| p.merge("fig" => thumbnail_for(p["doi"], p["key"])) }
 
+  src = whole_library?(key) ? "whole library" : "collection #{key}"
   out = {
     "generated" => stamp,
-    "source" => "#{LIBRARY_TYPE} #{LIBRARY_ID} / collection #{key}",
+    "source" => "#{LIBRARY_TYPE} #{LIBRARY_ID} / #{src}",
     "latest" => latest,
     "all" => pubs
   }
