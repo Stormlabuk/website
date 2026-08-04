@@ -221,6 +221,8 @@
 .sponsor:hover { border-color: var(--border-default); box-shadow: var(--shadow-sm); }
 .sponsor img { max-width: 100%; max-height: 120px; object-fit: contain; filter: grayscale(1); opacity: 0.55; transition: filter var(--dur-slow) var(--ease-standard), opacity var(--dur-slow) var(--ease-standard); }
 .sponsor:hover img { filter: none; opacity: 1; }
+.sponsor__name { font-family: var(--font-display); font-weight: 700; font-size: 1.35rem; letter-spacing: -0.015em; color: var(--grey-500); text-align: center; transition: color var(--dur-slow) var(--ease-standard); }
+.sponsor:hover .sponsor__name { color: var(--grey-950); }
 @media (max-width: 760px) { .sponsor-grid { grid-template-columns: repeat(2, 1fr); } }
 
 // ── Generic page hero (dark) ───────────────────────────────────────────────

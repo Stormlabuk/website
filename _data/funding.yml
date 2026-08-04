@@ -5,13 +5,13 @@
 active:
   - { funder: "ARIA Seed", logo: "sponsors/aria.png", title: "MAGNIS — Magnetically-Guided Endocisternal Neural Interface Delivery System" }
   - { funder: "EPSRC", logo: "sponsors/epsrc.png", title: "Terabotics Programme Grant — robots with terahertz imaging to spot and remove cancer tumours" }
-  - { funder: "ARIA Seed", logo: "sponsors/aria.png", title: "MORPH — Muscular Operative Robotic Precision Handler" }
   - { funder: "ERC", logo: "sponsors/erc.png", title: "RoboMRI: future cardiovascular healthcare via MRI-driven robotics" }
   - { funder: "Leeds NIHR BRC", logo: "sponsors/nihr.png", title: "Leeds NIHR Biomedical Research Centre" }
   - { funder: "EPSRC", logo: "sponsors/epsrc.png", title: "IMMERSE — Intelligent Magnetic Multi-scale Robotics for endoluminal Surgical Excellence" }
   - { funder: "Intuitive Surgical", logo: "sponsors/intuitive.png", title: "Intuitive Surgical da Vinci Research Kit" }
 
 completed:
+  - { funder: "ARIA Seed", logo: "sponsors/aria.png", title: "MORPH — Muscular Operative Robotic Precision Handler" }
   - { funder: "European Research Council", logo: "sponsors/erc.png", title: "ERC Consolidator Grant: NoLiMiTs — Novel Lifesaving Magnetic Tentacles" }
   - { funder: "H2020 EU", logo: "sponsors/horizon-2020.png", title: "AUTOCAPSULE — autonomous multimodal implantable endoscopic capsule for the GI tract" }
   - { funder: "NIH", logo: "", title: "Magnetic Capsule Endoscope for Colonoscopy in patients with IBD" }

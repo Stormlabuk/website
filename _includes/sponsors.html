@@ -32,7 +32,11 @@
       <div class="sponsor-grid">
         {%- for p in site.data.sponsors.partners -%}
         <div class="sponsor" title="{{ p.name }}">
+          {%- if p.src and p.src != "" -%}
           <img src="{{ p.src | prepend: '/assets/images/' | relative_url }}" alt="{{ p.name }}">
+          {%- else -%}
+          <span class="sponsor__name">{{ p.name }}</span>
+          {%- endif -%}
         </div>
         {%- endfor -%}
       </div>

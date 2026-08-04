@@ -11,10 +11,11 @@ description: "The STORM Lab at the University of Leeds pioneers miniature surgic
   <div class="hero__inner">
     <div class="hero__text">
       <span class="eyebrow">Medical robotics / University of Leeds</span>
-      <h1 class="storm-display">Disrupting<br>colonoscopy with<br><span class="storm-mark">capsule robots</span></h1>
+      <h1 class="storm-display">Intelligent robotics for<br><span class="storm-mark">minimally invasive medicine</span></h1>
       <p class="hero__lead">
-        We leverage magnetic manipulation to enable tiny medical instruments to reach deep
-        within the human body; diagnosing and treating disease while minimising risk to the patient.
+        We develop intelligent robotic technologies that make minimally invasive procedures safer,
+        more accessible and more effective — leveraging magnetic manipulation to reach deep within
+        the body, diagnose disease earlier and expand access to care worldwide.
       </p>
       <div class="hero__actions">
         <a class="btn btn--accent btn--lg" href="{{ '/research/' | relative_url }}">Explore our research <span aria-hidden="true">→</span></a>
@@ -34,9 +35,9 @@ description: "The STORM Lab at the University of Leeds pioneers miniature surgic
   <div class="mission__inner">
     <span class="eyebrow eyebrow--inverse">Our mission</span>
     <p class="mission__text">
-      We develop intelligent robotic technologies that make minimally invasive procedures
-      <span class="hl">safer, more accessible and more effective</span> — leveraging magnetic
-      manipulation to reach deep within the body, diagnose disease earlier and expand access to care worldwide.
+      We leverage magnetic manipulation to enable tiny medical instruments to reach
+      <span class="hl">deep within the human body</span> — diagnosing and treating disease
+      while minimising risk to the patient.
     </p>
   </div>
 </section>
@@ -71,12 +72,8 @@ description: "The STORM Lab at the University of Leeds pioneers miniature surgic
 <section class="projects">
   <div class="dither-layer" aria-hidden="true"></div>
   <div class="projects__inner">
-    <span class="eyebrow eyebrow--inverse">Our research projects</span>
-    <h2>Pioneering magnetic robotics across the body</h2>
-    <p class="projects__lead">
-      From painless screening to autonomous surgery, our projects share one principle:
-      manipulating tiny instruments from afar with magnetic fields, safely and affordably.
-    </p>
+    <span class="eyebrow eyebrow--inverse">Our research streams</span>
+    <h2>Pioneering magnetic robotics and surgical autonomy across the body</h2>
     <div class="projects__grid">
       {%- for area in site.data.research -%}
       <a class="proj" href="{{ '/research/' | append: area.slug | append: '/' | relative_url }}">

@@ -4,6 +4,8 @@
     - { label: "Magnetic flexible endoscopy", url: "/research/magnetic-flexible-endoscopy/" }
     - { label: "Magnetic tentacles", url: "/research/magnetic-tentacles/" }
     - { label: "Magnetic vine robots", url: "/research/magnetic-vine-robots/" }
+    - { label: "MRI actuated instruments", url: "/research/mri-actuated-instruments/" }
+    - { label: "Magnetically guided ultrasound", url: "/research/magnetically-guided-ultrasound/" }
     - { label: "Autonomy in surgery", url: "/research/autonomy-in-surgical-robotics/" }
 - heading: Lab
   links:

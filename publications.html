@@ -19,7 +19,6 @@ description: "Research output from STORM Lab UK — pulled from the group Zotero
   <div class="dither-layer" aria-hidden="true"></div>
   <div class="container pub-hero__inner">
     <span class="tick" aria-hidden="true"></span>
-    <div class="pub-hero__kicker">Research output · Group library</div>
     <h1 class="storm-display pub-hero-h1">Publications</h1>
     <div class="pub-hero-stats">
       <div class="pub-stat">
@@ -76,16 +75,13 @@ description: "Research output from STORM Lab UK — pulled from the group Zotero
       <a href="{{ zoteroHref }}" class="doi-link pub-colhead__zotero" target="_blank" rel="noopener">View Zotero library →</a>
     </div>
 
-    {%- assign n = 0 -%}
     {%- for y in years -%}
     <div class="pub-year-row">
       <div class="pub-year-num">{% if y == 0 %}Undated{% else %}{{ y }}{% endif %}</div>
       <ol class="pub-index">
         {%- assign yitems = pubs | where: "year", y -%}
         {%- for p in yitems -%}
-        {%- assign n = n | plus: 1 -%}
         <li class="pub-row pub-item">
-          <span class="pub-item__n">{% if n < 10 %}0{% endif %}{{ n }}</span>
           <div>
             <a href="https://doi.org/{{ p.doi }}" class="pub-link pub-item__title">{{ p.title }}</a>
             <div class="pub-item__authors">{{ p.authors }}</div>
