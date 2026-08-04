@@ -12,6 +12,7 @@ on:
 
 permissions:
   contents: write
+  actions: write   # to dispatch the Pages deploy after committing
 
 jobs:
   optimize:
@@ -28,6 +29,7 @@ jobs:
           python -m pip install --quiet Pillow
           python scripts/optimize_images.py assets/images
       - name: Commit if changed
+        id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -35,6 +37,14 @@ jobs:
           if ! git diff --cached --quiet; then
             git commit -m "Optimize images"
             git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           else
             echo "Nothing to optimize."
           fi
+      # A commit pushed with the Actions token does not itself trigger the Pages
+      # workflow, so dispatch it explicitly when images changed.
+      - name: Trigger Pages deploy
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --ref "${{ github.ref_name }}"

@@ -12,6 +12,7 @@ on:
 
 permissions:
   contents: write
+  actions: write   # to dispatch the Pages deploy after committing
 
 jobs:
   refresh:
@@ -28,6 +29,7 @@ jobs:
           ZOTERO_API_KEY: ${{ secrets.ZOTERO_API_KEY }}
         run: ruby scripts/fetch_zotero.rb
       - name: Commit if changed
+        id: commit
         run: |
           if ! git diff --quiet -- _data/zotero; then
             git config user.name "github-actions[bot]"
@@ -35,6 +37,14 @@ jobs:
             git add _data/zotero
             git commit -m "Refresh publications from Zotero"
             git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           else
             echo "No changes."
           fi
+      # A commit pushed with the Actions token does not itself trigger the Pages
+      # workflow, so dispatch it explicitly when the data changed.
+      - name: Trigger Pages deploy
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --ref "${{ github.ref_name }}"
