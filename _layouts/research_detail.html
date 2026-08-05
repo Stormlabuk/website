@@ -38,6 +38,7 @@ layout: default
       {%- endif -%}
     </div>
     <div class="rd-overview__body">
+      {%- if page.overview_heading -%}<h2 class="rd-overview__title">{{ page.overview_heading }}</h2>{%- endif -%}
       {%- for para in page.overview -%}<p>{{ para }}</p>{%- endfor -%}
       {%- if page.stats -%}
       <div class="rd-stats">
@@ -68,8 +69,9 @@ layout: default
   </div>
   {%- endif -%}
   {%- if page.infographic and page.infographic != "" -%}
+  {%- if page.infographic contains "://" -%}{%- assign infosrc = page.infographic -%}{%- else -%}{%- assign infosrc = page.infographic | prepend: '/assets/images/' | relative_url -%}{%- endif -%}
   <figure class="rd-figure">
-    <img src="{{ page.infographic | prepend: '/assets/images/' | relative_url }}" alt="{{ page.infographic_alt | default: page.title }}">
+    <img src="{{ infosrc }}" alt="{{ page.infographic_alt | default: page.title }}">
     {%- if page.infographic_caption -%}<figcaption>{{ page.infographic_caption }}</figcaption>{%- endif -%}
   </figure>
   {%- endif -%}
