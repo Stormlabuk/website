@@ -3,6 +3,10 @@ title: "Magnetic Vine Robots"
 slug: magnetic-vine-robots
 order: 3
 tagline: "Growing robots that extend from their tip to navigate confined anatomy steered by external magnetic fields"
+animation: "https://www.stormlabuk.com/wp-content/uploads/2025/05/Pause-GIF-image.gif"
+animation_alt: "Magnetic vine robot growing and steering to navigate anatomy"
+infographic: research/vine-infographic.png
+infographic_alt: "Magnetic vine robots — principle of operation"
 applications:
   - "Minimally invasive access"
   - "Endoluminal navigation"

@@ -55,7 +55,7 @@ layout: default
 </section>
 {%- endif -%}
 
-{%- if page.youtube or page.video or page.infographic -%}
+{%- if page.youtube or page.video or page.animation or page.infographic -%}
 <section class="rd-section rd-media">
   {%- if page.youtube and page.youtube != "" -%}
   <div class="rd-video">
@@ -67,6 +67,13 @@ layout: default
       <source src="{{ page.video | prepend: '/assets/videos/' | relative_url }}">
     </video>
   </div>
+  {%- endif -%}
+  {%- if page.animation and page.animation != "" -%}
+  {%- if page.animation contains "://" -%}{%- assign animsrc = page.animation -%}{%- else -%}{%- assign animsrc = page.animation | prepend: '/assets/images/' | relative_url -%}{%- endif -%}
+  <figure class="rd-figure">
+    <img src="{{ animsrc }}" alt="{{ page.animation_alt | default: page.title }}" loading="lazy">
+    {%- if page.animation_caption -%}<figcaption>{{ page.animation_caption }}</figcaption>{%- endif -%}
+  </figure>
   {%- endif -%}
   {%- if page.infographic and page.infographic != "" -%}
   {%- if page.infographic contains "://" -%}{%- assign infosrc = page.infographic -%}{%- else -%}{%- assign infosrc = page.infographic | prepend: '/assets/images/' | relative_url -%}{%- endif -%}
