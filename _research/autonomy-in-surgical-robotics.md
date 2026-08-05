@@ -3,8 +3,8 @@ title: "Autonomy in Surgical Robotics"
 slug: autonomy-in-surgical-robotics
 order: 6
 tagline: "Intelligent control and machine learning that bring autonomy to surgical robots"
-infographic: research/autonomy-placeholder.png
-infographic_alt: "Placeholder figure — to be replaced with a paper figure"
+infographic: research/autonomy-infographic.png
+infographic_alt: "Autonomy in surgical robotics"
 applications:
   - "Robotic Surgery"
   - "Soft Tissue Surgery"

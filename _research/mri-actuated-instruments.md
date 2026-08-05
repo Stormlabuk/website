@@ -3,6 +3,8 @@ title: "MRI actuated instruments"
 slug: mri-actuated-instruments
 order: 4
 tagline: "Instruments powered and guided directly by the magnetic field of an MRI scanner"
+infographic: research/mri-infographic.png
+infographic_alt: "MRI-driven robotic catheter — principle of operation"
 applications:
   - "Image-guided intervention"
   - "Cardiovascular procedures"

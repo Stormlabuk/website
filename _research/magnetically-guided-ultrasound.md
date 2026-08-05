@@ -3,6 +3,8 @@ title: "Magnetically Guided Ultrasound"
 slug: magnetically-guided-ultrasound
 order: 5
 tagline: "Innovative approaches to leverage ultrasound deep inside the human body in a minimally invasive way"
+infographic: research/guidedus-infographic.jpg
+infographic_alt: "Magnetically guided ultrasound — principle of operation"
 applications:
   - "Gastrointestinal diagnostics"
   - "Micro-ultrasound imaging"
