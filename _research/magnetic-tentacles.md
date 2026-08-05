@@ -4,6 +4,8 @@ slug: magnetic-tentacles
 order: 2
 hero: tentacle
 tagline: "Catheters with highly flexible body controlled by external magnetic fields"
+infographic: research/tentacles-infographic.jpg
+infographic_alt: "Magnetic tentacle robots — principle of operation"
 applications:
   - "Lung tumour biopsy"
   - "Cardiovascular surgery"
