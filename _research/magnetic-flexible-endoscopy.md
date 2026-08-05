@@ -7,7 +7,8 @@ applications:
   - "Colorectal cancer screening"
   - "Painless colonoscopy"
   - "Diagnostic & therapeutic endoscopy"
-infographic: "https://www.stormlabuk.com/wp-content/uploads/2020/06/Infographic-Painless-Colonoscopy.png"
+youtube: "85iX9Ofq9kk"
+infographic: research/mfe-infographic.png
 infographic_alt: "Painless colonoscopy — how magnetic capsule endoscopy works"
 overview_heading: "Endoscopic capsule navigation achieved by magnetic coupling"
 overview:
