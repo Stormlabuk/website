@@ -49,19 +49,20 @@ description: "Research output from STORM Lab UK — pulled from the group Zotero
     <div class="pub-latest-grid">
       {%- for p in latest -%}
       <a href="https://doi.org/{{ p.doi }}" class="feat-card">
-        <div class="feat-card__fig">
+        <div class="feat-card__plate">
           {%- if p.fig and p.fig != "" -%}
             <img src="{{ p.fig | prepend: '/assets/images/' | relative_url }}" alt="">
           {%- else -%}
-            <span class="feat-card__dither" aria-hidden="true"></span>
-            <span class="feat-card__figno">FIG {{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
+            <span class="feat-card__ph">Figure</span>
           {%- endif -%}
-          <span class="feat-card__date">{{ p.date }}</span>
         </div>
         <div class="feat-card__body">
           <span class="pub-link feat-card__title">{{ p.title }}</span>
           <div class="feat-card__authors">{{ p.authors }}</div>
-          <div class="feat-card__venue">{{ p.venue }}</div>
+        </div>
+        <div class="feat-card__meta">
+          <span class="feat-card__venue">{{ p.venue }}</span>
+          <span class="feat-card__date">{{ p.date }}</span>
         </div>
       </a>
       {%- endfor -%}

@@ -34,17 +34,18 @@
 
 // ── Latest / featured cards ──────────────────────────────────────────────────
 .pub-latest-grid { display: grid; grid-template-columns: 1fr; gap: 24px; }
-.feat-card { display: block; text-decoration: none; border: 1px solid var(--border-default); border-radius: var(--radius-sm); overflow: hidden; transition: transform 180ms var(--ease-standard), box-shadow 180ms var(--ease-standard), border-color 180ms var(--ease-standard); }
-.feat-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border-color: var(--grey-300); text-decoration: none; }
-.feat-card__fig { position: relative; height: 148px; background: var(--grey-950); overflow: hidden; }
-.feat-card__fig img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.feat-card__dither { position: absolute; inset: 0; background-image: radial-gradient(rgba(248,205,4,0.32) 1px, transparent 1.4px); background-size: 7px 7px; opacity: 0.55; }
-.feat-card__figno { position: absolute; left: 14px; top: 13px; font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--storm-yellow); }
-.feat-card__date { position: absolute; right: 14px; bottom: 12px; font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.08em; color: rgba(255,255,255,0.72); }
-.feat-card__body { padding: 18px 18px 20px; }
-.feat-card__title { display: block; font-size: 1rem; font-weight: 700; line-height: 1.3; letter-spacing: -0.01em; border-bottom: none; }
-.feat-card__authors { font-size: 0.82rem; color: var(--text-muted); margin-top: 9px; }
-.feat-card__venue { font-family: var(--font-mono); font-size: 0.66rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-faint); margin-top: 11px; }
+// Latest / Featured card — "Light plate": figure fully visible on a white plate
+// (never cropped, any aspect ratio), yellow top rule, meta in a tinted footer.
+.feat-card { display: block; text-decoration: none; background: var(--white); border: 1px solid var(--grey-300); border-top: 3px solid var(--storm-yellow); transition: transform 180ms var(--ease-standard), box-shadow 180ms var(--ease-standard); }
+.feat-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); text-decoration: none; }
+.feat-card__plate { margin: 16px 16px 0; height: 172px; background: var(--white); border: 1px solid var(--border-subtle); display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.feat-card__plate img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; display: block; }
+.feat-card__ph { font-family: var(--font-sans); font-weight: 600; font-size: 0.64rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--grey-400); }
+.feat-card__body { padding: 16px 18px 0; }
+.feat-card__title { display: block; font-size: 1rem; font-weight: 700; line-height: 1.32; letter-spacing: -0.01em; border-bottom: none; }
+.feat-card__authors { font-size: 0.82rem; color: var(--text-muted); margin-top: 8px; }
+.feat-card__meta { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 16px; padding: 11px 18px; background: var(--surface-tint); border-top: 1px solid var(--border-subtle); }
+.feat-card__venue, .feat-card__date { font-family: var(--font-sans); font-weight: 600; font-size: 0.64rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--grey-500); }
 
 // ── Complete index (by year) ─────────────────────────────────────────────────
 .pub-year-row { display: grid; grid-template-columns: 96px 1fr; border-top: 2px solid var(--grey-950); margin-top: 22px; }
