@@ -13,7 +13,7 @@ Under the hood:
 
 🧠 Real-time Topology Tracking: Combines Cylinder Čech Complexes with point clouds to instantly track drastic topology changes and fix non-manifold geometries.
 
-🦾 Smart Active Manipulation: Uses a Null Space Criterion to optimize grasp points, actively executing targeted "turning over" and "stretching" actions to expose hidden surfaces.
+🦾 Smart Active Manipulation: Uses a Null Space Criterion to optimise grasp points, actively executing targeted "turning over" and "stretching" actions to expose hidden surfaces.
 
 🫀 Real-world Validation: Achieved full homeomorphic reconstruction on complex items, including actual human cadaveric liver and colon tissues, using the da Vinci Research Kit (dVRK).
 

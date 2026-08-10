@@ -11,7 +11,7 @@ Researchers from STORM Lab and collaborators have published a new paper in _The
 
 The study introduces a Wavelet-Decomposed Boundary Element Method, which combines multiscale wavelet shape representation with physics-based boundary modelling. This enables robots to control complex 3D deformations using visual feedback such as contours, curves, and surfaces, without requiring full volumetric meshing or precise prior knowledge of material stiffness.
 
-Validated in simulation and on the da Vinci Research Kit with phantom and ex vivo tissue, the framework achieved millimeter-level accuracy while improving stability and computational efficiency compared with existing approaches.
+Validated in simulation and on the da Vinci Research Kit with phantom and ex vivo tissue, the framework achieved millimetre-level accuracy while improving stability and computational efficiency compared with existing approaches.
 
 This work contributes to more robust deformable object manipulation in unstructured environments, with particular relevance to surgical robotics, where soft tissue deformation and partial visibility remain key challenges.
 

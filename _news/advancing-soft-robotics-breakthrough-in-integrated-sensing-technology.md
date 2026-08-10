@@ -15,7 +15,7 @@ A significant part of the research involved developing a custom graphene nanopla
 
 An important application demonstrated in this study is the direct printing of strain sensors onto a pneumatic soft robotic gripper. This advancement provides continuous feedback and allows the gripper to adjust to various shapes, showing the practical implications of this research in enhancing soft robotic functionalities.
 
-This study is part of STORM LAB's broader research efforts exploring different actuation methods in soft robotics, including magnetic, pneumatic, and electrical systems. The integration of advanced sensing capabilities is seen as a key step towards realizing real-time condition monitoring and autonomous control in these robotic systems.
+This study is part of STORM LAB's broader research efforts exploring different actuation methods in soft robotics, including magnetic, pneumatic, and electrical systems. The integration of advanced sensing capabilities is seen as a key step towards realising real-time condition monitoring and autonomous control in these robotic systems.
 
 The research team extends their thanks and congratulations to all the collaborators who contributed to this important work.
 

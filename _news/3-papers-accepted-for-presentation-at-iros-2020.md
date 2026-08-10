@@ -23,7 +23,7 @@ Federico Campisano, Andria Remirez, Claire Ann Landewee, Simone Calò, Keith Obs
 
 >
 
-This paper presents a method to enable intuitive teleoperation of a waterjet actuated soft continuum manipulator (The HydroJet) within the gastric cavity. The key feature required to successfully articulate the device in this confined space is the integration of a contact detection algorithm within the teleoperation control scheme which alerts the operator when contact is achieved and prevents integral windup of the PID controller. Experimental validation using a geometrically accurate model shows that both an expert gastroenterologist and novice users are able to complete gastroscopy and visualize all key gastric landmarks.
+This paper presents a method to enable intuitive teleoperation of a waterjet actuated soft continuum manipulator (The HydroJet) within the gastric cavity. The key feature required to successfully articulate the device in this confined space is the integration of a contact detection algorithm within the teleoperation control scheme which alerts the operator when contact is achieved and prevents integral windup of the PID controller. Experimental validation using a geometrically accurate model shows that both an expert gastroenterologist and novice users are able to complete gastroscopy and visualise all key gastric landmarks.
 
 ## Toward Autonomous Tissue Retraction in Robotic Assisted Minimally Invasive Surgery
 
