@@ -5,10 +5,10 @@ description: >-
   STORM Lab at the University of Leeds pioneers miniature surgical robots,
   capsule endoscopes and AI-guided tools for minimally invasive medicine —
   led by Professor Pietro Valdastri.
-# Set `url` to your published address (e.g. https://stormlabuk.github.io or a custom domain).
-url: ""
-# If the site is served from a project subpath (https://USER.github.io/REPO),
-# set baseurl to "/REPO". For a custom domain or user/org page, leave it "".
+# Published address. Served at the custom domain root, so no baseurl subpath.
+url: "https://www.stormlabuk.com"
+# Custom domain / user-org page → baseurl stays "". (For a project subpath such
+# as https://USER.github.io/REPO you would set baseurl to "/REPO" instead.)
 baseurl: ""
 lang: en-GB
 

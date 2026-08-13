@@ -40,8 +40,13 @@ jobs:
       - name: Configure Pages
         id: pages
         uses: actions/configure-pages@v5
+      # Served at the custom-domain root (www.stormlabuk.com), so the build must
+      # honour `baseurl: ""` from _config.yml. Do NOT pass --baseurl here:
+      # actions/configure-pages emits base_path "/website" for a project site,
+      # and that flag would override _config.yml, prefixing every relative_url
+      # asset with /website → 404s on the custom domain.
       - name: Build with Jekyll
-        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        run: bundle exec jekyll build
         env:
           JEKYLL_ENV: production
       - name: Upload artifact
