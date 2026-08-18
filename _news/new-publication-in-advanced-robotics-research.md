@@ -4,7 +4,7 @@ slug: new-publication-in-advanced-robotics-research
 category: "Publication"
 hub: magnetic-vine-robots
 date: 2026-02-23 12:09:09
-image: "news/adrr70099-fig-0001-m.jpg"
+image: "news/new-publication-in-advanced-robotics-research.jpg"
 excerpt: "Andrea Yanez has published her latest research exploring advances in soft robotic navigation for minimally invasive procedures. The article presents the design of a magnetic tip mount for a 7 mm vine…"
 ---
 Andrea Yanez has published her latest research exploring advances in soft robotic navigation for minimally invasive procedures.

@@ -4,7 +4,7 @@ slug: congratulations-to-dr-benjamin-calme-on-robosoft-2026-best-paper-award
 category: "Award"
 hub: magnetic-flexible-endoscopy
 date: 2026-04-24 09:00:12
-image: "news/3Robosoft_BestPaper_FeatureArticle.png.webp"
+image: "news/congratulations-to-dr-benjamin-calme-on-robosoft-2026-best-paper-award.webp"
 excerpt: "Researchers from the STORM Lab at the University of Leeds, in collaboration with the University of California San Diego, have been awarded the Best Paper Award at the IEEE International Conference on…"
 ---
 Researchers from the STORM Lab at the University of Leeds, in collaboration with the University of California San Diego, have been awarded the **Best Paper Award at the IEEE International Conference on Soft Robotics (RoboSoft 2026).**

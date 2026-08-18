@@ -4,7 +4,7 @@ slug: an-ultrasound-guided-system-for-autonomous-marking-of-tumor-boundaries-dur
 category: "News"
 hub: autonomy-in-surgical-robotics
 date: 2024-09-30 15:48:37
-image: "news/3fjX5Ud3ZV.png"
+image: "news/an-ultrasound-guided-system-for-autonomous-marking-of-tumor-boundaries-during-robot-assisted-surgery.png"
 excerpt: "[video width=\"1920\" height=\"1080\" mp4=\"https://www.stormlabuk.com/wp-content/uploads/2024/09/Video_LinkedIn.mp4\"][/video] Here our latest paper \"An Ultrasound-Guided System for Autonomous Marking of Tumour Boundaries During Robot-assisted Surgery,\" just published in the IEEE Transactions on Medical Robotics and Bionics! 🎉…"
 ---
 [video width="1920" height="1080" mp4="https://www.stormlabuk.com/wp-content/uploads/2024/09/Video_LinkedIn.mp4"]

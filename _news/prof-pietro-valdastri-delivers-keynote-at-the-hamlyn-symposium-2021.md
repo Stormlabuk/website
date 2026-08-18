@@ -4,7 +4,7 @@ slug: prof-pietro-valdastri-delivers-keynote-at-the-hamlyn-symposium-2021
 category: "News"
 hub: magnetic-flexible-endoscopy
 date: 2021-07-14 19:36:56
-image: "news/hsmr21-banner-final_1619798242486_eventfeatured2018_x1.jpg"
+image: "news/prof-pietro-valdastri-delivers-keynote-at-the-hamlyn-symposium-2021.jpg"
 excerpt: "We are pleased to announce Professor Pietro Valdastri, Chair in Robotics and Autonomous Systems at the University of Leeds, is one of the featured speakers of the Hamlyn Symposium on Medical Robotics…"
 ---
 We are pleased to announce Professor Pietro Valdastri, Chair in Robotics and Autonomous Systems at the University of Leeds, is one of the featured speakers of the Hamlyn Symposium on Medical Robotics 2021 ([#HSMR21](https://www.youtube.com/hashtag/hsmr21)). Professor Valdastri gave a talk on ‘Medical Capsule Robots: A Fantastic Voyage’ followed by a Q&A session.[https://www.youtube.com/watch?v=GzJy4GVxh08 The keynote can be viewed here: ](https://www.youtube.com/watch?v=GzJy4GVxh08)

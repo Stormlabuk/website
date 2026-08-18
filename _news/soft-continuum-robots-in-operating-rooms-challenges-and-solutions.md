@@ -4,7 +4,7 @@ slug: soft-continuum-robots-in-operating-rooms-challenges-and-solutions
 category: "Publication"
 hub: magnetic-tentacles
 date: 2026-03-23 10:01:29
-image: "news/chrome_fqaBjd8ztj.png"
+image: "news/soft-continuum-robots-in-operating-rooms-challenges-and-solutions.png"
 excerpt: "Researchers from STORM Lab and collaborators have published a new review examining the challenges and opportunities in bringing soft continuum robotic systems from laboratory prototypes into real-world clinical use. The paper, “Enhancing…"
 ---
 Researchers from STORM Lab and collaborators have published a new review examining the challenges and opportunities in bringing soft continuum robotic systems from laboratory prototypes into real-world clinical use.

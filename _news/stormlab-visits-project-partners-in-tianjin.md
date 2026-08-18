@@ -9,7 +9,7 @@ excerpt: "[caption id=\"attachment_782\" align=\"aligncenter\" width=\"750\"] Me
 ---
 [caption id="attachment_782" align="aligncenter" width="750"]
 
-![](/assets/images/news/20180327_153408-1024x576.jpg)
+![](/assets/images/news/stormlab-visits-project-partners-in-tianjin.jpg)
 
  Members of StormLab UK, Tianjin University and Tianjin Medical University Endoscopy center
 

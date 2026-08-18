@@ -4,7 +4,7 @@ slug: advancing-soft-robotics-breakthrough-in-integrated-sensing-technology
 category: "News"
 hub: autonomy-in-surgical-robotics
 date: 2023-11-20 23:39:43
-image: "news/adem202301275-fig-0001-m.jpg"
+image: "news/advancing-soft-robotics-breakthrough-in-integrated-sensing-technology.jpg"
 excerpt: "Russell Harris and the team at STORM LAB are pleased to share their latest research published in Advanced Engineering Materials, marking a notable development in the field of soft robotics. The study…"
 ---
 Russell Harris and the team at STORM LAB are pleased to share their latest research published in Advanced Engineering Materials, marking a notable development in the field of soft robotics. The study focuses on the creation of high-performance strain sensors, a vital component for the progression of soft robotics in varied applications like wearable electronics, prosthetics, and biomedical devices.

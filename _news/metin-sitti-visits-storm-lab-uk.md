@@ -4,7 +4,7 @@ slug: metin-sitti-visits-storm-lab-uk
 category: "News"
 hub: magnetic-flexible-endoscopy
 date: 2019-03-15 09:28:13
-image: "news/setti.png"
+image: "news/metin-sitti-visits-storm-lab-uk.png"
 excerpt: "This week Wednesday (13 March) Prof. Sitti, the Director of the Physical Intelligence Department at the Max Planck Institute for Intelligent Systems in Germany, visited Leeds for the monthly Robotics@Leeds Seminar. Previously…"
 ---
 This week Wednesday (13 March) Prof. Sitti, the Director of the Physical Intelligence Department at the Max Planck Institute for Intelligent Systems in Germany, visited Leeds for the monthly Robotics@Leeds Seminar.

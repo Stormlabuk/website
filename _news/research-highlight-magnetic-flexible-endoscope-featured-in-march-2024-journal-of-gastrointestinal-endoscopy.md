@@ -4,7 +4,7 @@ slug: research-highlight-magnetic-flexible-endoscope-featured-in-march-2024-jour
 category: "Publication"
 hub: magnetic-flexible-endoscopy
 date: 2024-04-29 10:57:08
-image: "news/gr1.jpg"
+image: "news/research-highlight-magnetic-flexible-endoscope-featured-in-march-2024-journal-of-gastrointestinal-endoscopy.jpg"
 excerpt: "We are pleased to share that our research on the \" Magnetic Flexible Endoscope: A Novel Platform for Diagnostic and Therapeutic Colonoscopy \" has been featured on the cover of the March…"
 ---
 We are pleased to share that our research on the "[Magnetic Flexible Endoscope: A Novel Platform for Diagnostic and Therapeutic Colonoscopy](https://www.igiejournal.org/article/S2949-7086(23)00140-1/fulltext)" has been featured on the cover of the March 2024 issue of the _International Journal of Gastrointestinal Endoscopy_.

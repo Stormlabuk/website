@@ -4,7 +4,7 @@ slug: a-comparative-study-of-spatio-temporal-u-nets-for-tissue-segmentation-in-s
 category: "News"
 hub: autonomy-in-surgical-robotics
 date: 2021-01-28 14:45:15
-image: "news/GRAPH.png"
+image: "news/a-comparative-study-of-spatio-temporal-u-nets-for-tissue-segmentation-in-surgical-robotics.png"
 excerpt: "This paper compares the performance of three different neural network structures based on the U-Net for tissue segmentation. The models subject of this study comprise temporal layers such as Long Short Term…"
 ---
 This paper compares the performance of three different neural network structures based on the U-Net for tissue segmentation. The models subject of this study comprise temporal layers such as Long Short Term Memory cells and Attention Gate block. Results show that the model benefits from the implementation of temporal layers along with attention-based layers, even in case of a limited dataset. The proposed method allows to extract fundamental features from the scene which can be fed to a system to perform autonomous surgical gestures such as tissue retraction, suturing and ablation.

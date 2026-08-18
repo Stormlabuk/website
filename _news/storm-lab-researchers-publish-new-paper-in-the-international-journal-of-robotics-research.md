@@ -4,7 +4,7 @@ slug: storm-lab-researchers-publish-new-paper-in-the-international-journal-of-ro
 category: "Publication"
 hub: autonomy-in-surgical-robotics
 date: 2026-05-27 15:54:42
-image: "news/download.png"
+image: "news/storm-lab-researchers-publish-new-paper-in-the-international-journal-of-robotics-research.png"
 excerpt: "Researchers from STORM Lab and collaborators have published a new paper in The International Journal of Robotics Research, presenting a new method for robotic manipulation of deformable objects. The study introduces a…"
 ---
 Researchers from STORM Lab and collaborators have published a new paper in _The International Journal of Robotics Research_, presenting a new method for robotic manipulation of deformable objects.

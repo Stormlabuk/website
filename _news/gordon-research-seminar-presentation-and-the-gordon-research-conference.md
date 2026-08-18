@@ -4,7 +4,7 @@ slug: gordon-research-seminar-presentation-and-the-gordon-research-conference
 category: "News"
 hub: magnetic-tentacles
 date: 2022-09-15 11:00:11
-image: "news/MicrosoftTeams-image-5.jpg"
+image: "news/gordon-research-seminar-presentation-and-the-gordon-research-conference.jpg"
 excerpt: "Michael and Giovanni had the privilege and pleasure to present their work at the first ever Gordon Research Seminar (GRS) on Robotics last week. While Professor Valdastri presented a summary of the…"
 ---
 Michael and Giovanni had the privilege and pleasure to present their work at the first ever Gordon Research Seminar (GRS) on Robotics last week. While Professor Valdastri presented a summary of the progress made by the Tentacles project at the Gordon Research Conference (GRC).

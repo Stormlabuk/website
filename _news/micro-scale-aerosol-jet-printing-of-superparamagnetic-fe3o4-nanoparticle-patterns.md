@@ -4,7 +4,7 @@ slug: micro-scale-aerosol-jet-printing-of-superparamagnetic-fe3o4-nanoparticle-p
 category: "Publication"
 hub: ""
 date: 2022-12-06 13:00:13
-image: "news/ApplicationFrameHost_F8fGljqF3r.png"
+image: "news/micro-scale-aerosol-jet-printing-of-superparamagnetic-fe3o4-nanoparticle-patterns.png"
 excerpt: "Creating custom patterns of magnetic nanoparticles on flexible substrates may enable new opportunities in early diagnosis and personalised treatment of life-threatening diseases. In this collaboration led by the Future Manufacturing Processes Research…"
 ---
 Creating custom patterns of magnetic nanoparticles on flexible substrates may enable new opportunities in early diagnosis and personalised treatment of life-threatening diseases. In this collaboration led by the Future Manufacturing Processes Research Group at the University of Leeds, we demonstrated for the first time that Aerosol Jet Printing can be leveraged to reliably print large-area, fine-feature patterns of magnetic nanoparticles onto both rigid and soft biocompatible materials.  We also used the STORM Lab dEPM robotic platform to guide patterned magnetic nanofilms through complex movements such as rotation and bending, showing how our approach can be applied to soft robotics and biomedical engineering applications. Here some links to probe further:

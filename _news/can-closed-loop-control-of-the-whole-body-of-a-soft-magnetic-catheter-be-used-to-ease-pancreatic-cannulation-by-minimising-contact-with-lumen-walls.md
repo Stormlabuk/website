@@ -4,7 +4,7 @@ slug: can-closed-loop-control-of-the-whole-body-of-a-soft-magnetic-catheter-be-u
 category: "News"
 hub: magnetic-tentacles
 date: 2025-05-01 11:34:53
-image: "news/chrome_L3BfQhNRUq.png"
+image: "news/can-closed-loop-control-of-the-whole-body-of-a-soft-magnetic-catheter-be-used-to-ease-pancreatic-cannulation-by-minimising-contact-with-lumen-walls.png"
 excerpt: "In this newly published journal article, we demonstrate shape control of a 50mm long by 1.8mm diameter magnetic catheter. The proposed modelling and control approach not only reduces contact with the environment…"
 ---
 In this newly published journal article, we demonstrate shape control of a 50mm long by 1.8mm diameter magnetic catheter. The proposed modelling and control approach not only reduces contact with the environment during a procedure, but is also capable of adapting to different inserting positions and orientations, successfully clearing the duodenal papilla and successfully reaching the user selected destination.

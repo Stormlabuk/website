@@ -4,7 +4,7 @@ slug: evolutionary-inverse-material-identification-bespoke-characterization-of-s
 category: "Publication"
 hub: ""
 date: 2022-01-16 23:51:36
-image: "news/frobt-08-790571-g001.jpg"
+image: "news/evolutionary-inverse-material-identification-bespoke-characterization-of-soft-materials-using-a-metaheuristic-algorithm.jpg"
 excerpt: "In our quest towards creating highly dexterous soft surgical robots to diagnose and treat cancer, reliable material modelling is crucial. In this new paper, we present a framework for fitting hyper-elastic model…"
 ---
 In our quest towards creating highly dexterous soft surgical robots to diagnose and treat cancer, reliable material modelling is crucial. In this new paper, we present a framework for fitting hyper-elastic model parameters by means of an evolutionary algorithm. This AI-based approach allows to navigate more efficiently the vast and complex design parameter space, showing a substantial increase in fitting accuracy when compared to conventional methods.”

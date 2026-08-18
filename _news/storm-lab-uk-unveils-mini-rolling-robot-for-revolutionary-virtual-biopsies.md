@@ -4,7 +4,7 @@ slug: storm-lab-uk-unveils-mini-rolling-robot-for-revolutionary-virtual-biopsies
 category: "News"
 hub: magnetic-flexible-endoscopy
 date: 2025-04-25 08:50:37
-image: "news/800x400-0-0-1-80-OloidMagRobotics_jadu_StormLab_2025.jpg"
+image: "news/storm-lab-uk-unveils-mini-rolling-robot-for-revolutionary-virtual-biopsies.jpg"
 excerpt: "Researchers at the Science and Technologies Of Robotics in Medicine (STORM) Lab, based at the University of Leeds, have developed a small magnetic robot designed to perform non-invasive “virtual biopsies.” This technology…"
 ---
 Researchers at the Science and Technologies Of Robotics in Medicine (STORM) Lab, based at the University of Leeds, have developed a small magnetic robot designed to perform non-invasive “virtual biopsies.” This technology has the potential to support earlier and more accurate detection of cancers in the gastrointestinal tract.

@@ -4,7 +4,7 @@ slug: northern-robotics-experts-to-lead-euro-conversation-on-ethics-of-ai
 category: "News"
 hub: autonomy-in-surgical-robotics
 date: 2019-02-07 09:42:08
-image: "news/1200_x_600_Elec_storm_lab.png"
+image: "news/northern-robotics-experts-to-lead-euro-conversation-on-ethics-of-ai.png"
 excerpt: "Rapid technological innovation is bringing human-robot interaction ever closer to our daily lives, meaning society needs a standard framework to address the ethical and safety issues that arise. [ Link to Original…"
 ---
 Rapid technological innovation is bringing human-robot interaction ever closer to our daily lives, meaning society needs a standard framework to address the ethical and safety issues that arise.

@@ -4,7 +4,7 @@ slug: feasibility-study-for-autonomous-tissue-retraction-in-robotic-assisted-min
 category: "News"
 hub: autonomy-in-surgical-robotics
 date: 2020-08-13 14:55:00
-image: "news/ral.png"
+image: "news/feasibility-study-for-autonomous-tissue-retraction-in-robotic-assisted-minimally-invasive-surgery-accepted-in-ra-l.png"
 excerpt: "This paper presents a novel approach for semi-autonomous tissue retraction in minimally invasive surgery; taking advantage of neural networks to detect the candidate flaps for retraction from depth maps of the surgical…"
 ---
 >

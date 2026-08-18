@@ -4,7 +4,7 @@ slug: storm-lab-team-attends-2019-ieee-international-conference-on-intelligent-r
 category: "Publication"
 hub: autonomy-in-surgical-robotics
 date: 2019-11-15 13:27:24
-image: "news/IMG-20191109-WA0006.jpg"
+image: "news/storm-lab-team-attends-2019-ieee-international-conference-on-intelligent-robots-and-systems-iros.jpg"
 excerpt: "The STORM Lab team attended 2019 IEEE International Conference on Intelligent Robots and Systems (IROS) which took place in Macau, November 4-8. The work \"Control of Magnetic Endoscopes under Anatomical Uncertainties\" comparing…"
 ---
 The STORM Lab team attended 2019 IEEE International Conference on Intelligent Robots and Systems (IROS) which took place in Macau, November 4-8. The work "Control of Magnetic Endoscopes under Anatomical Uncertainties" comparing two different control approaches for magnetic levitation was presented by Lavinia.

@@ -4,7 +4,7 @@ slug: innovative-magnetic-robotic-catheters-a-step-forward-in-minimally-invasive
 category: "News"
 hub: magnetic-tentacles
 date: 2023-11-20 23:36:33
-image: "news/ApplicationFrameHost_oXUASeJdeJ.png"
+image: "news/innovative-magnetic-robotic-catheters-a-step-forward-in-minimally-invasive-surgery.png"
 excerpt: "The research team at STORMLAB has introduced an innovative approach in the realm of minimally invasive surgery with their latest development in robotic catheters. These new devices, characterised by their flexibility and…"
 ---
 The research team at STORMLAB has introduced an innovative approach in the realm of minimally invasive surgery with their latest development in robotic catheters. These new devices, characterised by their flexibility and magnetic control, offer promising advancements in surgical precision and safety.

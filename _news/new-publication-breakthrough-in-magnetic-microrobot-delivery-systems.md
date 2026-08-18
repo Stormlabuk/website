@@ -4,7 +4,7 @@ slug: new-publication-breakthrough-in-magnetic-microrobot-delivery-systems
 category: "News"
 hub: magnetic-tentacles
 date: 2026-01-15 21:24:19
-image: "news/Photos_erV70KVUG3.png"
+image: "news/new-publication-breakthrough-in-magnetic-microrobot-delivery-systems.png"
 excerpt: "We're delighted to announce that our latest research has been published in Science Advances. The paper, \"Combining tethered and untethered magnetic robots via a magnetically triggerable latch for targeted payload delivery and…"
 ---
 We're delighted to announce that our latest research has been published in _Science Advances_. The paper, "Combining tethered and untethered magnetic robots via a magnetically triggerable latch for targeted payload delivery and retrieval," presents a novel approach to drug delivery in hard-to-reach areas of the body.

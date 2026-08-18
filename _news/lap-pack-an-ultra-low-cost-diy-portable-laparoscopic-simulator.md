@@ -4,7 +4,7 @@ slug: lap-pack-an-ultra-low-cost-diy-portable-laparoscopic-simulator
 category: "Award"
 hub: magnetic-flexible-endoscopy
 date: 2020-05-20 15:20:25
-image: "news/capture112.png"
+image: "news/lap-pack-an-ultra-low-cost-diy-portable-laparoscopic-simulator.png"
 excerpt: "In abdominal surgery a laparoscopic approach is widely recognised as the gold-standard in most common surgical procedures. However, still open surgery is the standard of treatment for the majority of populations in…"
 ---
 In abdominal surgery a laparoscopic approach is widely recognised as the gold-standard in most common surgical procedures. However, still open surgery is the standard of treatment for the majority of populations in low and middle-income countries. Even if laparoscopic surgery is accepted in a medical setting, its impact is limited by shortage of skilled surgeons. This shortage is due to limited access to quality box trainers. Though, there are wide range of laparoscopic simulator (in variety of shapes, training task etc.) which are commercially available. But majority of them are limited in their impact due to its cost, task validation, portability, accessibility, close relation to abdominal space, validation according to international standard of Fundamental of Laparoscopic Surgery (FLS) etc. This highlights the need for currently unavailable laparoscopic trainers which fulfils majority of the above criteria.

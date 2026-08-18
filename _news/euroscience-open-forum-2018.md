@@ -4,7 +4,7 @@ slug: euroscience-open-forum-2018
 category: "News"
 hub: magnetic-flexible-endoscopy
 date: 2018-07-16 11:40:10
-image: "news/1024x538_501963.jpg"
+image: "news/euroscience-open-forum-2018.jpg"
 excerpt: "We recently travelled to Toulouse, France to exhibit our work on Magnetic colonoscopy as part of the Sonopill project. We were representing UK Research and Innovation, EPSRC and the STORM Lab (University…"
 ---
 We recently travelled to Toulouse, France to exhibit our work on Magnetic colonoscopy as part of the [Sonopill project](https://www.gla.ac.uk/research/az/sonopill/). We were representing UK Research and Innovation, EPSRC and the STORM Lab (University of Leeds) at the week long ESOF 2018 event. [Read the University of Leeds press release](https://engineering.leeds.ac.uk/news/article/506/how-ultrasound-technology-and-robotics-could-offer-safer-gastrointestinal-screening).
@@ -17,24 +17,24 @@ Some highlights from the event included: demonstrating our work to Carlos Moedas
 
 [caption id="attachment_830" align="aligncenter" width="750"]
 
-![](/assets/images/news/IMG_20180708_133242-1024x768.jpg)
+![](/assets/images/news/euroscience-open-forum-2018-2.jpg)
 
  Setting up
 
 [caption id="attachment_829" align="aligncenter" width="750"]
 
-![](/assets/images/news/IMG_20180709_122756-1024x768.jpg)
+![](/assets/images/news/euroscience-open-forum-2018-3.jpg)
 
  The UK Research and Innovation Stand - setup complete!
 
 [caption id="attachment_828" align="aligncenter" width="750"]
 
-![](/assets/images/news/IMG_20180709_122819-768x1024.jpg)
+![](/assets/images/news/euroscience-open-forum-2018-4.jpg)
 
  Our stand - ready to receive visitors
 
 [caption id="attachment_827" align="aligncenter" width="750"]
 
-![](/assets/images/news/IMG_20180709_182422-1024x768.jpg)
+![](/assets/images/news/euroscience-open-forum-2018-5.jpg)
 
  Discussing our research with delegates

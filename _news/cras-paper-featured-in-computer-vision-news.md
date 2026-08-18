@@ -4,7 +4,7 @@ slug: cras-paper-featured-in-computer-vision-news
 category: "Publication"
 hub: ""
 date: 2022-06-06 09:48:49
-image: "news/image-1.jpg"
+image: "news/cras-paper-featured-in-computer-vision-news.jpg"
 excerpt: "Work we presented at CRAS has been published in this magazine:"
 ---
 Work we presented at CRAS has been [published in this magazine:](https://www.rsipvision.com/ComputerVisionNews-2022June/36/)

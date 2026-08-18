@@ -4,7 +4,7 @@ slug: innovative-magnetic-steering-enhances-vine-robot-capabilities
 category: "Publication"
 hub: magnetic-vine-robots
 date: 2024-09-02 20:38:22
-image: "news/chrome_B0qYlk7ntA.png"
+image: "news/innovative-magnetic-steering-enhances-vine-robot-capabilities.png"
 excerpt: "We are pleased to present our ground-breaking research in the field of surgical robotics, recently accepted for publication in Soft Robotics. This work introduces an innovative method for the external steering of…"
 ---
 **We are pleased to present our ground-breaking research in the field of surgical robotics, recently accepted for publication in _Soft Robotics_. This work introduces an innovative method for the external steering of vine robots using magnetic actuation, marking a significant advancement in the capabilities of robotic systems for minimally invasive surgery.**

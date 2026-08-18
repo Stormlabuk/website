@@ -4,7 +4,7 @@ slug: cancer-research-uk-award-stormlab-uk-early-detection-award
 category: "Award"
 hub: magnetic-flexible-endoscopy
 date: 2019-02-11 12:56:26
-image: "news/1200px-Cancer_Research_UK.svg.png"
+image: "news/cancer-research-uk-award-stormlab-uk-early-detection-award.png"
 excerpt: "Cancer Research UK have awarded STORMLAB UK 1 of 19 early detection award grants to enable the first-in-human trials of the robotic magnetic flexible endoscope. The system aims to provide advances towards…"
 ---
 Cancer Research UK have awarded STORMLAB UK 1 of 19 early detection award grants to enable the first-in-human trials of the robotic magnetic flexible endoscope.

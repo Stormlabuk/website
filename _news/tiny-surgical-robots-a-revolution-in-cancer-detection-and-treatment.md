@@ -4,7 +4,7 @@ slug: tiny-surgical-robots-a-revolution-in-cancer-detection-and-treatment
 category: "Publication"
 hub: ""
 date: 2023-07-31 10:12:18
-image: "news/First_demonstration_of_bimanual_magnetic_soft_robots_for_skull_base_surgery.jpg"
+image: "news/tiny-surgical-robots-a-revolution-in-cancer-detection-and-treatment.jpg"
 excerpt: "Researchers at the University of Leeds' STORM Lab have made significant advancements in the detection and treatment of lung cancer with the development of ultra-soft, magnetically controlled robots. At just 2mm in…"
 ---
 Researchers at the University of Leeds' STORM Lab have made significant advancements in the detection and treatment of lung cancer with the development of ultra-soft, magnetically controlled robots. At just 2mm in diameter, these robots can navigate deeper into the lungs, providing more tailored and less invasive treatments. Initial tests on cadavers showed promising results, published in Nature Engineering Communications.

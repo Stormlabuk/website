@@ -4,7 +4,7 @@ slug: universities-minister-chris-skidmore-visits-nexus
 category: "News"
 hub: magnetic-flexible-endoscopy
 date: 2020-01-17 16:51:20
-image: "news/WEB_LUGDant160119_3157__36.jpg"
+image: "news/universities-minister-chris-skidmore-visits-nexus.jpg"
 excerpt: "Dr James Chandler, Research Fellow in Medical Robotics and Professor Pietro Valdastri, Chair in Robotics and Autonomous Systems in the School of Electronic and Engineering demonstrated the prototype bellowscope and Magnetic Flexible…"
 ---
 Dr James Chandler, Research Fellow in Medical Robotics and Professor Pietro Valdastri, Chair in Robotics and Autonomous Systems in the School of Electronic and Engineering demonstrated the prototype bellowscope and Magnetic Flexible Endoscope to Chris Skidmore; Minister of State for Universities, Science, Research and Innovation as part of a tour of Leeds Universities innovation hub.

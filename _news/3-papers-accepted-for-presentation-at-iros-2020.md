@@ -4,7 +4,7 @@ slug: 3-papers-accepted-for-presentation-at-iros-2020
 category: "News"
 hub: magnetic-tentacles
 date: 2020-07-09 07:58:35
-image: "news/Untitled-2.png"
+image: "news/3-papers-accepted-for-presentation-at-iros-2020.png"
 excerpt: "Congratulations to Giovanni, James, Federico, Simone, Aleks and Bruno for having their papers accepted for presentation at IROS 2020. Dual-Arm Control for Enhanced Magnetic Manipulation By enhancing manipulability of magnetically actuated endoscopic…"
 ---
 Congratulations to Giovanni, James, Federico, Simone, Aleks and Bruno for having their papers accepted for presentation at IROS 2020.

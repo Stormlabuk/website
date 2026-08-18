@@ -4,7 +4,7 @@ slug: team-roboforce-wins-kuka-innovation-prize
 category: "Award"
 hub: magnetic-flexible-endoscopy
 date: 2019-11-25 11:40:09
-image: "news/IMG_1792-820x500.jpg"
+image: "news/team-roboforce-wins-kuka-innovation-prize.jpg"
 excerpt: "During the MEDICA medical technology trade fair in Düsseldorf the KUKA Innovation Award was decided on the topic of “Healthy Living”. Robotic talents from all over the world applied with their ideas…"
 ---
 During the MEDICA medical technology trade fair in Düsseldorf the KUKA Innovation Award was decided on the topic of “Healthy Living”. Robotic talents from all over the world applied with their ideas and an international jury selected the five best concepts. The final teams presented their ideas to a broad specialist audience at MEDICA 2019.

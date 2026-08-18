@@ -4,7 +4,7 @@ slug: top-honour-for-engineer-pioneering-medical-robots
 category: "Award"
 hub: autonomy-in-surgical-robotics
 date: 2022-02-23 11:13:29
-image: "news/Capture.png"
+image: "news/storm-lab-placeholder.png"
 excerpt: "A leading academic at the University of Leeds has been honoured for his work in developing medical robots. Pietro Valdastri, Professor of Robotics and Autonomous Systems in the School of Electronic and…"
 ---
 A leading academic at the University of Leeds has been honoured for his work in developing medical robots.

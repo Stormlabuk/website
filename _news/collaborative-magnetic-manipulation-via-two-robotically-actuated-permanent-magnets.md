@@ -4,7 +4,7 @@ slug: collaborative-magnetic-manipulation-via-two-robotically-actuated-permanent
 category: "News"
 hub: magnetic-tentacles
 date: 2022-10-12 12:00:26
-image: "news/lFg7aNit4G.png"
+image: "news/collaborative-magnetic-manipulation-via-two-robotically-actuated-permanent-magnets.png"
 excerpt: "What happens if you place two large magnets at the end effector of two serial robots? How many independent degrees of freedom can be magnetically controlled in the central workspace? We have…"
 ---
 What happens if you place two large magnets at the end effector of two serial robots?

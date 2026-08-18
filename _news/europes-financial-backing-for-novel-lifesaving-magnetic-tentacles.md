@@ -4,7 +4,7 @@ slug: europes-financial-backing-for-novel-lifesaving-magnetic-tentacles
 category: "News"
 hub: magnetic-tentacles
 date: 2019-02-18 13:00:48
-image: "news/1200px-European_Research_Council_logo.svg.png"
+image: "news/europes-financial-backing-for-novel-lifesaving-magnetic-tentacles.png"
 excerpt: "Robotic tentacles to help surgeons operate inside the body is among several new research programmes at Leeds supported by European funding. The University of Leeds has received more than €19m in funding…"
 ---
 ## Robotic tentacles to help surgeons operate inside the body is among several new research programmes at Leeds supported by European funding.

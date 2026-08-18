@@ -4,7 +4,7 @@ slug: weve-been-featured-on-operation-ouch
 category: "News"
 hub: ""
 date: 2026-02-23 12:06:27
-image: "news/chrome_O2j23klyML.jpg"
+image: "news/weve-been-featured-on-operation-ouch.jpg"
 excerpt: "We’re excited to share that StormLab UK has been featured on BBC ’s children’s medical programme, Operation Ouch! The episode features our work while exploring how blood carries oxygen around the body…"
 ---
 We’re excited to share that StormLab UK has been featured on **BBC’s** children’s medical programme, _Operation Ouch_!

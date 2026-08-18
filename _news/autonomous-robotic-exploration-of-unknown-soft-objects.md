@@ -4,7 +4,7 @@ slug: autonomous-robotic-exploration-of-unknown-soft-objects
 category: "Publication"
 hub: autonomy-in-surgical-robotics
 date: 2026-03-23 09:58:31
-image: "news/10.1177_02783649251415415-fig1.jpg"
+image: "news/autonomous-robotic-exploration-of-unknown-soft-objects.jpg"
 excerpt: "Ever tried to get a robot to fully map an object that changes shape the second it touches it? 🤔 Autonomous exploration of unknown soft objects is notoriously difficult because they deform…"
 ---
 Ever tried to get a robot to fully map an object that changes shape the second it touches it? 🤔 Autonomous exploration of unknown soft objects is notoriously difficult because they deform unpredictably, keeping much of their surface hidden or self-occluded. To crack this problem, our new paper in the [The International Journal of Robotics Research (IJRR)](https://www.linkedin.com/company/ijrr-journal?trk=public_post-text) introduces a novel framework integrating topology-aware 3D reconstruction with a topology-guided motion planner.

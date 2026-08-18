@@ -13,6 +13,6 @@ Wired Health is a one day event focused on technological aspects of healthcare a
 
 Among the world-level speakers, Storm Lab director, prof. Pietro Valdastri has been invited to give a talk about our technologies.
 
-![](/assets/images/news/catturapietrowired2-1024x580.png)
+![](/assets/images/news/stormlab-uk-wired-health-italy.png)
 
 The event description can be found (https://www.wired.it/attualita/media/2018/03/15/wired-health-2018-programma/), while the complete program of the event is (https://images.wired.it/wp-content/uploads/2018/03/12112238/1520846557_Programma_digitale_correzione.pdf).

@@ -4,7 +4,7 @@ slug: robotic-autonomy-for-magnetic-endoscope-biopsy
 category: "News"
 hub: magnetic-flexible-endoscopy
 date: 2022-07-07 12:00:35
-image: "news/tmrb-abstract-01.png"
+image: "news/robotic-autonomy-for-magnetic-endoscope-biopsy.png"
 excerpt: "The magnetic flexible endoscope team have just published their latest work entitled ‘Robotic Autonomy for Magnetic Endoscope Biopsy’ to IEEE Transactions on Medical Robotics and Bionics. Tissue biopsies taken during colonoscopy are…"
 ---
 The magnetic flexible endoscope team have just published their latest work entitled ‘Robotic Autonomy for Magnetic Endoscope Biopsy’ to IEEE Transactions on Medical Robotics and Bionics.

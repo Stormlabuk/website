@@ -4,7 +4,7 @@ slug: science-robotics-paper-published
 category: "Publication"
 hub: magnetic-flexible-endoscopy
 date: 2019-06-20 08:12:26
-image: "news/SKY_0093-3-X3.jpg"
+image: "news/science-robotics-paper-published.jpg"
 excerpt: "STORM Lab engineers have helped show it is technically possible to guide a tiny robotic capsule inside the colon to take micro-ultrasound images. Known as a Sonopill, the device could one day…"
 ---
 STORM Lab engineers have helped show it is technically possible to guide a tiny robotic capsule inside the colon to take micro-ultrasound images.

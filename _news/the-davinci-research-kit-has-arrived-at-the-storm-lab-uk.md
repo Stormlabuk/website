@@ -9,7 +9,7 @@ excerpt: "The Storm Lab is happy to announce that a brand new DaVinci® Research
 ---
 The Storm Lab is happy to announce that a brand new DaVinci® Research Kit has arrived.
 
-![](/assets/images/news/DSC_0193-1024x683.jpg)
+![](/assets/images/news/the-davinci-research-kit-has-arrived-at-the-storm-lab-uk.jpg)
 
 The daVinci® Research Kit [1], a.k.a. dVRK, is an advanced control system, produced by Medical Motion Corporation, a spinoff of the Worchester Polytechnic Institute, Massachussetts, USA. This system allows to directly control the motion of the Intuitive Surgical daVinci® system ([see our webpage on the daVinci](http://stormlabuk.com/robotic-surgery/da-vinci-surgical-system/)). The embedded controller of the commercial daVinci® is designed for hospital use, where the motion of the patient-side manipulator strictly follows the motion of the joystick, handled by the surgeon. The dVRK substitutes the original controller, allowing the researchers to implement new control strategies and advanced algorithms by directly and independently controlling all the daVinci® arms.
 

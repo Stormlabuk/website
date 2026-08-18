@@ -4,7 +4,7 @@ slug: teleoperation-and-contact-detection-of-a-waterjet-actuated-soft-continuum-
 category: "Publication"
 hub: magnetic-tentacles
 date: 2020-08-12 14:32:00
-image: "news/OverviewRA-L_campisano.png"
+image: "news/teleoperation-and-contact-detection-of-a-waterjet-actuated-soft-continuum-manipulator-published-in-ra-l.png"
 excerpt: "Our new work on teleoperation and contact detection of a waterjet-actuated soft continuum manipulator has been published on RA-L. This work presents a method to enable intuitive articulation of a waterjet-actuated soft…"
 ---
 >

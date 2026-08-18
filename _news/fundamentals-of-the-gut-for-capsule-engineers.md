@@ -4,7 +4,7 @@ slug: fundamentals-of-the-gut-for-capsule-engineers
 category: "News"
 hub: magnetic-flexible-endoscopy
 date: 2020-10-07 08:59:56
-image: "news/Capture.png"
+image: "news/storm-lab-placeholder.png"
 excerpt: "A literature review on the Gastrointestinal tract has just been published by the STORM Lab UK in Progress of Biomedical Engineering. The inspection of the GI tract is fundamental for the early…"
 ---
 ## A literature review on the Gastrointestinal tract has just been published by the STORM Lab UK in Progress of Biomedical Engineering.

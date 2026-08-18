@@ -23,7 +23,7 @@ Highlights from our time in London include:
 
 [caption id="attachment_742" align="alignnone" width="3715"]
 
-![](/assets/images/news/IMG_20180221_100327.jpg)
+![](/assets/images/news/science-for-a-successful-nation.jpg)
 
  Setting-up the exhibit
 
@@ -31,7 +31,7 @@ Highlights from our time in London include:
 
 [caption id="attachment_741" align="aligncenter" width="3719"]
 
-![](/assets/images/news/IMG_20180221_124548.jpg)
+![](/assets/images/news/science-for-a-successful-nation-2.jpg)
 
  Our completed stand ready to receive guests
 
@@ -39,6 +39,6 @@ Highlights from our time in London include:
 
 [caption id="attachment_740" align="aligncenter" width="4608"]
 
-![](/assets/images/news/IMG_20180221_140931.jpg)
+![](/assets/images/news/science-for-a-successful-nation-3.jpg)
 
  Mr James Martin and Dr Holly Lay either side of "Sonozilla" - a scaled-up model of a Sonopill capsule

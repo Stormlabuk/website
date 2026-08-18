@@ -4,7 +4,7 @@ slug: actuated-coiling-soft-robot-with-variable-stiffness
 category: "News"
 hub: magnetic-tentacles
 date: 2023-05-10 10:20:31
-image: "news/lloyd1-3264770-large.gif"
+image: "news/actuated-coiling-soft-robot-with-variable-stiffness.gif"
 excerpt: "Soft, flexible robots, fabricated using magnetically-active elastomers, are capable of very large deformations, and are actuated at distance thus allowing for extremely small scale. This combination of properties is understandably appealing to…"
 ---
 Soft, flexible robots, fabricated using magnetically-active elastomers, are capable of very large deformations, and are actuated at distance thus allowing for extremely small scale. This combination of properties is understandably appealing to the minimally invasive surgical community but, due to the soft materials and low actuating forces involved, one prominent challenge is the functionalization of such magnetic devices.

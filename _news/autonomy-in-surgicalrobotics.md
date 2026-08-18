@@ -4,7 +4,7 @@ slug: autonomy-in-surgicalrobotics
 category: "News"
 hub: autonomy-in-surgical-robotics
 date: 2021-05-11 20:54:04
-image: "news/Capturea.png"
+image: "news/autonomy-in-surgicalrobotics.png"
 excerpt: "Starting from the autonomotive field, the topic of autonomy in robotics has been largely debated by the research community. In particular, the last 20 years have seen the rise of autonomous surgical…"
 ---
 Starting from the autonomotive field, the topic of autonomy in robotics has been largely debated by the research community. In particular, the last 20 years have seen the rise of autonomous surgical robots as a result of an increasing interest by the community and the availability of robotic research platform.

@@ -4,7 +4,7 @@ slug: towards-autonomous-robotic-minimally-invasive-ultrasound-scanning-and-vess
 category: "News"
 hub: autonomy-in-surgical-robotics
 date: 2022-10-13 08:20:34
-image: "news/chrome_hiDiFyAxo8.png"
+image: "news/towards-autonomous-robotic-minimally-invasive-ultrasound-scanning-and-vessel-reconstruction-on-non-planar-surfaces.png"
 excerpt: "In our recently published work, we explore the challenges and a potential solution for enabling autonomous intracorporeal Ultrasound (US) scanning during robotic surgery. Enabled by a novel kinematic sensor-fusion scheme, we demonstrate…"
 ---
 In our recently published work, we explore the challenges and a potential solution for enabling autonomous intracorporeal Ultrasound (US) scanning during robotic surgery. Enabled by a novel kinematic sensor-fusion scheme, we demonstrate the autonomous navigation and probe reorientation along a phantom hepatic vessel structure. Check out our paper for in-depth results and future directions of our research on autonomous robotic surgery.

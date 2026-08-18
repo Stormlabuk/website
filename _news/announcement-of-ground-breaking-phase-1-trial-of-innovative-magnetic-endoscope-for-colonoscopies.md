@@ -4,7 +4,7 @@ slug: announcement-of-ground-breaking-phase-1-trial-of-innovative-magnetic-endos
 category: "News"
 hub: magnetic-flexible-endoscopy
 date: 2023-10-24 17:39:41
-image: "news/VICE-endocsope-team-SU001.jpg"
+image: "news/announcement-of-ground-breaking-phase-1-trial-of-innovative-magnetic-endoscope-for-colonoscopies.jpg"
 excerpt: "The Research Team: (From left to right) Dr. Bruno Scaglioni, Dr. Keith Obstein, Dr. James Martin, Claire Landewee, Dr. Simone Calò, and Dr. Pietro Valdastri. (Photograph courtesy of Susan Urmy) STORMLab members…"
 ---
 **The Research Team:** (From left to right) Dr. Bruno Scaglioni, Dr. Keith Obstein, Dr. James Martin, Claire Landewee, Dr. Simone Calò, and Dr. Pietro Valdastri. (Photograph courtesy of Susan Urmy)

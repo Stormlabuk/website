@@ -4,7 +4,7 @@ slug: a-robot-small-enough-to-explore-the-lungs
 category: "News"
 hub: magnetic-tentacles
 date: 2022-04-25 13:31:57
-image: "news/image.jpg"
+image: "news/a-robot-small-enough-to-explore-the-lungs.jpg"
 excerpt: "Engineers and scientists have paved the way for a robot that can reach some of the smallest bronchial tubes in the lungs – to take tissue samples or deliver cancer therapy. Though…"
 ---
 ## Engineers and scientists have paved the way for a robot that can reach some of the smallest bronchial tubes in the lungs – to take tissue samples or deliver cancer therapy.

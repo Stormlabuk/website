@@ -4,7 +4,7 @@ slug: enabling-the-future-of-colonoscopy-with-intelligent-and-autonomous-magneti
 category: "News"
 hub: magnetic-flexible-endoscopy
 date: 2020-10-13 13:02:51
-image: "news/website-01.png"
+image: "news/enabling-the-future-of-colonoscopy-with-intelligent-and-autonomous-magnetic-manipulation.png"
 excerpt: "The magnetic flexible endoscope team have just published their latest work entitled ‘Enabling the future of colonoscopy with intelligent and autonomous magnetic manipulation' - the culmination of 12 years of research by…"
 ---
 The magnetic flexible endoscope team have just published their latest work entitled ‘Enabling the future of colonoscopy with intelligent and autonomous magnetic manipulation' - the culmination of 12 years of research by an international team of scientists led by the University of Leeds. The research has been published in the scientific journal [Nature Machine Intelligence](https://www.nature.com/articles/s42256-020-00231-9) ([https://www.nature.com/articles/s42256-020-00231-9](https://www.nature.com/articles/s42256-020-00231-9)) and reported in [The Times](https://www.thetimes.co.uk/article/magnet-to-help-robot-carry-out-colon-checkup-wnn9rm8gz), [New Scientist](https://www.newscientist.com/article/2256896-robot-that-can-perform-colonoscopies-aims-to-make-it-less-unpleasant/) and [The Daily Mail](https://www.dailymail.co.uk/sciencetech/article-8831027/Robots-Scientists-invent-mechanical-arm-perform-colonoscopies-painful-procedure.html).

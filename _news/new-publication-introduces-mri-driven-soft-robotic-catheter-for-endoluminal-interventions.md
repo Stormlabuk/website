@@ -4,7 +4,7 @@ slug: new-publication-introduces-mri-driven-soft-robotic-catheter-for-endolumina
 category: "Publication"
 hub: mri-actuated-instruments
 date: 2026-03-23 10:03:56
-image: "news/OeEyzanyNv.png"
+image: "news/new-publication-introduces-mri-driven-soft-robotic-catheter-for-endoluminal-interventions.png"
 excerpt: "Researchers from STORM Lab and collaborators have published a new paper in Communications Engineering, presenting a novel approach to robotic intervention using magnetic resonance imaging (MRI) for both actuation and real-time visualisation…"
 ---
 Researchers from STORM Lab and collaborators have published a new paper in _Communications Engineering_, presenting a novel approach to robotic intervention using magnetic resonance imaging (MRI) for both actuation and real-time visualisation.

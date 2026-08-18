@@ -4,7 +4,7 @@ slug: new-publication-in-ieee-transactions-on-robotics-automating-organ-conforma
 category: "Publication"
 hub: autonomy-in-surgical-robotics
 date: 2024-01-17 11:24:21
-image: "news/1705433237733.jpg"
+image: "news/new-publication-in-ieee-transactions-on-robotics-automating-organ-conformation-in-robotic-surgery.jpg"
 excerpt: "We are pleased to announce that our research team's latest paper has been published in the IEEE Transactions on Robotics. The paper presents a significant advancement in the field of surgical robotics…"
 ---
 We are pleased to announce that our research team's latest paper has been published in the IEEE Transactions on Robotics. The paper presents a significant advancement in the field of surgical robotics, focusing on the automation of organ conformation using bimanual manipulation with a state-of-the-art surgical robot.
