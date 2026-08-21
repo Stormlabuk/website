@@ -12,10 +12,8 @@ name: Build and deploy Jekyll to GitHub Pages
 on:
   push:
     branches:
-      - main
-      - master
-      - claude/stormlab-github-pages-pxcv5h
-  workflow_dispatch:
+      - main          # production: merging to main publishes to www.stormlabuk.com
+  workflow_dispatch:   # manual re-deploy from the Actions tab
 
 permissions:
   contents: read

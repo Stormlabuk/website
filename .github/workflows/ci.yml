@@ -1,0 +1,30 @@
+# ─────────────────────────────────────────────────────────────────────────
+# PR gate: builds the site on every pull request into main. If Jekyll can't
+# build (bad front matter, Liquid/SCSS error, …) the check fails and the PR
+# is blocked — so broken changes can never be merged and auto-deployed.
+# ─────────────────────────────────────────────────────────────────────────
+name: Build check
+
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+      - name: Build with Jekyll
+        run: bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production

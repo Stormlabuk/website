@@ -131,15 +131,33 @@ Or without `make`: `bundle install` then `bundle exec jekyll serve`.
 `make build` / `build.cmd` produces the static site in `_site/` if you want to
 inspect or host the output yourself.
 
-## Publishing (currently OFF)
+## Development & release
 
-The site is set up for **local use only** — nothing is published automatically.
-The GitHub Actions workflow in `.github/workflows/pages.yml` runs **only when
-triggered manually**, so a private repository stays private.
+The site is live at **<https://www.stormlabuk.com>** and publishes from the
+`main` branch via GitHub Actions.
 
-When you want to go live (public repo, or a plan that allows Pages on private
-repos): enable **Settings → Pages → Source: GitHub Actions**, then switch the
-workflow's `on:` trigger to run on push (see the comments at the top of
-`pages.yml`). For a project subpath (`https://USER.github.io/REPO`) also set
-`baseurl: "/REPO"` in `_config.yml`. The site uses Jekyll 4 and Dart-Sass
-`@use`, so use the **GitHub Actions** source, not "Deploy from a branch".
+**`main` is production.** Every merge into `main` triggers
+`.github/workflows/pages.yml`, which builds the site and deploys it to the live
+domain. Treat `main` as always-deployable — don't commit directly to it.
+
+**To make a change:**
+
+1. Branch off `main`: `git switch -c my-change main`
+2. Commit your work and preview locally with `make serve`
+   (→ <http://localhost:4000>).
+3. Push the branch and open a **pull request** into `main`.
+4. The **Build check** (`.github/workflows/ci.yml`) builds the site on the PR.
+   If Jekyll can't build, the check fails and the PR is blocked.
+5. Once the check is green, **merge**. The merge auto-deploys to
+   www.stormlabuk.com within a couple of minutes.
+
+`main` is protected: pull request required, the Build check must pass, and
+force-pushes are blocked.
+
+### Hosting notes
+
+The site is served at the **custom-domain root**, so `baseurl` stays `""` and
+`url` is `https://www.stormlabuk.com` in `_config.yml`; the `CNAME` file pins the
+domain. Pages **Source** must be **GitHub Actions** (not "Deploy from a branch")
+— the site uses Jekyll 4 and Dart-Sass `@use`. Do **not** pass `--baseurl` in the
+build step; that would override `_config.yml` and 404 every asset at the root.
