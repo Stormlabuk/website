@@ -131,28 +131,13 @@ Or without `make`: `bundle install` then `bundle exec jekyll serve`.
 `make build` / `build.cmd` produces the static site in `_site/` if you want to
 inspect or host the output yourself.
 
-## Development & release
+## Publishing
 
-The site is live at **<https://www.stormlabuk.com>** and publishes from the
-`main` branch via GitHub Actions.
-
-**`main` is production.** Every merge into `main` triggers
-`.github/workflows/pages.yml`, which builds the site and deploys it to the live
-domain. Treat `main` as always-deployable — don't commit directly to it.
-
-**To make a change:**
-
-1. Branch off `main`: `git switch -c my-change main`
-2. Commit your work and preview locally with `make serve`
-   (→ <http://localhost:4000>).
-3. Push the branch and open a **pull request** into `main`.
-4. The **Build check** (`.github/workflows/ci.yml`) builds the site on the PR.
-   If Jekyll can't build, the check fails and the PR is blocked.
-5. Once the check is green, **merge**. The merge auto-deploys to
-   www.stormlabuk.com within a couple of minutes.
-
-`main` is protected: pull request required, the Build check must pass, and
-force-pushes are blocked.
+The site is live at **<https://www.stormlabuk.com>** and deploys automatically:
+any push to the working branch triggers `.github/workflows/pages.yml`, which
+builds the site with Jekyll and publishes it to the custom domain. Preview
+locally first with `make serve` (→ <http://localhost:4000>). Pages **Source**
+must be **GitHub Actions** (not "Deploy from a branch").
 
 ### Hosting notes
 
