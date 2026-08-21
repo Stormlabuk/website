@@ -12,9 +12,7 @@ name: Build and deploy Jekyll to GitHub Pages
 on:
   push:
     branches:
-      - main
-      - master
-      - claude/stormlab-github-pages-pxcv5h
+      - claude/stormlab-github-pages-pxcv5h   # the branch GitHub Pages deploys from
   workflow_dispatch:
 
 permissions:
