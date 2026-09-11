@@ -141,6 +141,8 @@
   .news-featured__media { order: -1; min-height: 220px; }
   .news-featured__body { padding: 32px 24px 28px; }
   .news-featured__title { font-size: 1.7rem; }
-  .news-tools { width: 100%; }
-  .news-search { flex: 1; width: auto; }
+  // Stack the research filter + search full-width so they can't overflow the
+  // viewport (an <input>'s intrinsic min-width stops it shrinking in a row).
+  .news-tools { width: 100%; flex-direction: column; align-items: stretch; }
+  .news-select, .news-search { width: 100%; }
 }
