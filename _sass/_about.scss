@@ -15,10 +15,11 @@
 .member__frame {
   position: relative; aspect-ratio: 3 / 4; border-radius: 24px; overflow: hidden;
   background: var(--grey-950); border: 1px solid var(--border-default);
-  // Force a compositing layer that honours border-radius so the corners don't
-  // leak as squares when .member__photo scales up on hover (WebKit clip bug).
-  -webkit-mask-image: -webkit-radial-gradient(#fff, #000); mask-image: radial-gradient(#fff, #000);
-  transform: translateZ(0);
+  // Safari ignores `overflow: hidden` rounding for children that carry a
+  // transform (.member__photo scales on hover), leaking square corners.
+  // clip-path reliably clips transformed descendants to the rounded shape.
+  clip-path: inset(0 round 24px);
+  isolation: isolate;
 }
 .member__photo {
   width: 100%; height: 100%; object-fit: cover; display: block;
