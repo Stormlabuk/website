@@ -1,6 +1,7 @@
 ---
 title: "IEEE ICRA 2021 Plenary “Medical Capsule Robots: A Fantastic Voyage\" by STORM Lab Director Pietro Valdastri"
 slug: icra-2021-plenary-medical-capsule-robots-a-fantastic-voyage-by-storm-lab-director-pietro-valdastri
+redirect_from: "/icra-2021-plenary-medical-capsule-robots-a-fantastic-voyage-by-storm-lab-director-pietro-valdastri/"
 category: "Publication"
 hub: autonomy-in-surgical-robotics
 date: 2021-07-14 19:42:41

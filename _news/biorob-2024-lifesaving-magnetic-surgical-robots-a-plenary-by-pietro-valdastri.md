@@ -1,6 +1,7 @@
 ---
 title: "BioRob 2024: Lifesaving Magnetic Surgical Robots - A Plenary by Pietro Valdastri"
 slug: biorob-2024-lifesaving-magnetic-surgical-robots-a-plenary-by-pietro-valdastri
+redirect_from: "/biorob-2024-lifesaving-magnetic-surgical-robots-a-plenary-by-pietro-valdastri/"
 category: "News"
 hub: ""
 date: 2024-09-03 08:24:22

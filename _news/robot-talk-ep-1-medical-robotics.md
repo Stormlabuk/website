@@ -1,6 +1,7 @@
 ---
 title: "Robot Talk Ep 1: Medical Robotics"
 slug: robot-talk-ep-1-medical-robotics
+redirect_from: "/robot-talk-ep-1-medical-robotics/"
 category: "News"
 hub: magnetic-flexible-endoscopy
 date: 2020-10-01 08:50:37

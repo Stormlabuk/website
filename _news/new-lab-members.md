@@ -1,6 +1,7 @@
 ---
 title: "New Lab Members"
 slug: new-lab-members
+redirect_from: "/new-lab-members/"
 category: "News"
 hub: magnetic-flexible-endoscopy
 date: 2017-10-26 11:04:23

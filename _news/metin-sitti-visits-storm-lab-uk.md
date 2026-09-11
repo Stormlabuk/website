@@ -1,6 +1,7 @@
 ---
 title: "Metin Sitti visits STORM LAB UK"
 slug: metin-sitti-visits-storm-lab-uk
+redirect_from: "/metin-sitti-visits-storm-lab-uk/"
 category: "News"
 hub: magnetic-flexible-endoscopy
 date: 2019-03-15 09:28:13

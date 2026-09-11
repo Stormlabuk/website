@@ -1,6 +1,7 @@
 ---
 title: "Guidelines for Robotic Flexible Endoscopy at the Time of COVID-19"
 slug: guidelines-for-robotic-flexible-endoscopy-at-the-time-of-covid-19
+redirect_from: "/guidelines-for-robotic-flexible-endoscopy-at-the-time-of-covid-19/"
 category: "News"
 hub: magnetic-flexible-endoscopy
 date: 2021-02-25 22:09:06

@@ -1,6 +1,7 @@
 ---
 title: "Tiny Surgical Robots: A Revolution in Cancer Detection and Treatment"
 slug: tiny-surgical-robots-a-revolution-in-cancer-detection-and-treatment
+redirect_from: "/tiny-surgical-robots-a-revolution-in-cancer-detection-and-treatment/"
 category: "Publication"
 hub: ""
 date: 2023-07-31 10:12:18

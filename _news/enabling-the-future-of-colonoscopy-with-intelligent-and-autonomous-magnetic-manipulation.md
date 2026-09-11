@@ -1,6 +1,7 @@
 ---
 title: "Enabling the future of colonoscopy with intelligent and autonomous magnetic manipulation"
 slug: enabling-the-future-of-colonoscopy-with-intelligent-and-autonomous-magnetic-manipulation
+redirect_from: "/enabling-the-future-of-colonoscopy-with-intelligent-and-autonomous-magnetic-manipulation/"
 category: "News"
 hub: magnetic-flexible-endoscopy
 date: 2020-10-13 13:02:51

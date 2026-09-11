@@ -1,6 +1,7 @@
 ---
 title: "UoL Press Release - Redesigning cancer screening technology"
 slug: uol-press-release-redesigning-cancer-screening-technology
+redirect_from: "/uol-press-release-redesigning-cancer-screening-technology/"
 category: "News"
 hub: magnetic-flexible-endoscopy
 date: 2019-04-25 08:26:24

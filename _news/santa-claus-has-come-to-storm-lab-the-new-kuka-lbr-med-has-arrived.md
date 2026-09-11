@@ -1,6 +1,7 @@
 ---
 title: "Santa Claus has come to STORM Lab: The new KUKA LBR Med has arrived"
 slug: santa-claus-has-come-to-storm-lab-the-new-kuka-lbr-med-has-arrived
+redirect_from: "/santa-claus-has-come-to-storm-lab-the-new-kuka-lbr-med-has-arrived/"
 category: "News"
 hub: ""
 date: 2017-12-12 16:04:42

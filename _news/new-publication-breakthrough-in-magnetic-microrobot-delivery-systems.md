@@ -1,6 +1,7 @@
 ---
 title: "New Publication: Breakthrough in Magnetic Microrobot Delivery Systems"
 slug: new-publication-breakthrough-in-magnetic-microrobot-delivery-systems
+redirect_from: "/new-publication-breakthrough-in-magnetic-microrobot-delivery-systems/"
 category: "News"
 hub: magnetic-tentacles
 date: 2026-01-15 21:24:19

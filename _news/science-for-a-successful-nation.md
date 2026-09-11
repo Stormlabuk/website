@@ -1,6 +1,7 @@
 ---
 title: "Science for a Successful Nation"
 slug: science-for-a-successful-nation
+redirect_from: "/science-for-a-successful-nation/"
 category: "News"
 hub: magnetically-guided-ultrasound
 date: 2018-02-22 11:26:34

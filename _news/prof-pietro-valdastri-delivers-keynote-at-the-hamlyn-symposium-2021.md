@@ -1,6 +1,7 @@
 ---
 title: "Prof Pietro Valdastri delivers Keynote at the Hamlyn Symposium 2021"
 slug: prof-pietro-valdastri-delivers-keynote-at-the-hamlyn-symposium-2021
+redirect_from: "/prof-pietro-valdastri-delivers-keynote-at-the-hamlyn-symposium-2021/"
 category: "News"
 hub: magnetic-flexible-endoscopy
 date: 2021-07-14 19:36:56

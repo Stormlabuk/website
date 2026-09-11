@@ -1,6 +1,7 @@
 ---
 title: "Six-degree-of-freedom Localisation Under Multiple Permanent Magnets Actuation"
 slug: six-degree-of-freedom-localization-under-multiple-permanent-magnets-actuation
+redirect_from: "/six-degree-of-freedom-localization-under-multiple-permanent-magnets-actuation/"
 category: "News"
 hub: magnetic-tentacles
 date: 2023-05-12 15:26:46

@@ -1,6 +1,7 @@
 ---
 title: "STORM Lab researchers publish new paper in The International Journal of Robotics Research"
 slug: storm-lab-researchers-publish-new-paper-in-the-international-journal-of-robotics-research
+redirect_from: "/storm-lab-researchers-publish-new-paper-in-the-international-journal-of-robotics-research/"
 category: "Publication"
 hub: autonomy-in-surgical-robotics
 date: 2026-05-27 15:54:42

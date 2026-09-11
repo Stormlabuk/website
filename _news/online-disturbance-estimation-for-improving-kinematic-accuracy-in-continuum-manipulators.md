@@ -1,6 +1,7 @@
 ---
 title: "Online Disturbance Estimation for Improving Kinematic Accuracy in Continuum Manipulators"
 slug: online-disturbance-estimation-for-improving-kinematic-accuracy-in-continuum-manipulators
+redirect_from: "/online-disturbance-estimation-for-improving-kinematic-accuracy-in-continuum-manipulators/"
 category: "News"
 hub: magnetic-tentacles
 date: 2020-02-12 16:02:52

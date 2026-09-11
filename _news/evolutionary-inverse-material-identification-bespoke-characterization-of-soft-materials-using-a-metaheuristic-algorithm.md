@@ -1,6 +1,7 @@
 ---
 title: "Evolutionary Inverse Material Identification: Bespoke Characterisation of Soft Materials Using a Metaheuristic Algorithm"
 slug: evolutionary-inverse-material-identification-bespoke-characterization-of-soft-materials-using-a-metaheuristic-algorithm
+redirect_from: "/evolutionary-inverse-material-identification-bespoke-characterization-of-soft-materials-using-a-metaheuristic-algorithm/"
 category: "Publication"
 hub: ""
 date: 2022-01-16 23:51:36

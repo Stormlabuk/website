@@ -1,6 +1,7 @@
 ---
 title: "Groundbreaking vine robots with magnetic skin could transform cancer treatment"
 slug: groundbreaking-vine-robots-with-magnetic-skin-could-transform-cancer-treatment
+redirect_from: "/groundbreaking-vine-robots-with-magnetic-skin-could-transform-cancer-treatment/"
 category: "Publication"
 hub: magnetic-vine-robots
 date: 2024-07-31 09:02:50

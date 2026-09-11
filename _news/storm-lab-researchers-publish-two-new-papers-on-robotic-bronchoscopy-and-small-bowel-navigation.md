@@ -1,6 +1,7 @@
 ---
 title: "STORM Lab Researchers Publish Two New Papers on Robotic Bronchoscopy and Small-Bowel Navigation"
 slug: storm-lab-researchers-publish-two-new-papers-on-robotic-bronchoscopy-and-small-bowel-navigation
+redirect_from: "/storm-lab-researchers-publish-two-new-papers-on-robotic-bronchoscopy-and-small-bowel-navigation/"
 category: "News"
 date: 2026-08-18 09:00:00
 image: "news/tmech-2026-two-papers.png"

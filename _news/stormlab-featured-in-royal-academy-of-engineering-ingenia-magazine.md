@@ -1,6 +1,7 @@
 ---
 title: "STORMLAB featured in Royal Academy of Engineering Ingenia Magazine"
 slug: stormlab-featured-in-royal-academy-of-engineering-ingenia-magazine
+redirect_from: "/stormlab-featured-in-royal-academy-of-engineering-ingenia-magazine/"
 category: "News"
 hub: autonomy-in-surgical-robotics
 date: 2023-03-09 09:49:11

@@ -1,6 +1,7 @@
 ---
 title: "Autonomous robotic exploration of unknown soft objects"
 slug: autonomous-robotic-exploration-of-unknown-soft-objects
+redirect_from: "/autonomous-robotic-exploration-of-unknown-soft-objects/"
 category: "Publication"
 hub: autonomy-in-surgical-robotics
 date: 2026-03-23 09:58:31

@@ -1,6 +1,7 @@
 ---
 title: "A decade retrospective of medical robotics research from 2010 to 2020"
 slug: a-decade-retrospective-of-medical-robotics-research-from-2010-to-2020
+redirect_from: "/a-decade-retrospective-of-medical-robotics-research-from-2010-to-2020/"
 category: "Publication"
 hub: ""
 date: 2021-11-12 12:05:16

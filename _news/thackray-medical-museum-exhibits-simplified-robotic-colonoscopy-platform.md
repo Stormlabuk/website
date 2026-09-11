@@ -1,6 +1,7 @@
 ---
 title: "Thackray Medical Museum Exhibits simplified Robotic Colonoscopy Platform"
 slug: thackray-medical-museum-exhibits-simplified-robotic-colonoscopy-platform
+redirect_from: "/thackray-medical-museum-exhibits-simplified-robotic-colonoscopy-platform/"
 category: "News"
 hub: magnetic-flexible-endoscopy
 date: 2021-05-25 09:48:45

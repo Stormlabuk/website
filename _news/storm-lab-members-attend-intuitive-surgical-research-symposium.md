@@ -1,6 +1,7 @@
 ---
 title: "STORM Lab Members attend Intuitive Surgical Research Symposium"
 slug: storm-lab-members-attend-intuitive-surgical-research-symposium
+redirect_from: "/storm-lab-members-attend-intuitive-surgical-research-symposium/"
 category: "News"
 hub: ""
 date: 2020-02-12 15:55:50

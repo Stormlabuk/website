@@ -1,6 +1,7 @@
 ---
 title: "The daVinci Research Kit has arrived at the Storm Lab UK"
 slug: the-davinci-research-kit-has-arrived-at-the-storm-lab-uk
+redirect_from: "/the-davinci-research-kit-has-arrived-at-the-storm-lab-uk/"
 category: "News"
 hub: autonomy-in-surgical-robotics
 date: 2018-01-16 18:17:17

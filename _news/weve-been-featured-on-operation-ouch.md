@@ -1,6 +1,7 @@
 ---
 title: "We’ve Been Featured on Operation Ouch!"
 slug: weve-been-featured-on-operation-ouch
+redirect_from: "/weve-been-featured-on-operation-ouch/"
 category: "News"
 hub: ""
 date: 2026-02-23 12:06:27

@@ -1,6 +1,7 @@
 ---
 title: "Europe’s financial backing for Novel Lifesaving Magnetic Tentacles"
 slug: europes-financial-backing-for-novel-lifesaving-magnetic-tentacles
+redirect_from: "/europes-financial-backing-for-novel-lifesaving-magnetic-tentacles/"
 category: "News"
 hub: magnetic-tentacles
 date: 2019-02-18 13:00:48

@@ -1,6 +1,7 @@
 ---
 title: "Seminar at the University of Toronto"
 slug: seminar-at-the-university-of-toronto
+redirect_from: "/seminar-at-the-university-of-toronto/"
 category: "News"
 hub: magnetic-flexible-endoscopy
 date: 2018-02-24 21:17:10

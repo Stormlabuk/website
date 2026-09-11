@@ -1,6 +1,7 @@
 ---
 title: "Challenges of continuum robots in clinical context: a review."
 slug: challenges-of-continuum-robots-in-clinical-context-a-review
+redirect_from: "/challenges-of-continuum-robots-in-clinical-context-a-review/"
 category: "News"
 hub: magnetic-tentacles
 date: 2020-06-29 21:36:39

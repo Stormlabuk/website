@@ -1,6 +1,7 @@
 ---
 title: "Lap-Pack, an ultra-low-cost, DIY, portable laparoscopic simulator"
 slug: lap-pack-an-ultra-low-cost-diy-portable-laparoscopic-simulator
+redirect_from: "/lap-pack-an-ultra-low-cost-diy-portable-laparoscopic-simulator/"
 category: "Award"
 hub: magnetic-flexible-endoscopy
 date: 2020-05-20 15:20:25

@@ -1,6 +1,7 @@
 ---
 title: "Fundamentals of the gut for capsule engineers"
 slug: fundamentals-of-the-gut-for-capsule-engineers
+redirect_from: "/fundamentals-of-the-gut-for-capsule-engineers/"
 category: "News"
 hub: magnetic-flexible-endoscopy
 date: 2020-10-07 08:59:56

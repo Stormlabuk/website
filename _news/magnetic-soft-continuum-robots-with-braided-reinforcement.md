@@ -1,6 +1,7 @@
 ---
 title: "Magnetic Soft Continuum Robots With Braided Reinforcement"
 slug: magnetic-soft-continuum-robots-with-braided-reinforcement
+redirect_from: "/magnetic-soft-continuum-robots-with-braided-reinforcement/"
 category: "News"
 hub: magnetic-tentacles
 date: 2022-07-21 12:09:43

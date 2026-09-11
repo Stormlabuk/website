@@ -1,6 +1,7 @@
 ---
 title: "An Ultrasound-Guided System for Autonomous Marking of Tumour Boundaries During Robot-assisted Surgery,"
 slug: an-ultrasound-guided-system-for-autonomous-marking-of-tumor-boundaries-during-robot-assisted-surgery
+redirect_from: "/an-ultrasound-guided-system-for-autonomous-marking-of-tumor-boundaries-during-robot-assisted-surgery/"
 category: "News"
 hub: autonomy-in-surgical-robotics
 date: 2024-09-30 15:48:37

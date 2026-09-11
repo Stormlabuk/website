@@ -1,6 +1,7 @@
 ---
 title: "StormLab visits project partners in Tianjin"
 slug: stormlab-visits-project-partners-in-tianjin
+redirect_from: "/stormlab-visits-project-partners-in-tianjin/"
 category: "News"
 hub: magnetic-flexible-endoscopy
 date: 2018-04-04 09:22:53

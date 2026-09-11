@@ -1,6 +1,7 @@
 ---
 title: "STORM Lab team attends 2019 IEEE International Conference on Intelligent Robots and Systems (IROS)"
 slug: storm-lab-team-attends-2019-ieee-international-conference-on-intelligent-robots-and-systems-iros
+redirect_from: "/storm-lab-team-attends-2019-ieee-international-conference-on-intelligent-robots-and-systems-iros/"
 category: "Publication"
 hub: autonomy-in-surgical-robotics
 date: 2019-11-15 13:27:24

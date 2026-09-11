@@ -1,6 +1,7 @@
 ---
 title: "New Publication in Advanced Robotics Research"
 slug: new-publication-in-advanced-robotics-research
+redirect_from: "/new-publication-in-advanced-robotics-research/"
 category: "Publication"
 hub: magnetic-vine-robots
 date: 2026-02-23 12:09:09

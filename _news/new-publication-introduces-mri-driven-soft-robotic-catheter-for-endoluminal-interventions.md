@@ -1,6 +1,7 @@
 ---
 title: "New Publication Introduces MRI-Driven Soft Robotic Catheter for Endoluminal Interventions"
 slug: new-publication-introduces-mri-driven-soft-robotic-catheter-for-endoluminal-interventions
+redirect_from: "/new-publication-introduces-mri-driven-soft-robotic-catheter-for-endoluminal-interventions/"
 category: "Publication"
 hub: mri-actuated-instruments
 date: 2026-03-23 10:03:56

@@ -1,6 +1,7 @@
 ---
 title: "Feasibility study for Autonomous Tissue Retraction in Robotic Assisted Minimally Invasive Surgery accepted in RA-L."
 slug: feasibility-study-for-autonomous-tissue-retraction-in-robotic-assisted-minimally-invasive-surgery-accepted-in-ra-l
+redirect_from: "/feasibility-study-for-autonomous-tissue-retraction-in-robotic-assisted-minimally-invasive-surgery-accepted-in-ra-l/"
 category: "News"
 hub: autonomy-in-surgical-robotics
 date: 2020-08-13 14:55:00

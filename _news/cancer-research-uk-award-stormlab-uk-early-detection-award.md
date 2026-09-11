@@ -1,6 +1,7 @@
 ---
 title: "Cancer Research UK award STORMLAB UK Early Detection Award"
 slug: cancer-research-uk-award-stormlab-uk-early-detection-award
+redirect_from: "/cancer-research-uk-award-stormlab-uk-early-detection-award/"
 category: "Award"
 hub: magnetic-flexible-endoscopy
 date: 2019-02-11 12:56:26

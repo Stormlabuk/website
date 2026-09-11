@@ -1,6 +1,7 @@
 ---
 title: "Teleoperation and contact detection of a waterjet-actuated soft continuum manipulator published in RA-L"
 slug: teleoperation-and-contact-detection-of-a-waterjet-actuated-soft-continuum-manipulator-published-in-ra-l
+redirect_from: "/teleoperation-and-contact-detection-of-a-waterjet-actuated-soft-continuum-manipulator-published-in-ra-l/"
 category: "Publication"
 hub: magnetic-tentacles
 date: 2020-08-12 14:32:00

@@ -1,6 +1,7 @@
 ---
 title: "Diving deep into the body with soft magnetic robots"
 slug: diving-deep-into-the-body-with-soft-magnetic-robots
+redirect_from: "/diving-deep-into-the-body-with-soft-magnetic-robots/"
 category: "News"
 hub: magnetic-tentacles
 date: 2024-10-11 13:32:01

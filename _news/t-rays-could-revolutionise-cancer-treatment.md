@@ -1,6 +1,7 @@
 ---
 title: "T-rays could 'revolutionise cancer treatment'"
 slug: t-rays-could-revolutionise-cancer-treatment
+redirect_from: "/t-rays-could-revolutionise-cancer-treatment/"
 category: "News"
 hub: ""
 date: 2021-06-09 13:01:39

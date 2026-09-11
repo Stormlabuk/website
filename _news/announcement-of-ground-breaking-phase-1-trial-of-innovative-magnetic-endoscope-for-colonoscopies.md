@@ -1,6 +1,7 @@
 ---
 title: "Announcement of Ground-breaking Phase 1 Trial of Innovative Magnetic Endoscope for Colonoscopies"
 slug: announcement-of-ground-breaking-phase-1-trial-of-innovative-magnetic-endoscope-for-colonoscopies
+redirect_from: "/announcement-of-ground-breaking-phase-1-trial-of-innovative-magnetic-endoscope-for-colonoscopies/"
 category: "News"
 hub: magnetic-flexible-endoscopy
 date: 2023-10-24 17:39:41

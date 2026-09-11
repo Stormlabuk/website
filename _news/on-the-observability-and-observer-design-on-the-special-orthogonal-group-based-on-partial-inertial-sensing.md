@@ -1,6 +1,7 @@
 ---
 title: "On the Observability and Observer Design on the Special Orthogonal Group Based on Partial Inertial Sensing"
 slug: on-the-observability-and-observer-design-on-the-special-orthogonal-group-based-on-partial-inertial-sensing
+redirect_from: "/on-the-observability-and-observer-design-on-the-special-orthogonal-group-based-on-partial-inertial-sensing/"
 category: "Publication"
 hub: ""
 date: 2021-01-21 22:50:42

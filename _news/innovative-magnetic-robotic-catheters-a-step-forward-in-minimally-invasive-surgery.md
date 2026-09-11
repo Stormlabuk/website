@@ -1,6 +1,7 @@
 ---
 title: "Innovative Magnetic Robotic Catheters: A Step Forward in Minimally Invasive Surgery"
 slug: innovative-magnetic-robotic-catheters-a-step-forward-in-minimally-invasive-surgery
+redirect_from: "/innovative-magnetic-robotic-catheters-a-step-forward-in-minimally-invasive-surgery/"
 category: "News"
 hub: magnetic-tentacles
 date: 2023-11-20 23:36:33

@@ -1,6 +1,7 @@
 ---
 title: "Turning Point: The Robotics Opportunity"
 slug: turning-point-the-robotics-opportunity
+redirect_from: "/turning-point-the-robotics-opportunity/"
 category: "Publication"
 hub: ""
 date: 2024-11-18 11:12:15

@@ -1,6 +1,7 @@
 ---
 title: "Team RoboFORCE wins KUKA Innovation Prize"
 slug: team-roboforce-wins-kuka-innovation-prize
+redirect_from: "/team-roboforce-wins-kuka-innovation-prize/"
 category: "Award"
 hub: magnetic-flexible-endoscopy
 date: 2019-11-25 11:40:09

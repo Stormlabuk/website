@@ -1,6 +1,7 @@
 ---
 title: "A Comparative Study of Spatio-Temporal U-Nets for Tissue Segmentation in Surgical Robotics"
 slug: a-comparative-study-of-spatio-temporal-u-nets-for-tissue-segmentation-in-surgical-robotics
+redirect_from: "/a-comparative-study-of-spatio-temporal-u-nets-for-tissue-segmentation-in-surgical-robotics/"
 category: "News"
 hub: autonomy-in-surgical-robotics
 date: 2021-01-28 14:45:15

@@ -1,6 +1,7 @@
 ---
 title: "The rise of surgical robots -  New Electronics magazine"
 slug: the-rise-of-surgical-robots-new-electronics-magazine
+redirect_from: "/the-rise-of-surgical-robots-new-electronics-magazine/"
 category: "News"
 hub: ""
 date: 2021-06-22 21:33:23

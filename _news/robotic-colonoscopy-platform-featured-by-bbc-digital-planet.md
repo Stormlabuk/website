@@ -1,6 +1,7 @@
 ---
 title: "Robotic colonoscopy platform featured by BBC Digital Planet"
 slug: robotic-colonoscopy-platform-featured-by-bbc-digital-planet
+redirect_from: "/robotic-colonoscopy-platform-featured-by-bbc-digital-planet/"
 category: "News"
 hub: magnetic-flexible-endoscopy
 date: 2019-07-10 09:50:22

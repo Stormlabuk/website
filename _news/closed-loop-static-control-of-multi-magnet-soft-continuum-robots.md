@@ -1,6 +1,7 @@
 ---
 title: "Closed Loop Static Control of Multi-Magnet Soft Continuum Robots"
 slug: closed-loop-static-control-of-multi-magnet-soft-continuum-robots
+redirect_from: "/closed-loop-static-control-of-multi-magnet-soft-continuum-robots/"
 category: "News"
 hub: magnetic-tentacles
 date: 2023-05-10 09:43:26

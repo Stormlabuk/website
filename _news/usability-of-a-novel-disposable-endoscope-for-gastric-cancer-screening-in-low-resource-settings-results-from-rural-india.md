@@ -1,6 +1,7 @@
 ---
 title: "Usability of a novel disposable endoscope for gastric cancer screening in low-resource settings: results from rural India"
 slug: usability-of-a-novel-disposable-endoscope-for-gastric-cancer-screening-in-low-resource-settings-results-from-rural-india
+redirect_from: "/usability-of-a-novel-disposable-endoscope-for-gastric-cancer-screening-in-low-resource-settings-results-from-rural-india/"
 category: "News"
 hub: magnetic-flexible-endoscopy
 date: 2020-06-02 23:58:00

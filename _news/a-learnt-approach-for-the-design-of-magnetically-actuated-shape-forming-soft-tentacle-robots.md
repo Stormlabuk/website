@@ -1,6 +1,7 @@
 ---
 title: "A Learnt Approach for the design of magnetically actuated shape forming soft tentacle robots"
 slug: a-learnt-approach-for-the-design-of-magnetically-actuated-shape-forming-soft-tentacle-robots
+redirect_from: "/a-learnt-approach-for-the-design-of-magnetically-actuated-shape-forming-soft-tentacle-robots/"
 category: "News"
 hub: magnetic-tentacles
 date: 2020-06-02 23:56:00

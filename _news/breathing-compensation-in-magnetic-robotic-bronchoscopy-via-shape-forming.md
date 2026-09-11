@@ -1,6 +1,7 @@
 ---
 title: "Breathing Compensation in Magnetic Robotic Bronchoscopy via Shape Forming"
 slug: breathing-compensation-in-magnetic-robotic-bronchoscopy-via-shape-forming
+redirect_from: "/breathing-compensation-in-magnetic-robotic-bronchoscopy-via-shape-forming/"
 category: "Publication"
 hub: magnetic-tentacles
 date: 2024-07-15 21:53:19

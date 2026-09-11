@@ -1,6 +1,7 @@
 ---
 title: "A robot small enough to explore the lungs"
 slug: a-robot-small-enough-to-explore-the-lungs
+redirect_from: "/a-robot-small-enough-to-explore-the-lungs/"
 category: "News"
 hub: magnetic-tentacles
 date: 2022-04-25 13:31:57

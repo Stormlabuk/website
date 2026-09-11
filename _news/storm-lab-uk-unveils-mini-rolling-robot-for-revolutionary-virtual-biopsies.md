@@ -1,6 +1,7 @@
 ---
 title: "STORM Lab UK Announces Development of Miniature Rolling Robot for Virtual Biopsies"
 slug: storm-lab-uk-unveils-mini-rolling-robot-for-revolutionary-virtual-biopsies
+redirect_from: "/storm-lab-uk-unveils-mini-rolling-robot-for-revolutionary-virtual-biopsies/"
 category: "News"
 hub: magnetic-flexible-endoscopy
 date: 2025-04-25 08:50:37

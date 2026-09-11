@@ -1,6 +1,7 @@
 ---
 title: "Hybrid Tendon-Actuated and Soft Magnetic Robotic Platform for Pancreatic Applications"
 slug: hybrid-tendon-actuated-and-soft-magnetic-robotic-platform-for-pancreatic-applications
+redirect_from: "/hybrid-tendon-actuated-and-soft-magnetic-robotic-platform-for-pancreatic-applications/"
 category: "Publication"
 hub: magnetic-tentacles
 date: 2025-01-10 11:35:42

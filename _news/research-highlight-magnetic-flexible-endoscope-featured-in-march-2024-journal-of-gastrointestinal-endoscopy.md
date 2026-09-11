@@ -1,6 +1,7 @@
 ---
 title: "Research Highlight: Magnetic Flexible Endoscope Featured in March 2024 Journal of Gastrointestinal Endoscopy"
 slug: research-highlight-magnetic-flexible-endoscope-featured-in-march-2024-journal-of-gastrointestinal-endoscopy
+redirect_from: "/research-highlight-magnetic-flexible-endoscope-featured-in-march-2024-journal-of-gastrointestinal-endoscopy/"
 category: "Publication"
 hub: magnetic-flexible-endoscopy
 date: 2024-04-29 10:57:08

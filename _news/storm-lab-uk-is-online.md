@@ -1,6 +1,7 @@
 ---
 title: "STORM Lab UK is online!"
 slug: storm-lab-uk-is-online
+redirect_from: "/storm-lab-uk-is-online/"
 category: "News"
 hub: ""
 date: 2017-10-25 11:10:35

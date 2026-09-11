@@ -1,6 +1,7 @@
 ---
 title: "Publication: Feasibility of Fibre Reinforcement Within Magnetically Actuated Soft Continuum Robots"
 slug: publication-feasibility-of-fiber-reinforcement-within-magnetically-actuated-soft-continuum-robots
+redirect_from: "/publication-feasibility-of-fiber-reinforcement-within-magnetically-actuated-soft-continuum-robots/"
 category: "News"
 hub: magnetic-tentacles
 date: 2021-07-14 19:35:23

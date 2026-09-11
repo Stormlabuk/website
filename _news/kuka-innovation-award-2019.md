@@ -1,6 +1,7 @@
 ---
 title: "KUKA Innovation Award 2019"
 slug: kuka-innovation-award-2019
+redirect_from: "/kuka-innovation-award-2019/"
 category: "Award"
 hub: magnetic-flexible-endoscopy
 date: 2018-08-30 11:43:37

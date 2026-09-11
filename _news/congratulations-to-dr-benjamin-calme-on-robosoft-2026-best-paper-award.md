@@ -1,6 +1,7 @@
 ---
 title: "Congratulations to Dr. Benjamin Calme on RoboSoft 2026 Best Paper Award"
 slug: congratulations-to-dr-benjamin-calme-on-robosoft-2026-best-paper-award
+redirect_from: "/congratulations-to-dr-benjamin-calme-on-robosoft-2026-best-paper-award/"
 category: "Award"
 hub: magnetic-flexible-endoscopy
 date: 2026-04-24 09:00:12

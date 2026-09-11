@@ -1,6 +1,7 @@
 ---
 title: "Towards Autonomous Robotic Minimally Invasive Ultrasound Scanning and Vessel Reconstruction on Non-Planar Surfaces"
 slug: towards-autonomous-robotic-minimally-invasive-ultrasound-scanning-and-vessel-reconstruction-on-non-planar-surfaces
+redirect_from: "/towards-autonomous-robotic-minimally-invasive-ultrasound-scanning-and-vessel-reconstruction-on-non-planar-surfaces/"
 category: "News"
 hub: autonomy-in-surgical-robotics
 date: 2022-10-13 08:20:34

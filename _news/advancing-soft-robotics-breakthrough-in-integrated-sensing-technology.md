@@ -1,6 +1,7 @@
 ---
 title: "Advancing Soft Robotics: Breakthrough in Integrated Sensing Technology"
 slug: advancing-soft-robotics-breakthrough-in-integrated-sensing-technology
+redirect_from: "/advancing-soft-robotics-breakthrough-in-integrated-sensing-technology/"
 category: "News"
 hub: autonomy-in-surgical-robotics
 date: 2023-11-20 23:39:43

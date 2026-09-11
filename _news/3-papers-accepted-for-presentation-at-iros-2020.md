@@ -1,6 +1,7 @@
 ---
 title: "3 papers accepted for presentation at IROS 2020"
 slug: 3-papers-accepted-for-presentation-at-iros-2020
+redirect_from: "/3-papers-accepted-for-presentation-at-iros-2020/"
 category: "News"
 hub: magnetic-tentacles
 date: 2020-07-09 07:58:35

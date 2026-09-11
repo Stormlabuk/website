@@ -1,6 +1,7 @@
 ---
 title: "Sonopill feasibility study published in Science Robotics"
 slug: science-robotics-paper-published
+redirect_from: "/science-robotics-paper-published/"
 category: "Publication"
 hub: magnetic-flexible-endoscopy
 date: 2019-06-20 08:12:26

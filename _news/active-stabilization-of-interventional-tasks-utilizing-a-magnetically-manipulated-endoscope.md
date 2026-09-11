@@ -1,6 +1,7 @@
 ---
 title: "Active Stabilisation of Interventional Tasks Utilising a Magnetically Manipulated Endoscope"
 slug: active-stabilization-of-interventional-tasks-utilizing-a-magnetically-manipulated-endoscope
+redirect_from: "/active-stabilization-of-interventional-tasks-utilizing-a-magnetically-manipulated-endoscope/"
 category: "News"
 hub: magnetic-flexible-endoscopy
 date: 2022-05-11 12:06:49

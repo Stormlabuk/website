@@ -1,6 +1,7 @@
 ---
 title: "Best Student Paper Award at the International Symposium on Medical Robotics 2018"
 slug: best-student-paper-award-at-the-international-symposium-on-medical-robotics-2018
+redirect_from: "/best-student-paper-award-at-the-international-symposium-on-medical-robotics-2018/"
 category: "Award"
 hub: magnetic-flexible-endoscopy
 date: 2018-03-03 19:45:21

@@ -1,6 +1,7 @@
 ---
 title: "Lavinia Barducci at the Hamlyn Symposium 2018"
 slug: lavinia-barducci-at-the-hamlyn-symposium-2018
+redirect_from: "/lavinia-barducci-at-the-hamlyn-symposium-2018/"
 category: "News"
 hub: magnetic-flexible-endoscopy
 date: 2018-06-29 12:49:09

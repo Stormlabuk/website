@@ -1,6 +1,7 @@
 ---
 title: "Actuated Coiling Soft Robot with Variable Stiffness"
 slug: actuated-coiling-soft-robot-with-variable-stiffness
+redirect_from: "/actuated-coiling-soft-robot-with-variable-stiffness/"
 category: "News"
 hub: magnetic-tentacles
 date: 2023-05-10 10:20:31

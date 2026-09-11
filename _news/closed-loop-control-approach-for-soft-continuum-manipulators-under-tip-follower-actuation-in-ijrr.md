@@ -1,6 +1,7 @@
 ---
 title: "Closed-loop Control Approach for Soft Continuum Manipulators under Tip Follower Actuation in IJRR"
 slug: closed-loop-control-approach-for-soft-continuum-manipulators-under-tip-follower-actuation-in-ijrr
+redirect_from: "/closed-loop-control-approach-for-soft-continuum-manipulators-under-tip-follower-actuation-in-ijrr/"
 category: "News"
 hub: magnetic-tentacles
 date: 2021-03-16 22:48:41

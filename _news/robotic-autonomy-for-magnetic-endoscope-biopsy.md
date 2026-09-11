@@ -1,6 +1,7 @@
 ---
 title: "‘Robotic Autonomy for Magnetic Endoscope Biopsy"
 slug: robotic-autonomy-for-magnetic-endoscope-biopsy
+redirect_from: "/robotic-autonomy-for-magnetic-endoscope-biopsy/"
 category: "News"
 hub: magnetic-flexible-endoscopy
 date: 2022-07-07 12:00:35

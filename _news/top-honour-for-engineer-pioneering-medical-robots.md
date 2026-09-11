@@ -1,6 +1,7 @@
 ---
 title: "Top honour for engineer pioneering medical robots"
 slug: top-honour-for-engineer-pioneering-medical-robots
+redirect_from: "/top-honour-for-engineer-pioneering-medical-robots/"
 category: "Award"
 hub: autonomy-in-surgical-robotics
 date: 2022-02-23 11:13:29

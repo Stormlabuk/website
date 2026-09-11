@@ -1,6 +1,7 @@
 ---
 title: "Can closed-loop control of the whole body of a soft magnetic catheter be used to ease pancreatic cannulation by minimising contact with lumen walls?"
 slug: can-closed-loop-control-of-the-whole-body-of-a-soft-magnetic-catheter-be-used-to-ease-pancreatic-cannulation-by-minimising-contact-with-lumen-walls
+redirect_from: "/can-closed-loop-control-of-the-whole-body-of-a-soft-magnetic-catheter-be-used-to-ease-pancreatic-cannulation-by-minimising-contact-with-lumen-walls/"
 category: "News"
 hub: magnetic-tentacles
 date: 2025-05-01 11:34:53

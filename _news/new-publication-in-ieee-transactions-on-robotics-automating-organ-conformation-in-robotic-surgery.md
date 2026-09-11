@@ -1,6 +1,7 @@
 ---
 title: "New Publication in IEEE Transactions on Robotics: Automating Organ Conformation in Robotic Surgery"
 slug: new-publication-in-ieee-transactions-on-robotics-automating-organ-conformation-in-robotic-surgery
+redirect_from: "/new-publication-in-ieee-transactions-on-robotics-automating-organ-conformation-in-robotic-surgery/"
 category: "Publication"
 hub: autonomy-in-surgical-robotics
 date: 2024-01-17 11:24:21

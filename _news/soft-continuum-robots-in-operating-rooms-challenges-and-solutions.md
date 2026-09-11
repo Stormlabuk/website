@@ -1,6 +1,7 @@
 ---
 title: "Soft Continuum Robots in Operating Rooms: Challenges and Solutions"
 slug: soft-continuum-robots-in-operating-rooms-challenges-and-solutions
+redirect_from: "/soft-continuum-robots-in-operating-rooms-challenges-and-solutions/"
 category: "Publication"
 hub: magnetic-tentacles
 date: 2026-03-23 10:01:29

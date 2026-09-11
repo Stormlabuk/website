@@ -1,6 +1,7 @@
 ---
 title: "A Framework for Simulation of Magnetic Soft Robots using the Material Point Method"
 slug: a-framework-for-simulation-of-magnetic-soft-robots-using-the-material-point-method
+redirect_from: "/a-framework-for-simulation-of-magnetic-soft-robots-using-the-material-point-method/"
 category: "News"
 hub: magnetic-tentacles
 date: 2023-05-10 09:36:01

@@ -1,6 +1,7 @@
 ---
 title: "Best Paper Award at the 2022 edition of the Conference on New Technologies for Computer and Robot Assisted Surgery (CRAS)"
 slug: best-paper-award-at-the-2022-edition-of-the-conference-on-new-technologies-for-computer-and-robot-assisted-surgery-cras
+redirect_from: "/best-paper-award-at-the-2022-edition-of-the-conference-on-new-technologies-for-computer-and-robot-assisted-surgery-cras/"
 category: "Award"
 hub: magnetic-tentacles
 date: 2022-05-11 12:09:09

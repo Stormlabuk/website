@@ -1,6 +1,7 @@
 ---
 title: "Universities Minister Chris Skidmore visits Nexus and tries STORM prototypes"
 slug: universities-minister-chris-skidmore-visits-nexus
+redirect_from: "/universities-minister-chris-skidmore-visits-nexus/"
 category: "News"
 hub: magnetic-flexible-endoscopy
 date: 2020-01-17 16:51:20

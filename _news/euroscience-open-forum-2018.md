@@ -1,6 +1,7 @@
 ---
 title: "EuroScience Open Forum 2018"
 slug: euroscience-open-forum-2018
+redirect_from: "/euroscience-open-forum-2018/"
 category: "News"
 hub: magnetic-flexible-endoscopy
 date: 2018-07-16 11:40:10

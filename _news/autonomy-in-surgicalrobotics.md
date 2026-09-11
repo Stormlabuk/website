@@ -1,6 +1,7 @@
 ---
 title: "Autonomy in SurgicalRobotics"
 slug: autonomy-in-surgicalrobotics
+redirect_from: "/autonomy-in-surgicalrobotics/"
 category: "News"
 hub: autonomy-in-surgical-robotics
 date: 2021-05-11 20:54:04

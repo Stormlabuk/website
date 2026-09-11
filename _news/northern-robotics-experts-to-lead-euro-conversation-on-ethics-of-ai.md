@@ -1,6 +1,7 @@
 ---
 title: "Northern robotics experts to lead Euro conversation on ethics of AI"
 slug: northern-robotics-experts-to-lead-euro-conversation-on-ethics-of-ai
+redirect_from: "/northern-robotics-experts-to-lead-euro-conversation-on-ethics-of-ai/"
 category: "News"
 hub: autonomy-in-surgical-robotics
 date: 2019-02-07 09:42:08

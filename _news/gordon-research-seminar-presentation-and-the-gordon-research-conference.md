@@ -1,6 +1,7 @@
 ---
 title: "Gordon Research Seminar presentation and the Gordon Research Conference"
 slug: gordon-research-seminar-presentation-and-the-gordon-research-conference
+redirect_from: "/gordon-research-seminar-presentation-and-the-gordon-research-conference/"
 category: "News"
 hub: magnetic-tentacles
 date: 2022-09-15 11:00:11

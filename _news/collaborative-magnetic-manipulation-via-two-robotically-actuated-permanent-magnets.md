@@ -1,6 +1,7 @@
 ---
 title: "Collaborative Magnetic Manipulation via Two Robotically Actuated Permanent Magnets"
 slug: collaborative-magnetic-manipulation-via-two-robotically-actuated-permanent-magnets
+redirect_from: "/collaborative-magnetic-manipulation-via-two-robotically-actuated-permanent-magnets/"
 category: "News"
 hub: magnetic-tentacles
 date: 2022-10-12 12:00:26

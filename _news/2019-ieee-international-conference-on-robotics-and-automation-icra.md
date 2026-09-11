@@ -1,6 +1,7 @@
 ---
 title: "2019 IEEE International Conference on Robotics and Automation (ICRA)"
 slug: 2019-ieee-international-conference-on-robotics-and-automation-icra
+redirect_from: "/2019-ieee-international-conference-on-robotics-and-automation-icra/"
 category: "Publication"
 hub: magnetic-flexible-endoscopy
 date: 2019-05-26 14:05:12

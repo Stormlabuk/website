@@ -1,6 +1,7 @@
 ---
 title: "Innovative Magnetic Steering Enhances Vine Robot Capabilities"
 slug: innovative-magnetic-steering-enhances-vine-robot-capabilities
+redirect_from: "/innovative-magnetic-steering-enhances-vine-robot-capabilities/"
 category: "Publication"
 hub: magnetic-vine-robots
 date: 2024-09-02 20:38:22

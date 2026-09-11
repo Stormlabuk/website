@@ -1,6 +1,7 @@
 ---
 title: "Stormlab UK @ Wired Health Italy"
 slug: stormlab-uk-wired-health-italy
+redirect_from: "/stormlab-uk-wired-health-italy/"
 category: "News"
 hub: ""
 date: 2018-03-15 12:52:02
