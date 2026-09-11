@@ -23,21 +23,28 @@
 }
 .member__photo {
   width: 100%; height: 100%; object-fit: cover; display: block;
-  border-radius: inherit;
-  filter: grayscale(1) contrast(1.03); transform: scale(1);
+  // Round to the frame's INNER radius (24px frame − 1px border) so the corner
+  // meets the border exactly — a full 24px here exposes a grey arc of frame
+  // background. This intrinsic rounding also holds the corners when the photo
+  // scales on hover, which WebKit otherwise fails to clip.
+  border-radius: 23px;
+  // No `transform` at rest: a resting scale(1) still forces a compositing layer
+  // that WebKit fails to clip, leaking a grey corner. The hover scale below
+  // animates fine from no transform.
+  filter: grayscale(1) contrast(1.03);
   transition: transform 500ms var(--ease-out), filter 320ms var(--ease-standard);
 }
 .member:hover .member__photo { filter: grayscale(0) contrast(1); transform: scale(1.05); }
 .member__placeholder {
   position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
-  border-radius: inherit;
+  border-radius: 23px;
   background-image: radial-gradient(var(--grey-700) 1px, transparent 1.6px); background-size: 7px 7px;
 }
 .member__placeholder span { font-family: var(--font-mono); font-weight: 700; font-size: 1.6rem; letter-spacing: 0.04em; color: var(--grey-500); }
 .member__tab { position: absolute; top: 14px; left: 14px; width: 30px; height: 4px; border-radius: 2px; background: var(--storm-yellow); z-index: 2; }
 .member__overlay {
   position: absolute; left: 0; right: 0; bottom: 0; padding: 16px 15px;
-  border-bottom-left-radius: inherit; border-bottom-right-radius: inherit;
+  border-bottom-left-radius: 23px; border-bottom-right-radius: 23px;
   background: linear-gradient(to top, rgba(10,10,10,0.96) 55%, rgba(10,10,10,0));
   transform: translateY(102%); transition: transform 340ms var(--ease-out);
 }
