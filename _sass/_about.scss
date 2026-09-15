@@ -14,7 +14,7 @@
 .member:hover { transform: translateY(-4px); }
 .member__frame {
   position: relative; aspect-ratio: 3 / 4; border-radius: 24px; overflow: hidden;
-  background: var(--grey-950); border: 1px solid var(--border-default);
+  border: 1px solid var(--border-default);
   // Safari ignores `overflow: hidden` rounding for children that carry a
   // transform (.member__photo scales on hover), leaking square corners.
   // clip-path reliably clips transformed descendants to the rounded shape.
