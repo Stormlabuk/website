@@ -90,6 +90,10 @@ groups:
         role: "Ph.D. Student"
         photo: ""
         detail: ""
+      - name: "Jackson Williams"
+        role: "Ph.D. Student"
+        photo: "team/jackson-williams.jpg"
+        detail: "BEng & MEng Mechatronics & Robotics, University of Leeds"
 
   - title: "Staff"
     members:
