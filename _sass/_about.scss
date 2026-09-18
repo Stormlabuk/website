@@ -31,10 +31,9 @@
   // No `transform` at rest: a resting scale(1) still forces a compositing layer
   // that WebKit fails to clip, leaking a grey corner. The hover scale below
   // animates fine from no transform.
-  filter: grayscale(1) contrast(1.03);
-  transition: transform 500ms var(--ease-out), filter 320ms var(--ease-standard);
+  transition: transform 500ms var(--ease-out);
 }
-.member:hover .member__photo { filter: grayscale(0) contrast(1); transform: scale(1.05); }
+.member:hover .member__photo { transform: scale(1.05); }
 .member__placeholder {
   position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
   border-radius: 23px;
