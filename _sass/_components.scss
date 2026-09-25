@@ -76,7 +76,7 @@
 // ── Citation list (publications + research detail) ──────────────────────────
 .cite-list { list-style: none; margin: 24px 0 0; padding: 0; border-top: 2px solid var(--grey-950); }
 .cite {
-  display: grid; grid-template-columns: 44px 1fr; gap: 18px;
+  display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 18px;
   padding: 20px 16px; margin: 0 -16px;
   border-bottom: 1px solid var(--border-subtle);
   transition: background var(--dur-base) var(--ease-standard);
@@ -98,6 +98,9 @@
 .cite__date { font-family: var(--font-mono); font-size: var(--text-3xs); letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-faint); white-space: nowrap; }
 .cite__dot { width: 3px; height: 3px; border-radius: 50%; background: var(--grey-300); flex: none; }
 .cite__doi { font-family: var(--font-mono); font-size: var(--text-3xs); color: var(--status-info); white-space: nowrap; }
+// Long venue names and DOIs must wrap on phones rather than widen the page.
+.cite__meta .tag { white-space: normal; }
+@media (max-width: 600px) { .cite__doi { white-space: normal; overflow-wrap: anywhere; } }
 
 // ── Dark dithered section helper ────────────────────────────────────────────
 .ink-section { background: var(--grey-950); position: relative; overflow: hidden; }
