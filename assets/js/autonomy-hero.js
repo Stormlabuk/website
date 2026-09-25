@@ -22,6 +22,7 @@
   // Scene cues (running sum of the authored scene durations).
   var P = 0, E = 8, M = 17.6, S = 25.6, END = 32;
   var STILL_T = M + 3.9; // representative frame for reduced motion
+  var START_T = 2.5;     // first play begins mid-scan so the hero isn't empty on load
 
   // ── Maths ──────────────────────────────────────────────────────────────────
   var Easing = {
@@ -464,7 +465,7 @@
   }
 
   // ── Sizing: fit the 1920×1080 stage into the box (contain) ──────────────────
-  var time = reduce ? STILL_T : 0;
+  var time = reduce ? STILL_T : START_T;
   function resize() {
     var cw = stage.clientWidth, ch = stage.clientHeight;
     if (!cw || !ch) return;
