@@ -3,11 +3,17 @@ layout: default
 ---
 {%- assign meta = site.data.research | where: "slug", page.slug | first -%}
 
-<section class="rd-hero">
-  <div class="dither-layer" aria-hidden="true"></div>
+<section class="rd-hero{% if page.hero == 'autonomy' %} rd-hero--autonomy{% endif %}">
+  {%- unless page.hero == "autonomy" -%}<div class="dither-layer" aria-hidden="true"></div>{%- endunless -%}
   {%- if page.hero == "tentacle" -%}
     <canvas id="tentacle-hero" aria-hidden="true"></canvas>
     <div class="rd-hero__scrim" aria-hidden="true"></div>
+  {%- elsif page.hero == "autonomy" -%}
+    <div class="ah-stage" aria-hidden="true">
+      <div class="ah-stage__dither"></div>
+      <canvas id="autonomy-hero"></canvas>
+    </div>
+    <div class="ah-scrim" aria-hidden="true"></div>
   {%- elsif meta.img -%}
     <img class="rd-hero__img {% if meta.fit == 'contain' %}fit-contain{% endif %}" src="{{ meta.img | prepend: '/assets/images/' | relative_url }}" alt="" aria-hidden="true">
   {%- endif -%}
@@ -163,3 +169,7 @@ layout: default
     </div>
   </div>
 </section>
+
+{%- if page.hero == "autonomy" -%}
+<script src="{{ '/assets/js/autonomy-hero.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
+{%- endif -%}

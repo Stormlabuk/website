@@ -2,6 +2,7 @@
 title: "Autonomy in Surgical Robotics"
 slug: autonomy-in-surgical-robotics
 order: 6
+hero: autonomy
 tagline: "Intelligent control and machine learning that bring autonomy to surgical robots"
 infographic: research/autonomy-infographic.png
 infographic_alt: "Autonomy in surgical robotics"
