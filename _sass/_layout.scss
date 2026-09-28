@@ -370,6 +370,26 @@
 }
 // Phones: the title spans the full width, so lift the scene above it and fade
 // it out vertically behind the text instead of from the left.
+// MRI hero (hero: mri → assets/js/mri-hero.js): full-bleed WebGL scene with a
+// dither wash, a scrim behind the title and a fine grain on top.
+.rd-hero--mri { background: #0A0A0A; }
+.rd-hero--mri .rd-hero__inner { min-height: 640px; }
+.mri-hero { position: absolute; inset: 0; }
+.mri-hero__dither {
+  position: absolute; inset: 0; opacity: 0.3; pointer-events: none;
+  -webkit-mask-image: linear-gradient(120deg, #000, transparent 60%); mask-image: linear-gradient(120deg, #000, transparent 60%);
+}
+.mri-hero__scrim {
+  position: absolute; inset: 0; pointer-events: none;
+  background:
+    radial-gradient(ellipse 55% 60% at 12% 78%, rgba(10,10,10,0.92) 0%, rgba(10,10,10,0.7) 45%, rgba(10,10,10,0) 100%),
+    linear-gradient(90deg, rgba(10,10,10,0.95) 0%, rgba(10,10,10,0.8) 28%, rgba(10,10,10,0.35) 48%, rgba(10,10,10,0) 62%),
+    linear-gradient(180deg, rgba(10,10,10,0.7) 0%, rgba(10,10,10,0) 22%, rgba(10,10,10,0) 60%, rgba(10,10,10,0.9) 100%);
+}
+.mri-hero__grain {
+  position: absolute; inset: 0; pointer-events: none;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.07) 0.8px, transparent 1.1px); background-size: 5px 5px;
+}
 // Vine: softer left scrim plus a dither texture across the whole band.
 .rd-hero--vine .ah-scrim {
   background:
@@ -384,6 +404,7 @@
 }
 @media (max-width: 600px) {
   .ah-stage { top: 36%; }
+  .rd-hero--mri .mri-hero__scrim { background: linear-gradient(180deg, rgba(10,10,10,0.9) 0%, rgba(10,10,10,0) 19%, rgba(10,10,10,0) 29%, rgba(10,10,10,0.9) 49%, #0A0A0A 100%); }
   .rd-hero--anim .ah-scrim { background: linear-gradient(180deg, #0A0A0A 0%, rgba(10,10,10,0.85) 11%, rgba(10,10,10,0) 21%, rgba(10,10,10,0) 41%, rgba(10,10,10,0.9) 57%, #0A0A0A 100%); }
 }
 .rd-section { max-width: var(--container-max); margin: 0 auto; padding: 80px 32px; border-bottom: 1px solid var(--border-default); }

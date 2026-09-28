@@ -6,11 +6,16 @@ layout: default
 {%- comment -%}Animated 3D heroes: `hero: autonomy` / `hero: vine` → assets/js/<hero>-hero.js{%- endcomment -%}
 {%- assign animhero = false -%}
 {%- if page.hero == "autonomy" or page.hero == "vine" -%}{%- assign animhero = true -%}{%- endif -%}
-<section class="rd-hero{% if animhero %} rd-hero--anim rd-hero--{{ page.hero }}{% endif %}">
-  {%- unless animhero -%}<div class="dither-layer" aria-hidden="true"></div>{%- endunless -%}
+<section class="rd-hero{% if animhero %} rd-hero--anim rd-hero--{{ page.hero }}{% elsif page.hero == 'mri' %} rd-hero--mri{% endif %}">
+  {%- unless animhero or page.hero == "mri" -%}<div class="dither-layer" aria-hidden="true"></div>{%- endunless -%}
   {%- if page.hero == "tentacle" -%}
     <canvas id="tentacle-hero" aria-hidden="true"></canvas>
     <div class="rd-hero__scrim" aria-hidden="true"></div>
+  {%- elsif page.hero == "mri" -%}
+    <div class="mri-hero" id="mri-hero" aria-hidden="true"></div>
+    <div class="storm-dither mri-hero__dither" aria-hidden="true"></div>
+    <div class="mri-hero__scrim" aria-hidden="true"></div>
+    <div class="mri-hero__grain" aria-hidden="true"></div>
   {%- elsif animhero -%}
     <div class="ah-stage" aria-hidden="true">
       <div class="ah-stage__dither"></div>
@@ -174,6 +179,9 @@ layout: default
   </div>
 </section>
 
+{%- if page.hero == "mri" -%}
+<script type="module" src="{{ '/assets/js/mri-hero.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
+{%- endif -%}
 {%- if animhero -%}
 <script src="{{ '/assets/js/' | append: page.hero | append: '-hero.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
 {%- endif -%}
