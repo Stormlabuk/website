@@ -231,6 +231,22 @@
 .page-hero__inner { position: relative; max-width: var(--container-max); margin: 0 auto; padding: 72px 32px; }
 .page-hero h1 { color: var(--white); font-size: var(--text-3xl); margin-top: 18px; max-width: 760px; }
 .page-hero p { color: var(--grey-300); font-size: var(--text-md); max-width: 600px; margin-top: 20px; line-height: 1.55; }
+// Research landing: halftone KUKA-arm scene (assets/js/research-hero.js) behind the copy.
+.page-hero--anim { background: #0A0A0A; min-height: 640px; display: flex; align-items: center; }
+.page-hero--anim .dither-layer { opacity: 1; background-image: radial-gradient(rgba(255,255,255,0.09) 1px, transparent 1.6px); background-size: 7px 7px; -webkit-mask-image: none; mask-image: none; }
+.page-hero__canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.page-hero__scrim {
+  position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(90deg, #0A0A0A 0%, #0A0A0A clamp(0px, calc(100% - 700px), 30%), rgba(10,10,10,0.9) max(34%, min(640px, 60%)), rgba(10,10,10,0) max(62%, min(780px, 76%)));
+}
+.page-hero--anim .page-hero__inner { width: 100%; padding-block: 112px 104px; }
+.page-hero--anim h1 { max-width: 640px; }
+.page-hero--anim p { max-width: 540px; }
+@media (max-width: 599px) {
+  .page-hero--anim { align-items: flex-start; }
+  .page-hero--anim .page-hero__inner { padding-top: 360px; padding-bottom: 72px; }
+  .page-hero__scrim { background: linear-gradient(180deg, rgba(10,10,10,0.3) 0, rgba(10,10,10,0) 60px, rgba(10,10,10,0) 280px, #0A0A0A 370px); }
+}
 
 // Light page header (team)
 .page-head-light { max-width: var(--container-max); margin: 0 auto; padding: 72px 32px 24px; }

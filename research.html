@@ -5,8 +5,10 @@ permalink: /research/
 description: "Our research streams span soft magnetic surgical robots, medical capsule robots, robotic endoscopy, image-guided intervention and the translation of surgical robotics to clinical use."
 ---
 
-<section class="page-hero">
+<section class="page-hero page-hero--anim">
   <div class="dither-layer" aria-hidden="true"></div>
+  <canvas class="page-hero__canvas" id="research-hero" aria-hidden="true"></canvas>
+  <div class="page-hero__scrim" aria-hidden="true"></div>
   <div class="page-hero__inner">
     <span class="eyebrow eyebrow--inverse">Research</span>
     <h1 class="storm-display">From hypothesis-driven science to first-in-human trials</h1>
@@ -28,3 +30,5 @@ description: "Our research streams span soft magnetic surgical robots, medical c
     {%- endfor -%}
   </div>
 </section>
+
+<script src="{{ '/assets/js/research-hero.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
