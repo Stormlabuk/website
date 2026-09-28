@@ -98,7 +98,7 @@ groups:
   - title: "Staff"
     members:
       - name: "Sam Wilson"
-        role: "Research Support Technician"
+        role: "Lab Manager"
         photo: "team/sam-wilson.webp"
         detail: "BSc Medical Science, University of Leeds"
       - name: "Alfred Alexander"
