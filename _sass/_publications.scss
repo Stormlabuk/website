@@ -69,12 +69,15 @@
   .pub-hero-stats { gap: 32px 40px; }
   .pub-body { padding-block: 44px 72px; grid-template-columns: 1fr; gap: 56px; }
   .pub-latest-grid { grid-template-columns: 1fr 1fr; }
-  .pub-year-row { grid-template-columns: 60px 1fr; }
+  // The items' -14px hover bleed must land in a gap, not on the year.
+  .pub-year-row { grid-template-columns: 60px minmax(0, 1fr); column-gap: 14px; }
   .pub-year-num { font-size: 1.3rem; padding-top: 18px; }
 }
 @media (max-width: 560px) {
   .pub-hero-h1 { font-size: 2.6rem; }
   .pub-stat-num { font-size: 2rem; }
   .pub-latest-grid { grid-template-columns: 1fr; }
-  .pub-year-row { grid-template-columns: 44px 1fr; }
+  // Phones: too narrow for a side column, so the year heads its own list.
+  .pub-year-row { grid-template-columns: minmax(0, 1fr); }
+  .pub-year-num { padding-top: 16px; padding-bottom: 2px; }
 }
