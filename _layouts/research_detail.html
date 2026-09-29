@@ -6,13 +6,17 @@ layout: default
 {%- comment -%}Animated 3D heroes: `hero: autonomy` / `hero: vine` → assets/js/<hero>-hero.js{%- endcomment -%}
 {%- assign animhero = false -%}
 {%- if page.hero == "autonomy" or page.hero == "vine" -%}{%- assign animhero = true -%}{%- endif -%}
-<section class="rd-hero{% if animhero %} rd-hero--anim rd-hero--{{ page.hero }}{% elsif page.hero == 'mri' %} rd-hero--mri{% elsif page.hero == 'tentacle' %} rd-hero--tentacles{% endif %}">
-  {%- unless animhero or page.hero == "mri" or page.hero == "tentacle" -%}<div class="dither-layer" aria-hidden="true"></div>{%- endunless -%}
+<section class="rd-hero{% if animhero %} rd-hero--anim rd-hero--{{ page.hero }}{% elsif page.hero == 'mri' %} rd-hero--mri{% elsif page.hero == 'tentacle' %} rd-hero--tentacles{% elsif page.hero == 'mfe' %} rd-hero--mfe{% endif %}">
+  {%- unless animhero or page.hero == "mri" or page.hero == "tentacle" or page.hero == "mfe" -%}<div class="dither-layer" aria-hidden="true"></div>{%- endunless -%}
   {%- if page.hero == "tentacle" -%}
     <div class="storm-dither storm-dither--fade tentacles-hero__dither" aria-hidden="true"></div>
     <div class="tentacles-hero" id="tentacles-hero" aria-hidden="true"></div>
     <div class="tentacles-hero__fade" id="tentacles-hero-fade" aria-hidden="true"></div>
     <div class="tentacles-hero__scrim" aria-hidden="true"></div>
+  {%- elsif page.hero == "mfe" -%}
+    <div class="mfe-hero__grid" aria-hidden="true"></div>
+    <div class="mfe-hero" id="mfe-hero" aria-hidden="true"></div>
+    <div class="mfe-hero__scrim" aria-hidden="true"></div>
   {%- elsif page.hero == "mri" -%}
     <div class="mri-hero" id="mri-hero" aria-hidden="true"></div>
     <div class="storm-dither mri-hero__dither" aria-hidden="true"></div>
@@ -183,6 +187,9 @@ layout: default
 
 {%- if page.hero == "tentacle" -%}
 <script type="module" src="{{ '/assets/js/tentacles-hero.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
+{%- endif -%}
+{%- if page.hero == "mfe" -%}
+<script type="module" src="{{ '/assets/js/mfe-hero.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
 {%- endif -%}
 {%- if page.hero == "mri" -%}
 <script type="module" src="{{ '/assets/js/mri-hero.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>

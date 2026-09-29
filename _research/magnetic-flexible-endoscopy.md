@@ -1,6 +1,7 @@
 ---
 title: "Magnetic flexible endoscopy"
 slug: magnetic-flexible-endoscopy
+hero: mfe
 order: 1
 tagline: "Re-imagining colonoscopy with a magnetically guided, capsule-tipped endoscope"
 applications:
