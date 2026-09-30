@@ -75,6 +75,8 @@ defaults:
     values: { layout: "news_article", nav_section: "News" }
   - scope: { path: "" }
     values: { layout: "default" }
+  - scope: { path: "publications/map/index.html" }
+    values: { sitemap: false }
 
 exclude:
   - README.md
