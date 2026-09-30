@@ -109,6 +109,8 @@ svg text{font-family:var(--sans)}
   .panel{top:auto; left:10px; right:10px; width:auto; bottom:calc(env(safe-area-inset-bottom,0px) + 64px); max-height:55vh; transform:translateY(calc(100% + 80px))}
 }
 @media (prefers-reduced-motion: reduce){ .panel{transition:none} }
+/* phones: the panels are near-opaque anyway, and re-blurring the live map every frame is costly */
+@media (max-width:760px), (pointer:coarse){ .views, .search #q, .legend, .panel, .tip{-webkit-backdrop-filter:none; backdrop-filter:none} }
 </style>
 </head>
 <body>
@@ -204,6 +206,7 @@ const mqDark = matchMedia('(prefers-color-scheme: dark)');
 const isDark = () => document.documentElement.dataset.theme==='dark' || (document.documentElement.dataset.theme!=='light' && mqDark.matches);
 const col = id => isDark() ? TH[id].c : d3.color(TH[id].c).darker(1.1).formatHex();
 const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const lite = matchMedia('(max-width:760px), (pointer:coarse)').matches; // phones/tablets: settle the field faster
 
 /* ---------- chrome ---------- */
 document.getElementById('sub').textContent =
@@ -318,6 +321,7 @@ function buildField(){
     .force('y',d3.forceY(d=>d.kind==='p'?anchors[d.p.theme].y:H/2).strength(d=>d.kind==='p'?.07:.012))
     .force('col',d3.forceCollide(d=>d.r+1.6))
     .alphaDecay(.022);
+  if(lite) sim.alphaMin(.01);
   // links curve like field lines
   const tick=()=>{
     lk.attr('d',d=>{ const sx=d.source.x, sy=d.source.y, tx=d.target.x, ty=d.target.y, mx=(sx+tx)/2, my=(sy+ty)/2, dx=tx-sx, dy=ty-sy;
@@ -329,7 +333,7 @@ function buildField(){
   fieldNodes={pn,an};
   const settle=()=>{ fitted=true; if(!sel) fitTo(g.node().getBBox(), safeBox(false), 1200); else focusField(); };
   if(reduce){ sim.stop(); for(let i=0;i<320;i++) sim.tick(); tick(); settle(); }
-  else sim.on('tick',()=>{ tick(); if(!fitted && sim.alpha()<.12) settle(); });
+  else sim.on('tick',()=>{ if(lite) sim.tick(2); tick(); if(!fitted && sim.alpha()<.12) settle(); });
   return g;
 }
 
@@ -489,7 +493,7 @@ addEventListener('keydown',e=>{ if(e.key==='Escape') select(null); });
 function select(s){ sel=s; openPanel(); highlight(); if(view==='field') focusField(); }
 
 let qt; document.getElementById('q').addEventListener('input',e=>{ clearTimeout(qt); qt=setTimeout(()=>{ query=e.target.value.trim(); highlight(); },120); });
-let rt; addEventListener('resize',()=>{ clearTimeout(rt); rt=setTimeout(render,200); });
+let rt, lastW=innerWidth; addEventListener('resize',()=>{ clearTimeout(rt); rt=setTimeout(()=>{ if(lite && innerWidth===lastW) return; lastW=innerWidth; render(); },200); }); // phones: ignore height-only changes (keyboard, URL bar)
 mqDark.addEventListener('change',()=>{ paintLegend(); render(); openPanel(); });
 
 render();
